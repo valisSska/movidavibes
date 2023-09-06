@@ -1,0 +1,26 @@
+[24-Jul-2023 13:27:50 UTC] PHP Warning:  Undefined variable $page in /home3/klhdeymy/public_html/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-marketplace/includes/Themes.php on line 177
+[24-Jul-2023 13:34:43 UTC] PHP Warning:  Attempt to read property "public" on null in /home3/klhdeymy/public_html/wp-content/mu-plugins/endurance-page-cache.php on line 544
+[24-Jul-2023 13:34:43 UTC] PHP Warning:  Attempt to read property "public" on null in /home3/klhdeymy/public_html/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-performance/includes/CachePurgingService.php on line 125
+[25-Jul-2023 13:09:01 UTC] PHP Warning:  Undefined array key "display_grid_class" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/resources/rcapi_functions.php on line 104
+[25-Jul-2023 13:09:06 UTC] PHP Warning:  Attempt to read property "taxonomy" on null in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/shortcodes/recent_items_list.php on line 141
+[25-Jul-2023 13:17:24 UTC] PHP Warning:  Undefined array key "display_grid_class" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/resources/rcapi_functions.php on line 104
+[25-Jul-2023 13:17:26 UTC] PHP Warning:  Attempt to read property "taxonomy" on null in /home3/klhdeymy/public_html/wp-content/themes/wprentals/libs/ajax_functions.php on line 23
+[25-Jul-2023 13:17:26 UTC] PHP Warning:  Undefined array key "display_grid_class" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/resources/rcapi_functions.php on line 104
+[25-Jul-2023 13:17:27 UTC] PHP Warning:  Undefined array key "display_grid_class" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/resources/rcapi_functions.php on line 104
+[26-Jul-2023 10:36:18 UTC] PHP Warning:  Attempt to read property "taxonomy" on null in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/shortcodes/recent_items_list.php on line 141
+[26-Jul-2023 11:25:11 UTC] PHP Warning:  Attempt to read property "taxonomy" on null in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/shortcodes/recent_items_list.php on line 141
+[05-Aug-2023 12:32:00 UTC] PHP Warning:  Undefined array key "facebook" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/widgets/social_widget_top_bar.php on line 37
+[05-Aug-2023 12:32:00 UTC] PHP Warning:  Undefined array key "whatsup" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/widgets/social_widget_top_bar.php on line 37
+[05-Aug-2023 12:32:00 UTC] PHP Warning:  Undefined array key "telegram" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/widgets/social_widget_top_bar.php on line 37
+[05-Aug-2023 12:32:00 UTC] PHP Warning:  Undefined array key "tiktok" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/widgets/social_widget_top_bar.php on line 37
+[05-Aug-2023 12:32:00 UTC] PHP Warning:  Undefined array key "rss" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/widgets/social_widget_top_bar.php on line 37
+[05-Aug-2023 12:32:00 UTC] PHP Warning:  Undefined array key "twitter" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/widgets/social_widget_top_bar.php on line 37
+[05-Aug-2023 12:32:00 UTC] PHP Warning:  Undefined array key "dribbble" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/widgets/social_widget_top_bar.php on line 37
+[05-Aug-2023 12:32:00 UTC] PHP Warning:  Undefined array key "google" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/widgets/social_widget_top_bar.php on line 37
+[05-Aug-2023 12:32:00 UTC] PHP Warning:  Undefined array key "linkedIn" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/widgets/social_widget_top_bar.php on line 37
+[05-Aug-2023 12:32:00 UTC] PHP Warning:  Undefined array key "tumblr" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/widgets/social_widget_top_bar.php on line 37
+[05-Aug-2023 12:32:00 UTC] PHP Warning:  Undefined array key "pinterest" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/widgets/social_widget_top_bar.php on line 37
+[05-Aug-2023 12:32:00 UTC] PHP Warning:  Undefined array key "youtube" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/widgets/social_widget_top_bar.php on line 37
+[05-Aug-2023 12:32:00 UTC] PHP Warning:  Undefined array key "vimeo" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/widgets/social_widget_top_bar.php on line 37
+[05-Aug-2023 12:32:00 UTC] PHP Warning:  Undefined array key "instagram" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/widgets/social_widget_top_bar.php on line 37
+[05-Aug-2023 12:32:00 UTC] PHP Warning:  Undefined array key "foursquare" in /home3/klhdeymy/public_html/wp-content/plugins/wprentals-core/widgets/social_widget_top_bar.php on line 37
