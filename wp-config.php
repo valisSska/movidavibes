@@ -8,6 +8,9 @@ define('DB_HOST', 'localhost');
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
+define('WP_HOME','http://localhost:94');
+define('WP_SITEURL','http://localhost:94');
+
 $_SERVER['HTTPS'] = 'off';
 
 define('AUTH_KEY', 'e8fb0413fc299616e80cb02c4236da3732517993be6c43bcd076e94f363eddce');
