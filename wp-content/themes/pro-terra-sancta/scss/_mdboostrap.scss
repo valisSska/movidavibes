@@ -1,0 +1,41 @@
+// Bootstrap
+@import "~mdbootstrap-pro/scss/core/bootstrap/functions";
+@import "~mdbootstrap-pro/scss/core/bootstrap/variables";
+
+// CORE
+@import "~mdbootstrap-pro/scss/core/mixins";
+// Your custom variables
+@import "~mdbootstrap-pro/scss/custom-variables";
+@import "~mdbootstrap-pro/scss/core/colors";
+@import "~mdbootstrap-pro/scss/core/variables";
+@import "~mdbootstrap-pro/scss/core/global";
+@import "~mdbootstrap-pro/scss/core/helpers";
+@import "~mdbootstrap-pro/scss/core/typography";
+@import "~mdbootstrap-pro/scss/core/masks";
+// @import "~/mdbootstrap-pro/scss/core/waves";
+
+// FREE
+// @import "~mdbootstrap-pro/scss/free/animations-basic";
+// @import "~mdbootstrap-pro/scss/free/buttons";
+// @import "~mdbootstrap-pro/scss/free/cards";
+// @import "~mdbootstrap-pro/scss/free/dropdowns";
+@import "~mdbootstrap-pro/scss/free/input-group";
+@import "~mdbootstrap-pro/scss/free/navbars";
+// @import "~mdbootstrap-pro/scss/free/pagination";
+// @import "~mdbootstrap-pro/scss/free/badges";
+// @import "~mdbootstrap-pro/scss/free/modals";
+// @import "~mdbootstrap-pro/scss/free/carousels";
+@import "~mdbootstrap-pro/scss/free/forms";
+@import "~mdbootstrap-pro/scss/free/msc";
+// @import "~mdbootstrap-pro/scss/free/footers";
+// @import "~mdbootstrap-pro/scss/free/list-group";
+// @import "~mdbootstrap-pro/scss/free/tables";
+// @import "~mdbootstrap-pro/scss/free/depreciated";
+// @import "~mdbootstrap-pro/scss/free/steppers";
+// @import "~mdbootstrap-pro/scss/free/loader";
+// @import "~mdbootstrap-pro/scss/free/treeview";
+
+// PRO
+@import "~mdbootstrap-pro/scss/pro/variables";
+@import "~mdbootstrap-pro/scss/pro/sidenav";
+@import "~mdbootstrap-pro/scss/pro/sidenav2";

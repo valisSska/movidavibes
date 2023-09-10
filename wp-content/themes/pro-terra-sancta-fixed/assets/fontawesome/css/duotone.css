@@ -1,0 +1,101 @@
+/*!
+ * Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Duotone';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../webfonts/fa-duotone-900.eot");
+  src: url("../webfonts/fa-duotone-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-duotone-900.woff2") format("woff2"), url("../webfonts/fa-duotone-900.woff") format("woff"), url("../webfonts/fa-duotone-900.ttf") format("truetype"), url("../webfonts/fa-duotone-900.svg#fontawesome") format("svg"); }
+
+.fad {
+  position: relative;
+  font-family: 'Font Awesome 5 Duotone';
+  font-weight: 900; }
+
+.fad:before {
+  position: absolute;
+  color: var(--fa-primary-color, inherit);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1); }
+
+.fad:after {
+  color: var(--fa-secondary-color, inherit);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4); }
+
+.fa-swap-opacity .fad:before,
+.fad.fa-swap-opacity:before {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4); }
+
+.fa-swap-opacity .fad:after,
+.fad.fa-swap-opacity:after {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1); }
+
+.fad.fa-inverse {
+  color: #fff; }
+
+.fad.fa-stack-1x, .fad.fa-stack-2x {
+  position: absolute; }
+
+.fad.fa-stack-1x:before,
+.fad.fa-stack-2x:before,
+.fad.fa-fw:before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.fad.fa-alarm-clock:after {
+  content: "\10f34e"; }
+
+.fad.fa-angle-down:after {
+  content: "\10f107"; }
+
+.fad.fa-angle-up:after {
+  content: "\10f106"; }
+
+.fad.fa-apple-alt:after {
+  content: "\10f5d1"; }
+
+.fad.fa-arrow-left:after {
+  content: "\10f060"; }
+
+.fad.fa-arrow-right:after {
+  content: "\10f061"; }
+
+.fad.fa-bars:after {
+  content: "\10f0c9"; }
+
+.fad.fa-chevron-left:after {
+  content: "\10f053"; }
+
+.fad.fa-chevron-right:after {
+  content: "\10f054"; }
+
+.fad.fa-clock:after {
+  content: "\10f017"; }
+
+.fad.fa-dollar-sign:after {
+  content: "\10f155"; }
+
+.fad.fa-envelope:after {
+  content: "\10f0e0"; }
+
+.fad.fa-euro-sign:after {
+  content: "\10f153"; }
+
+.fad.fa-play-circle:after {
+  content: "\10f144"; }
+
+.fad.fa-podcast:after {
+  content: "\10f2ce"; }
+
+.fad.fa-search:after {
+  content: "\10f002"; }
+
+.fad.fa-window-close:after {
+  content: "\10f410"; }

@@ -1,0 +1,296 @@
+@import url(https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Open+Sans:wght@300;400;700&display=swap);
+body {
+  color: #1d1d1b;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14.5px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+body.admin-bar.et_fixed_nav #main-header, body.admin-bar.et_fixed_nav #top-header, body.admin-bar.et_non_fixed_nav.et_transparent_nav #main-header, body.admin-bar.et_non_fixed_nav.et_transparent_nav #top-header {
+  top: 0 !important;
+}
+
+#top-menu .menu-item > a {
+  color: #1d1d1b;
+  font-size: 16px;
+  text-shadow: unset;
+  opacity: 1;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+html {
+  margin-top: 0 !important;
+}
+
+.flag-icon {
+  font-size: 16px;
+}
+
+#cookie_banner {
+  font-size: 18px;
+}
+
+#cookie_banner .buttonlink, .video_cookie .buttonlink {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#sidenav-overlay {
+  z-index: 99999;
+}
+
+.side-nav2 .collapsible a {
+  color: #1d1d1b;
+  font-weight: 900;
+}
+
+.side-nav2 a {
+  padding-left: 0;
+}
+
+.side-nav2 .collapsible-body a {
+  padding-left: 10px;
+  background-color: rgba(0, 0, 0, 0.15);
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+.side-nav2 .collapsible-body a span {
+  white-space: nowrap;
+}
+
+#content-image {
+  height: 588px;
+}
+
+#see-other-post .posts .text {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+#see-other-post .posts a .arrow-right {
+  margin-left: 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+#see-other-post .posts a .arrow-left {
+  margin-right: 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+.et_pb_pagebuilder_layout .entry-content, .et_pb_pagebuilder_layout .et_pb_post .entry-content {
+  padding-top: 0 !important;
+}
+
+#ats-affiliati {
+  box-shadow: unset;
+}
+
+#ats-affiliati .ats-affiliati_item a img {
+  max-height: 80px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  object-fit: contain;
+  width: unset;
+}
+
+.md-form input:not([type]):focus:not([readonly]), .md-form input[type=text]:not(.browser-default):focus:not([readonly]), .md-form input[type=password]:not(.browser-default):focus:not([readonly]), .md-form input[type=email]:not(.browser-default):focus:not([readonly]), .md-form input[type=url]:not(.browser-default):focus:not([readonly]), .md-form input[type=time]:not(.browser-default):focus:not([readonly]), .md-form input[type=date]:not(.browser-default):focus:not([readonly]), .md-form input[type=datetime]:not(.browser-default):focus:not([readonly]), .md-form input[type=datetime-local]:not(.browser-default):focus:not([readonly]), .md-form input[type=tel]:not(.browser-default):focus:not([readonly]), .md-form input[type=number]:not(.browser-default):focus:not([readonly]), .md-form input[type=search]:not(.browser-default):focus:not([readonly]), .md-form input[type=phone]:not(.browser-default):focus:not([readonly]), .md-form input[type=search-md]:focus:not([readonly]), .md-form textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid white;
+  box-shadow: none;
+}
+
+.subscribeForm {
+  background-color: white;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+  border-radius: 10px;
+  width: 500px;
+  max-width: 90%;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.subscribeForm fieldset {
+  width: 200px;
+  margin: 10px 0;
+  border: 1px solid #DDD;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background-color: #000000;
+}
+
+.subscribeForm button {
+  width: 200px;
+  font-weight: bold;
+}
+
+.subscribeForm input[type=text] {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #D31418;
+  border: 1px solid #444;
+  color: black;
+  width: 100%;
+}
+
+.subscribeForm input[type=checkbox] {
+  margin-right: 5px;
+}
+
+.subscribeForm input[type=email] {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #D31418;
+  border: 1px solid #444;
+  color: black;
+  width: 100%;
+}
+
+.subscribeForm input[type=submit] {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #D31418;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.subscribeForm input[type=submit]:hover {
+  background-color: #333;
+}
+
+.subscribeForm h1, .subscribeForm h2, .subscribeForm h3, .subscribeForm h4, .subscribeForm h5 {
+  font-family: "Castoro", sans-serif;
+  text-align: center;
+}
+
+.subscribeForm p {
+  padding: 0;
+  margin: 20px 20px 20px 20px;
+}
+
+.subscribeForm h3 {
+  padding: 0;
+  margin: 10px 0 0 10px;
+  font-size: 12px;
+}
+
+.subscribeForm fieldset img {
+  margin-left: 10px;
+}
+
+/*setting placeholder color for each browser*/
+.subscribeForm input[type=text]::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: black;
+}
+
+.subscribeForm input[type=text]:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: black;
+  opacity: 1;
+}
+
+.subscribeForm input[type=text]::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: black;
+  opacity: 1;
+}
+
+.subscribeForm input[type=text]:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: black;
+}
+
+.subscribeForm input[type=text].placeholdersjs {
+  /*For any unsupported browser*/
+  color: black;
+}
+
+.subscribeForm input[type=email]::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: black;
+}
+
+.subscribeForm input[type=email]:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: black;
+  opacity: 1;
+}
+
+.subscribeForm input[type=email]::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: black;
+  opacity: 1;
+}
+
+.subscribeForm input[type=email]:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: black;
+}
+
+.subscribeForm input[type=email].placeholdersjs {
+  /*For any unsupported browser*/
+  color: black;
+}
+
+input[type=text]:not(.browser-default), input[type=email]:not(.browser-default) {
+  box-sizing: content-box;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.subscribeForm a {
+  color: #D31418;
+}
+
+.subscribeForm button {
+  margin: auto;
+  background-color: #D31418;
+  color: white;
+}
+
+input:-internal-autofill-selected {
+  -webkit-box-shadow: 0 0 0 30px black inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: black !important;
+}
+
+.btn-outline-info:hover {
+  color: #fff;
+  background-color: #374856;
+  border-color: #374856;
+}

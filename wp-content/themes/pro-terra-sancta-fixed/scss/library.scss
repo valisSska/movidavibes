@@ -1,0 +1,4579 @@
+$transition-collapse: width 0s ease !default;
+@import './variables';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.wp-block-proterrasancta-divider {
+  padding: 20px;
+}
+.cmp-container{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding-bottom:10px;
+}
+.terminated{
+  margin-top: 35%;
+  opacity: .8;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  height: 45px;
+  width: fit-content;
+  background: #dcdcdc;
+  border: 7px solid #dcdcdc;
+  border-radius: 1px;
+}
+.terminated-text{
+  font-size:25px;
+  font-family: Arial Black;
+  opacity:0.8;
+}
+.btn-campaign{
+  width: auto;
+  margin-left: 10px;
+  border: none;
+  justify-content: center;
+  background-color: #fff;
+}
+.btn-campaign-text{
+  color:#b91521;
+  text-align:center;
+}
+.btn-campaign:hover{
+  background-color:#D2D2D2	;
+  color:#b91521;
+}
+.btn-campaign-text:hover{
+  color:#b91521;
+  text-align:center;
+  opacity:initial;
+}
+.is-style-shadow {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.is-style-container {
+  @include make-container();
+  @include make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints);
+}
+
+.wp-block-proterrasancta-cover-section {
+  .row .cover-section-title {
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+
+    @include media-breakpoint-up(md) {
+      font-size: 50px;
+      line-height: 65px;
+    }
+  }
+
+  .row .cover-section-text {
+    font-size: 16px;
+    padding: 0;
+
+    @include media-breakpoint-up(md) {
+      font-size: 18px;
+      padding: 0 10% 0 10%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 0 25% 0 25%;
+    }
+  }
+}
+
+.wp-block-proterrasancta-section-teaser .container,
+.wp-block-proterrasancta-section-hero .container,
+.wp-block-proterrasancta-brand-ambassador .container,
+.wp-block-proterrasancta-section-last-news .container {
+  background-repeat: no-repeat;
+  background-position: 50px 50px;
+
+  & ul {
+    list-style-type: none !important;
+  }
+
+  & ul li::before {
+    content: '\2022';
+    color: #ffa700;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 30px;
+    display: inline-block;
+    width: 35px;
+    position: relative;
+    top: 8px;
+  }
+
+  & h2 {
+    font-size: 30px;
+    font-weight: 900 !important;
+
+    @include media-breakpoint-up(md) {
+      font-size: 40px;
+      line-height: 34pt;
+    }
+  }
+}
+
+.btn-circle {
+  width: 69px;
+  height: 69px;
+  border-radius: 50px;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 20px;
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  & i {
+    color: white;
+  }
+}
+
+.row .title, .row .title2 {
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 10px;
+  line-height: 35px;
+
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include media-breakpoint-up(md) {
+    text-align: right;
+  }
+
+  @include media-breakpoint-up(lg) {
+    text-align: right;
+    padding: 20px;
+  }
+}
+
+.row .summary-column {
+  padding: 10px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 20px;
+  }
+}
+
+.wp-block-proterrasancta-section-teaser {
+  & .title,
+  & .summary-column {
+    opacity: 0;
+  }
+}
+
+.wp-block-proterrasancta-vision-hero {
+  & .vision-left,
+  & .vision-right {
+    opacity: 0;
+  }
+}
+
+.row .brand {
+  position: relative;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 20px;
+
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include media-breakpoint-up(md) {
+    text-align: right;
+  }
+
+  @include media-breakpoint-up(lg) {
+    text-align: right;
+    padding: 50px 0 50px 0;
+  }
+}
+
+.row .section-cover-title,
+.row .cover-title {
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: left;
+
+  strong {
+    font-weight: 900;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 50px;
+    line-height: 65px;
+  }
+}
+
+.btn-circle-cover {
+  width: 69px;
+  height: 69px;
+  border-radius: 50px;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: white;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+}
+
+.fix-bottom-block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.row .news-column {
+  padding: 20px;
+}
+
+.news-teaser-heading {
+  color: #ffffff;
+  font-family: $font-title;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+
+  @include media-breakpoint-up(md) {
+    font-size: 22px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 26px;
+  }
+}
+
+.news-teaser-excerpt {
+  color: #ffffff;
+  font-family: $font-family-base;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  position: absolute;
+  bottom: 20px;
+  height: 107px;
+  width: calc(100% - 80px);
+
+  @include media-breakpoint-up(md) {
+    bottom: 40px;
+    height: 57px;
+  }
+}
+
+.news-teaser-date,
+.news-date {
+  color: #d31418;
+  font-family: $font-family-base;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+  }
+}
+
+.news-teaser-date {
+  color: $secondary;
+}
+
+.news-teaser-body {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.news-title {
+  font-size: 36px;
+  line-height: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 50px;
+    line-height: 45px;
+    margin-bottom: 30px;
+  }
+}
+
+.card-news-title {
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: $secondary;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+  }
+}
+
+.news-text {
+  font-size: 16px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+  }
+}
+
+.post H2,
+.post H2 strong {
+  font-size: 38px;
+  font-weight: 900;
+}
+
+.btn-circle-small {
+  width: 40px;
+  border-radius: 60px;
+  font-size: 26px;
+  text-align: center;
+  display: inline-block;
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  & i {
+    color: white;
+  }
+}
+
+.wp-block-proterrasancta-section-last-news-grid {
+  & #last-news-grid-root .grid-teaser-heading {
+    font-weight: 900;
+    font-size: 18px;
+    padding: 20px 0 0 20px;
+  }
+
+  & #last-news-grid-root .grid-teaser-title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 26px;
+    padding: 0 0 20px 20px;
+    margin: 0;
+  }
+
+  & #last-news-grid-root .btn-circle-small {
+    margin: 0;
+  }
+
+  & #last-news-grid-root .teaser-column:nth-child(3n + 1) {
+    @include make-col(12);
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(4);
+    }
+  }
+
+  & #last-news-grid-root .teaser-column:nth-child(3n + 2) {
+    @include make-col(12);
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(8);
+    }
+  }
+
+  & #last-news-grid-root .teaser-column:nth-child(3n + 0) {
+    @include make-col(12);
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(8);
+    }
+  }
+
+  & .teaser-column.title {
+    padding-bottom: 0;
+  }
+}
+.text-Category{
+  margin-left:5%;
+  margin-top:5%;
+  color:white;
+  position:absolute;
+  width:90%;
+  font-size:25px;
+  text-shadow: 2px 2px 4px black;
+  .text-Category:hover {
+    opacity: 0.5;
+  }
+}
+
+.wp-block-proterrasancta-cover .row .section-cover-title {
+  font-size: 46px;
+}
+
+.wp-block-proterrasancta-news-list {
+  & .background-div {
+    height: 590px;
+  }
+
+  .cover-text-block {
+    background: white;
+    padding: 20px;
+    width: 100%;
+
+    @include media-breakpoint-up(xl) {
+      padding: 43px;
+    }
+  }
+
+  .cover-section-text {
+    color: #000000;
+    font-family: $font-family-base;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-top: 28px;
+  }
+
+  .news-teaser-title {
+    color: #000000;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: normal;
+    line-height: normal;
+    font-family: $font-title;
+
+    @include media-breakpoint-up(md) {
+      font-size: 22px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+    }
+  }
+
+  .news-teaser-tag {
+    color: #000000;
+    font-family: $font-family-base;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .row .news-column {
+    padding: 20px;
+
+    @include media-breakpoint-up(lg) {
+      padding: 15px 15px 15px 15px;
+    }
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.wp-block-proterrasancta-campaigns-list {
+  & .background-div {
+    height: 590px;
+  }
+
+  .cover-text-block {
+    background: white;
+    padding: 20px;
+    width: 100%;
+
+    @include media-breakpoint-up(xl) {
+      padding: 43px;
+    }
+  }
+
+  .cover-section-text {
+    color: white;
+    font-family: $font-family-base;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-top: 28px;
+  }
+
+  .news-teaser-title {
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: normal;
+    line-height: normal;
+    font-family: $font-title;
+
+    @include media-breakpoint-up(md) {
+      font-size: 22px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+    }
+  }
+
+  .news-teaser-tag {
+    color: white;
+    font-family: $font-family-base;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .news-teaser-date {
+    color: white;
+  }
+
+  .row .news-column {
+    padding: 20px;
+
+    @include media-breakpoint-up(lg) {
+      padding: 15px 15px 15px 15px;
+    }
+  }
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.wp-block-proterrasancta-press-release {
+  height: 230px;
+  width: 230px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.press-title {
+  font-weight: 900;
+  font-size: 16px;
+  text-align: right;
+  margin-top: 50px;
+  padding: 0 20px 0 80px;
+}
+
+.signature-title {
+  font-weight: 900;
+  font-size: 16px;
+  text-align: left;
+}
+
+.btn-circle-press {
+  width: 69px;
+  height: 69px;
+  border-radius: 50px;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 20px;
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+.vision-left .img-title {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  z-index: 1000;
+
+  @include media-breakpoint-up(lg) {
+    top: 40px;
+    right: -20px;
+  }
+}
+
+.vision-right .img-title {
+  position: absolute;
+  left: -20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: left;
+
+  & p {
+    margin: 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-size: contain;
+  }
+}
+
+.vision-right .img-title .text-vision {
+  display: block;
+  margin: auto 0 auto 0;
+  padding-left: 50px;
+  font-size: 16px;
+
+  @include media-breakpoint-up(md) {
+    padding-left: 100px;
+    font-size: 18px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-left: 100px;
+    font-size: 22px;
+  }
+}
+
+.vision-title {
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 35px;
+
+  @include media-breakpoint-up(md) {
+    text-align: right;
+  }
+}
+
+.wp-block-proterrasancta-vision-hero {
+  height: 400px;
+
+  @include media-breakpoint-up(md) {
+    height: 300px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 400px;
+  }
+}
+
+.wpcf7-form {
+  max-width: 100%;
+}
+
+.wpcf7-form-control {
+  max-width: 100%;
+}
+
+.kt-blocks-accordion-header {
+  &:focus {
+    outline: none;
+  }
+}
+
+.kt-blocks-accordion-title {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.kt-sc-innter-col {
+  font-size: 18px;
+}
+
+.kt-accordion-panel-inner {
+  background-color: transparent !important;
+  border: none !important;
+  font-size: 18px;
+}
+
+.kt-blocks-accordion-header {
+  background-color: transparent !important;
+  padding-left: 0 !important;
+}
+
+.wp-block-kadence-pane .kt-blocks-accordion-header {
+  border-top: none;
+  border-bottom: 2px solid #cddadc !important;
+}
+
+.wp-block-kadence-pane .kt-blocks-accordion-header {
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.kt-blocks-accordion-icon-trigger {
+  color: #69969d !important;
+}
+
+.blocks-gallery-grid {
+  width: 100%;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 900 !important;
+}
+
+h4.kt-blocks-info-box-title {
+  color: #007ea7;
+  position: relative;
+  margin-bottom: 25px;
+
+  &:after {
+    content: '';
+    background: #ffa700;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 6px;
+    width: 40%;
+    margin: 0 30% 0 30%;
+  }
+}
+
+h2 {
+  font-size: 22pt;
+  line-height: 34pt;
+}
+
+h3 {
+  font-size: 18pt;
+  line-height: 30pt;
+}
+
+h4 {
+  font-size: 16pt;
+  line-height: 28pt;
+}
+
+.team-block {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 240px;
+  width: 240px;
+  position: relative;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+
+  @include media-breakpoint-up(lg) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  & .container {
+    background-color: #80ced7;
+    position: absolute;
+    bottom: -25px;
+    border-radius: 50px;
+
+    @include media-breakpoint-up(sm) {
+      left: 75px;
+    }
+  }
+}
+
+.advisory-block {
+  height: 170px;
+  width: 170px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  margin: 0 2px 20px 0;
+  position: relative;
+  z-index: 10;
+
+  @include media-breakpoint-up(sm) {
+    margin: 0 20px 20px 0;
+  }
+
+  & .btn-circle-small {
+    position: absolute;
+    bottom: -10px;
+    left: 65px;
+    border: 1px solid $primary;
+    width: 34px;
+    border-radius: 60px;
+    font-size: 22px;
+    padding: 4px;
+
+    &.collapsed {
+      & .fa-arrow-up {
+        display: none;
+      }
+      .fa-arrow-down {
+        display: block;
+      }
+    }
+
+    &:not(.collapsed) {
+      & .fa-arrow-up {
+        display: block;
+      }
+      .fa-arrow-down {
+        display: none;
+      }
+    }
+  }
+}
+
+.shadow-md {
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.advisory-title {
+  font-weight: 900;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto;
+  position: relative;
+  width: 150px;
+  height: 38px;
+
+  & i {
+    position: absolute;
+    bottom: 10px;
+    right: -16px;
+    font-size: 24px;
+  }
+}
+
+.advisory {
+  background-color: white;
+
+  & .kt-blocks-accordion-title-wrap {
+    padding-left: 20px;
+  }
+
+  & .kt-blocks-accordion-header {
+    padding-bottom: 20px !important;
+  }
+
+  & .kt-blocks-accordion-header:after {
+    content: '';
+    background: #ffa700;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    height: 6px;
+    width: 100px;
+    margin-left: 20px;
+  }
+
+  & .kt-blocks-accordion-header.kt-accordion-panel-active:after {
+    bottom: 10px !important;
+  }
+}
+
+.row .title-row {
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  line-height: 25px;
+  z-index: 10;
+
+  @include media-breakpoint-up(md) {
+    text-align: left;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
+
+.advisory-accordion-block {
+  opacity: 0;
+  height: auto;
+  width: 340px;
+  max-width: 100%;
+  padding: 20px;
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+
+  & .advisory-text {
+    font-size: 14px;
+    color: #5d5d5d;
+  }
+
+  & .btn-circle-small {
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    text-align: center;
+    float: right;
+    color: white;
+    position: relative;
+
+    & i {
+      position: absolute;
+      font-size: 22px;
+    }
+
+    .fa-chevron-up {
+      top: 5px;
+      left: 6px;
+    }
+
+    .fa-chevron-down {
+      top: 5px;
+      left: 6px;
+    }
+
+    &.collapsed {
+      & .fa-chevron-up {
+        display: none;
+      }
+      .fa-chevron-down {
+        display: block;
+      }
+    }
+
+    &:not(.collapsed) {
+      & .fa-chevron-up {
+        display: block;
+      }
+      .fa-chevron-down {
+        display: none;
+      }
+    }
+  }
+}
+
+.advisory-accordion-title {
+  font-weight: 900;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+
+  &:after {
+    content: '';
+    background: #ffa700;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 6px;
+    width: 100px;
+  }
+}
+
+.wp-block-proterrasancta-advisory-card {
+  opacity: 0;
+  position: relative;
+
+  .advisory-text {
+    font-size: 14px;
+    color: #5d5d5d;
+    background-color: #ddf2f6;
+    width: 170px;
+    padding: 20px;
+    opacity: 0.8;
+    border-radius: 20px;
+  }
+}
+
+.advisory-card-background {
+  top: 150px;
+  background-color: #ddf2f6;
+  width: 170px;
+  opacity: 0.8;
+  height: 450px;
+  position: absolute;
+  z-index: 0;
+}
+
+.advisory-accordion-left {
+  width: 360px;
+  max-width: 100%;
+  margin-right: 0;
+
+  @media (max-width: 379px) {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  @include media-breakpoint-up(sm) {
+    margin-right: 20px;
+  }
+}
+
+.advisory-accordion-right {
+  width: 360px;
+  max-width: 100%;
+  margin-right: 0;
+
+  @include media-breakpoint-up(sm) {
+    margin-right: 20px;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-right: 20px;
+    width: 360px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 740px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 930px;
+  }
+
+  @media (max-width: 379px) {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+.wp-block-proterrasancta-row {
+  position: relative;
+  justify-content: center;
+
+  @include media-breakpoint-up(md) {
+    justify-content: flex-start;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.accordion-outline {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  pointer-events: none;
+
+  @media (max-width: 379px) {
+    left: 10px;
+  }
+  @media (min-width: 380px) {
+    left: unset;
+    right: unset;
+  }
+
+  @include media-breakpoint-up(sm) {
+    right: 100px;
+    left: unset;
+  }
+
+  @include media-breakpoint-up(md) {
+    right: unset;
+    left: 0;
+  }
+}
+
+.advisory-accordion-row-right {
+  .accordion-outline {
+    position: absolute;
+    top: 8px;
+    left: unset;
+    right: 20px;
+    pointer-events: none;
+
+    @media (max-width: 379px) {
+      right: 10px;
+      left: unset;
+    }
+
+    @media (min-width: 380px) {
+      right: unset;
+    }
+
+    @include media-breakpoint-up(sm) {
+      right: 100px;
+      left: unset;
+    }
+
+    @include media-breakpoint-up(md) {
+      right: 20px;
+      left: unset;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    justify-content: flex-end;
+  }
+}
+
+.accordion-outline path {
+  z-index: 10;
+}
+
+.accordion-outline path {
+  fill: none;
+  stroke: rgb(0, 126, 167);
+  stroke-width: 4px;
+}
+
+.wp-block-proterrasancta-team {
+  opacity: 0;
+
+  & .row {
+    position: relative;
+  }
+}
+
+.linkedin-title {
+  position: absolute;
+  top: 10px;
+  right: 0;
+
+  & i {
+    background-color: #0082ca !important;
+    color: #fff;
+    font-size: 25px;
+    padding: 5px 5px 0 5px;
+    border-radius: 5px;
+  }
+}
+
+.wp-block-proterrasancta-history-card,
+.move-me-up {
+  opacity: 0;
+}
+
+.plant-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: #b91521;
+  padding: 20px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 60px;
+    padding: 30px;
+  }
+}
+
+.plant-summary {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.plant-text {
+  opacity: 0;
+}
+
+.plant-image {
+  opacity: 0;
+
+  & img {
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.wp-block-proterrasancta-show-numbers-card {
+  background-color: #cddadc;
+  color: #69969d;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  & .number-title {
+    font-weight: 900;
+    font-size: 40px;
+  }
+}
+
+.inauguration-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 20px;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(md) {
+    font-size: 40px;
+  }
+}
+
+.duration {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+
+  @include media-breakpoint-up(md) {
+    font-size: 60px;
+  }
+}
+
+.duration-title {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.8;
+  overflow-x: hidden;
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+  }
+}
+
+.inauguration-title .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.inauguration-title .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+#inauguration-date-root {
+  opacity: 0;
+  padding-right: 5px;
+  padding-left: 5px;
+
+  @include media-breakpoint-up(md) {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}
+
+.wp-block-proterrasancta-cover-branded {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  padding: 20px;
+  position: relative;
+
+  @include media-breakpoint-up(md) {
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    padding: 50px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 100px;
+  }
+
+  @media (min-width: 2500px) {
+    height: 1000px;
+  }
+
+  & .cover-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 20px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 40px;
+      line-height: 55px;
+      padding-left: 0;
+    }
+  }
+
+  & .img1 {
+    position: absolute;
+    height: auto;
+    width: 130px;
+    bottom: -20px;
+    left: -20px;
+
+    @include media-breakpoint-up(md) {
+      width: auto;
+      height: 70%;
+      bottom: -40px;
+      left: -200px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 80%;
+      bottom: -50px;
+      left: -150px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      bottom: -50px;
+      left: 20px;
+    }
+  }
+
+  & .img2 {
+    height: 120px;
+    width: auto;
+
+    @include media-breakpoint-up(md) {
+      height: 250px;
+    }
+  }
+}
+
+.cover-text-block {
+  padding: 20px;
+
+  @include media-breakpoint-up(xl) {
+    padding: 50px;
+  }
+}
+
+.row .section-title {
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: left;
+  overflow-wrap: break-word;
+  padding-bottom: 20px;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    text-align: left;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 75%;
+    font-size: 40px;
+    line-height: 55px;
+  }
+}
+
+.row .section-left-title {
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: left;
+  overflow-wrap: break-word;
+  padding-bottom: 20px;
+  width: 100%;
+  margin-top: 20px;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+.row .chef-title {
+  font-size: 20px;
+  font-weight: 900;
+  overflow-wrap: break-word;
+  padding-bottom: 20px;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.row .ingredients-title {
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #3f5e63;
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+  }
+}
+
+.row .nutrition-text {
+  font-size: 14px;
+
+  & strong {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #3f5e63;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+    padding-right: 150px;
+
+    & strong {
+      font-size: 20px;
+    }
+  }
+}
+
+.row .restaurant-title {
+  font-size: 28px;
+  overflow-wrap: break-word;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  width: 100%;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.row .restaurant-text {
+  font-size: 20px;
+  font-weight: 900;
+  overflow-wrap: break-word;
+  padding-bottom: 20px;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.row .restaurant-address {
+  font-size: 16px;
+  overflow-wrap: break-word;
+  padding-bottom: 20px;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.row .restaurant-description {
+  font-size: 12px;
+  overflow-wrap: break-word;
+  padding-bottom: 20px;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.row .chef-text {
+  font-size: 16px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+  }
+}
+
+.row .recipe-type-text {
+  font-size: 14px;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(md) {
+    font-size: 22px;
+  }
+}
+
+.row .chef-by-text {
+  font-size: 12px;
+  color: #69969d;
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
+}
+
+.row .chef-name-text {
+  font-size: 12px;
+  font-weight: 900;
+  color: #69969d;
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
+}
+
+.row .recipe-numbers,
+.row .recipe-text {
+  font-size: 16px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+  }
+}
+
+.row .ingredients,
+.row .recipe-text-excerpt {
+  font-size: 14px;
+
+  & .div-hr {
+    border-top: 2px solid;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
+}
+
+.row .summary-title {
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: left;
+  overflow-wrap: break-word;
+  padding-bottom: 20px;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+.range-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: #b91521;
+  padding: 20px;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(md) {
+    font-size: 50px;
+    padding: 30px;
+  }
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  color: #b91521;
+  padding: 10px;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(md) {
+    font-size: 40px;
+    padding: 10px;
+  }
+}
+
+.big-hero-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  color: #b91521;
+  padding: 10px 10px 20px 10px;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(md) {
+    font-size: 40px;
+    line-height: 45px;
+    padding: 0 10% 25px 10%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 40px;
+    line-height: 45px;
+    padding: 0 25% 25px 25%;
+  }
+}
+
+.hero-heading {
+  text-align: center;
+  font-size: 18px;
+  color: #b91521;
+  padding: 10px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+.recipe-title {
+  font-size: 24px;
+  line-height: 25px;
+  font-weight: 900;
+  color: #b91521;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(md) {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+.row .summary-title1 {
+  font-size: 28px;
+  font-weight: 300;
+  text-align: center;
+  overflow-wrap: break-word;
+  padding-bottom: 10px;
+  color: #b91521;
+
+  @include media-breakpoint-up(md) {
+    text-align: right;
+    font-size: 40px;
+  }
+}
+
+.row .summary-title2 {
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  overflow-wrap: break-word;
+  color: #b91521;
+
+  @include media-breakpoint-up(md) {
+    text-align: right;
+    font-size: 40px;
+  }
+}
+
+.wp-block-proterrasancta-row .title-row {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: #b91521;
+  padding: 20px;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(md) {
+    font-size: 60px;
+    padding: 30px;
+  }
+}
+
+.simple-box {
+  height: 360px;
+}
+
+.values-title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 900;
+  color: #3f5e63;
+  padding-top: 10px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+.row .product-heading {
+  font-size: 14px;
+  font-weight: 900;
+  overflow-wrap: break-word;
+  text-transform: uppercase;
+  color: $secondary;
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
+}
+
+.row .product-sub-title {
+  font-size: 16px;
+  overflow-wrap: break-word;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+  }
+}
+
+.row .product-text {
+  font-size: 14px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
+}
+
+.values-summary {
+  text-align: left;
+  font-size: 16px;
+  color: black;
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+  }
+}
+
+.wp-block-proterrasancta-simple-box.text-center .values-summary {
+  text-align: center;
+}
+
+.history-block .title {
+  font-size: 32px;
+  font-weight: 900;
+  padding: 10px;
+  text-align: center;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 40px;
+  }
+}
+
+.history-block .text-content {
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #69969d;
+}
+
+#hero-carousel .carousel-indicators {
+  bottom: 10px;
+}
+
+#hero-carousel .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 3px solid white;
+  opacity: 1;
+  margin-left: 10px;
+}
+
+#hero-carousel .carousel-indicators li.active {
+  background-color: white;
+}
+
+#hero-carousel .values-title {
+  color: white;
+  text-align: right;
+  font-size: 50px;
+  line-height: 60px;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+  }
+}
+
+#hero-carousel .values-summary {
+  font-size: 18px;
+  color: white;
+  text-align: right;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+#hero-carousel .carousel-caption {
+  right: 15%;
+  max-width: 450px;
+  left: initial;
+  text-align: right;
+
+  @include media-breakpoint-down(xs) {
+    right: initial;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+#main-hero-image a,
+#hero-carousel a {
+  margin-top: 20px;
+  border-radius: 0;
+  padding: 13px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  background-color: #b91521;
+  border-color: #b91521;
+}
+
+#chef-carousel .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233F5E63' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+#chef-carousel .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%233F5E63' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e") !important;
+}
+
+#chef-carousel .carousel-inner {
+  width: 80%;
+  height: 430px;
+  margin: 0 auto;
+}
+
+#chef-carousel .carousel-caption {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #000000;
+}
+
+#chef-carousel .values-summary {
+  color: #222222;
+  font-size: 14px;
+  text-align: left;
+}
+
+#chef-carousel .carousel-control-prev {
+  margin-left: -10px;
+  margin-top: -100px;
+  @include media-breakpoint-down(md) {
+    margin-top: -250px;
+  }
+  @include media-breakpoint-down(xs) {
+    display: none;
+  }
+}
+
+#chef-carousel .carousel-control-next {
+  margin-right: -10px;
+  margin-top: -100px;
+  @include media-breakpoint-down(md) {
+    margin-top: -250px;
+  }
+  @include media-breakpoint-down(xs) {
+    display: none;
+  }
+}
+
+#chef-carousel .carousel-indicators {
+  display: none;
+  @include media-breakpoint-down(xs) {
+    li {
+      display: inline-block;
+    }
+    text-align: center;
+    display: block;
+  }
+}
+
+#carousel-thumb .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233F5E63' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+#carousel-thumb .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%233F5E63' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e") !important;
+}
+
+#carousel-thumb .carousel-inner {
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  @include media-breakpoint-down(xs) {
+    height: 200px;
+  }
+}
+
+#carousel-thumb .carousel-item {
+  background-color: white;
+}
+
+#carousel-thumb .carousel-control-prev {
+  margin-left: -10px;
+  margin-top: -100px;
+  @include media-breakpoint-down(md) {
+  }
+  @include media-breakpoint-down(xs) {
+    display: none;
+  }
+}
+
+#carousel-thumb .carousel-control-next {
+  margin-right: -10px;
+  margin-top: -100px;
+  @include media-breakpoint-down(md) {
+  }
+  @include media-breakpoint-down(xs) {
+    display: none;
+  }
+}
+
+#carousel-thumb .carousel-indicators {
+  li {
+    border-radius: 0;
+    background-color: white;
+    opacity: 1;
+  }
+  li.active img {
+    border: 2px solid #69969d;
+  }
+  img {
+    -webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+  }
+  @include media-breakpoint-down(xs) {
+    li {
+      img {
+        display: none;
+        width: 0;
+        height: 0;
+      }
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background-color: white;
+      display: inline-block;
+    }
+    text-align: center;
+    display: block;
+  }
+}
+
+.wp-block-proterrasancta-carousel-hero-slide {
+  height: 500px;
+
+  & img {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.product-image {
+  height: 280px;
+
+  & img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px 0 10px;
+  }
+}
+
+.collapsible-product-image {
+  height: 280px;
+  width: 460px;
+  max-width: 100%;
+
+  & img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.product-heading {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.product-title {
+  font-size: 40px;
+  line-height: 35px;
+  font-weight: 900;
+  padding: 20px 0 20px 0;
+}
+
+.product-summary {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.product-collapse-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  & i {
+    color: #b91521;
+    font-size: 40px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.directions {
+  height: 40px;
+  padding: 20px;
+
+  & i {
+    color: #b91521;
+    font-size: 40px;
+  }
+}
+
+.fixed-action-btn {
+  height: unset;
+}
+
+.products-list {
+  font-size: 22px;
+
+  & .wp-block-media-text {
+    max-width: 750px;
+    margin: auto;
+    padding: 20px 0 20px 0;
+  }
+
+  & .wp-block-media-text__media img {
+    height: 186px;
+    object-fit: cover;
+  }
+}
+
+.img-contain {
+  object-fit: contain;
+}
+
+.wp-block-proterrasancta-speak-about-us {
+  & .section-speak {
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    text-transform: uppercase;
+  }
+
+  & .section-image {
+    padding: 20px;
+    & img {
+      width: 160px;
+      object-fit: contain;
+    }
+  }
+
+  & .section-title {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 35px;
+    text-transform: lowercase;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+  }
+}
+
+.wp-block-proterrasancta-section-two-columns {
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  & .section-title {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 35px;
+    padding: 40px 20px 10px 40px;
+  }
+
+  & .section-text {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 20px 40px 40px;
+  }
+
+  & a {
+    text-decoration: underline;
+  }
+}
+
+.wp-block-media-text__content,
+.wp-block-media-text__media,
+.wp-block-proterrasancta-simple-box,
+.footer-address.cover-text,
+.range-text,
+.range-image,
+.product-image img {
+  opacity: 0;
+}
+
+.plant-right-box {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include media-breakpoint-up(lg) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.number-summary {
+  color: #030303;
+  white-space: nowrap;
+  font-size: 20px;
+}
+
+.range-image .range-left {
+  padding-bottom: 20px;
+
+  @include media-breakpoint-up(md) {
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+.title-left-container .title-left {
+  padding-bottom: 20px;
+
+  @include media-breakpoint-up(md) {
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+.summery-right-container,
+.title-left-container {
+  opacity: 1;
+}
+
+.summery-right-container .fit-content {
+  padding-bottom: 20px;
+
+  @include media-breakpoint-up(md) {
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+.wp-block-proterrasancta-section-2-cards .row .title {
+  text-align: left;
+}
+
+#separator-image img {
+  position: absolute;
+  width: 200px;
+  transform: translate(-50%, -50%);
+}
+
+.range-text .fit-content {
+  padding-bottom: 20px;
+
+  @include media-breakpoint-up(md) {
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+.range-summary {
+  font-size: 14px;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
+.hero-summary {
+  font-size: 18px;
+  padding: 0 10px 10px 10px;
+  text-align: center;
+}
+
+.hero-summary-right,
+.hero-summary-left {
+  font-size: 14px;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+.section-text {
+  font-size: 20px;
+  font-weight: 400;
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+  }
+}
+
+.section-hero-video-left-upsize-mobile {
+  padding-bottom: 30px;
+}
+
+.section-hero-video-left-side {
+  padding-bottom: 30px;
+}
+
+.row .hero-summary {
+  font-size: 18px;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+    padding: 0 10% 0 10%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 25% 0 25%;
+  }
+}
+
+.second-products-slide,
+.first-products-slide {
+  background-color: #f0f3f4;
+}
+
+.wp-block-proterrasancta-brand-ambassador {
+  & .col-12.col-md-5,
+  & .col-12.col-md-7 {
+    opacity: 0;
+  }
+
+  & .section-title {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 0;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      text-align: right;
+      width: 100%;
+      font-size: 35px;
+      line-height: 40px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.avatar-img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+
+  @include media-breakpoint-up(md) {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.avatar-img-chef {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 30px;
+  border-width: 4px;
+  border-color: white;
+  border-style: solid;
+
+  @include media-breakpoint-up(md) {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.avatar-big-img-chef {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 130px;
+  border-width: 4px;
+  border-color: white;
+  border-style: solid;
+
+  @include media-breakpoint-up(md) {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.place-over-zindex {
+  position: initial;
+  z-index: initial;
+
+  @include media-breakpoint-up(md) {
+    position: relative;
+    z-index: 2000;
+  }
+}
+
+.section-2-cards .card {
+  border: 0;
+  border-radius: 0;
+}
+
+.section-2-cards .summary-left {
+  line-height: 33px;
+  font-size: 20px;
+  @include media-breakpoint-down(xs) {
+    font-size: 16px;
+  }
+}
+
+.titlePart1,
+.titlePart3 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.titlePart2 {
+  font-size: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.titlePart2,
+.titlePart1,
+.titlePart3 {
+  @include media-breakpoint-down(xs) {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.slip-under-zindex {
+  position: initial;
+  z-index: initial;
+  top: 0;
+
+  @include media-breakpoint-up(md) {
+    position: relative;
+    top: -50px;
+    z-index: 1000;
+  }
+
+  @include media-breakpoint-up(lg) {
+    position: relative;
+    top: -150px;
+    z-index: 1000;
+  }
+
+  @include media-breakpoint-up(xl) {
+    position: relative;
+    top: -180px;
+    z-index: 1000;
+  }
+}
+
+#main-hero-map {
+  .simple-box {
+    width: 100%;
+    height: 100%;
+    @include media-breakpoint-down(lg) {
+      background-image: none !important;
+    }
+  }
+  .hero-image {
+    padding-bottom: 140px;
+    @include media-breakpoint-down(lg) {
+      padding-bottom: 10px;
+    }
+  }
+  .top {
+    display: block;
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    @include media-breakpoint-down(lg) {
+      display: inline-block;
+      position: relative;
+      float: left;
+      top: auto;
+      left: auto;
+    }
+  }
+  .bottom {
+    display: block;
+    position: absolute;
+    bottom: -150px;
+    left: 30%;
+    @include media-breakpoint-down(lg) {
+      display: inline-block;
+      position: relative;
+      float: left;
+      bottom: auto;
+      left: auto;
+    }
+  }
+
+  .right {
+    display: block;
+    position: absolute;
+    left: 450px;
+    top: -285px;
+    @include media-breakpoint-down(lg) {
+      position: relative;
+      left: auto;
+      top: auto;
+    }
+  }
+  .container-text-box {
+    height: 420px;
+    @include media-breakpoint-down(lg) {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      height: auto;
+    }
+  }
+  .hero-image img {
+    display: none;
+    @include media-breakpoint-down(lg) {
+      display: block;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+  .wp-block-proterrasancta-box-text-map {
+    width: 200px;
+    @include media-breakpoint-down(lg) {
+      width: 355px;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 170px;
+    }
+    padding: 5px 0px;
+    .title-map {
+      display: inline-block;
+      color: #3f5e63;
+      font-weight: 900;
+      font-size: 19px;
+    }
+    .summary-map {
+      color: #3f5e63;
+      font-size: 16px;
+    }
+    i {
+      color: #3f5e63;
+    }
+  }
+}
+
+.mt-7 {
+  margin-top: 5rem !important;
+}
+
+.mt-9 {
+  margin-top: 9rem !important;
+}
+
+#separator-image {
+  margin-bottom: 46px;
+}
+
+.featured-img-recipe {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.recipe-stars {
+  color: #cddadc;
+}
+
+.recipe-stars.checked {
+  color: $secondary;
+}
+
+.row .quote-section-text {
+  font-size: 18px;
+  padding: 0;
+  font-style: italic;
+
+  @include media-breakpoint-up(md) {
+    font-size: 22px;
+    padding: 0 10% 0 10%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 24px;
+    padding: 0 15% 0 15%;
+  }
+}
+
+.product .wp-block-kadence-slider {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+
+  & .kt-blocks-carousel {
+    padding: 0 0 0 0;
+  }
+}
+
+.wp-block-proterrasancta-product-facts {
+  color: #69969d;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  min-height: 160px;
+
+  & .facts-block {
+    z-index: 20;
+    position: relative;
+  }
+
+  & .fact-circle-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    padding: 20px 15px;
+    top: 0;
+    left: 0;
+  }
+
+  & .fact-circle {
+    height: 120px;
+    width: 120px;
+    background-color: #ebf0f1;
+    border-radius: 65px;
+    z-index: 10;
+    margin: auto;
+  }
+}
+
+.wp-block-proterrasancta-section-hero-video {
+  & .section-title {
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      text-align: right;
+    }
+  }
+
+  & .section-text {
+    width: 100%;
+    text-align: center;
+    color: #3f5e63;
+
+    @include media-breakpoint-up(md) {
+      width: 100%;
+      text-align: right;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 75%;
+      text-align: right;
+    }
+  }
+
+  .wp-block-kadence-videopopup {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.news-column {
+  .news-card {
+    display: block;
+  }
+  .news-card-hover {
+    display: none;
+  }
+
+  &.odd {
+    width: 580px;
+  }
+
+  &.even {
+    width: 370px;
+  }
+
+  &.same {
+    width: 360px;
+  }
+
+  &.projects {
+    width: 360px;
+  }
+
+  &:hover {
+    .news-card {
+      display: none;
+    }
+    .news-card-hover {
+      display: block;
+
+      & a:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.recipes {
+  & .news-teaser-heading.chef {
+    font-size: 16px;
+    color: #69969d;
+  }
+
+  & .avatar-img-chef {
+    top: -25px;
+    left: calc(100% / 2 - 39px);
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.name-retailer {
+  font-size: 18px;
+  font-weight: 900;
+  color: #b91521;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+  }
+}
+
+.content-retailer {
+  font-size: 14px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+  }
+}
+
+.link-retailer {
+  font-size: 14px;
+  color: #b91521;
+  overflow-wrap: break-word;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+  }
+}
+
+.wp-block-proterrasancta-section-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.wp-block-proterrasancta-section-hero-right {
+  padding: 25px 0 25px 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 70px 0 0 0;
+  }
+
+  & img {
+    padding: 20px 0 20px 0;
+    max-width: 130%;
+    width: 190px;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.wp-block-proterrasancta-section-hero-50,
+.wp-block-proterrasancta-section-hero-map,
+.wp-block-proterrasancta-section-text {
+  & .section-title {
+    width: 100%;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: $font-family-base;
+    font-size: 21px;
+    font-weight: bold;
+  }
+
+  & .section-text {
+    font-family: $font-family-base;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 34px;
+    color: #1d1d1b;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 0;
+
+    @include media-breakpoint-up(md) {
+      padding-left: 20px;
+    }
+  }
+
+  & a {
+    color: red;
+    text-decoration: underline;
+  }
+
+  & a:hover {
+    color: red;
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.7;
+  }
+}
+
+.wp-block-proterrasancta-section-testimonianza {
+  .divider {
+    width: calc(100% - 230px);
+    height: 18px;
+    background-color: #d31418;
+    display: inline-block;
+  }
+
+  .icon-icon-list {
+    width: 30px;
+    margin: 0 10px 0 10px;
+    padding: 0 0 5px;
+  }
+
+  .testimonianza-text {
+    display: inline-block;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: $font-family-base;
+    font-size: 21px;
+    font-weight: 800;
+  }
+
+  & .section-text {
+    font-family: $font-family-base;
+    font-style: italic;
+    letter-spacing: normal;
+    line-height: 34px;
+    color: #1d1d1b;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 0;
+
+    @include media-breakpoint-up(md) {
+      padding-left: 20px;
+    }
+  }
+}
+
+.wp-block-proterrasancta-section-hero-right-50 {
+  & .section-hero-right-50-block {
+    @include media-breakpoint-up(md) {
+      padding-right: 50px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-right: 100px;
+    }
+  }
+
+  & .section-title {
+    font-size: 28px;
+    width: 100%;
+    padding-bottom: 0;
+
+    @include media-breakpoint-up(md) {
+      font-size: 40px;
+      line-height: 45px;
+      padding-bottom: 20px;
+    }
+  }
+
+  & .section-text {
+    padding-bottom: 20px;
+
+    @include media-breakpoint-up(md) {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.wp-block-proterrasancta-section-hero-video-left {
+  & .section-left-block {
+    @include media-breakpoint-up(md) {
+      padding-left: 50px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-left: 100px;
+    }
+  }
+
+  & .kadence-video-intrinsic {
+    height: 215px;
+
+    @include media-breakpoint-up(md) {
+      height: 420px;
+    }
+  }
+
+  & .wp-block-kadence-videopopup {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.hero-image {
+  margin: 20px 0;
+
+  @include media-breakpoint-up(lg) {
+    margin: 0;
+  }
+}
+
+.navbar-collapse-right-menu {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+#main-hero-image {
+  & .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(md) {
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 40px;
+      line-height: 45px;
+    }
+  }
+}
+
+.wp-block-proterrasancta-section-text {
+  & .section-right {
+    @include media-breakpoint-up(md) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-left: 200px;
+      padding-right: 100px;
+    }
+  }
+}
+
+.wp-block-proterrasancta-section-hero {
+  & .section-left-block {
+    @include media-breakpoint-up(md) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-left: 200px;
+      padding-right: 100px;
+    }
+  }
+
+  & .col-12.col-md-4,
+  & .col-12.col-md-8 {
+    opacity: 0;
+  }
+
+  & .section-text,
+  & .section-title {
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+  }
+}
+
+.text-2-cards {
+  font-size: 16px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+  }
+}
+
+.where-to-buy-square {
+  width: 100px;
+  height: 100px;
+
+  @include media-breakpoint-up(lg) {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.img-sponsor {
+  width: 160px;
+  height: intrinsic;
+}
+
+.wp-block-proterrasancta-section-2-half-columns {
+  .text-section {
+    padding-bottom: 20px;
+
+    @include media-breakpoint-up(md) {
+      padding-bottom: 0;
+    }
+  }
+
+  .title-section {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: #3f5e63;
+
+    @include media-breakpoint-up(md) {
+      font-size: 40px;
+      text-align: right;
+    }
+  }
+
+  .content-section {
+    font-size: 14px;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      font-size: 18px;
+      text-align: right;
+    }
+  }
+}
+
+.wp-block-proterrasancta-section-2-quarter-columns {
+  .text-section {
+    padding-bottom: 20px;
+
+    @include media-breakpoint-up(md) {
+      padding-bottom: 0;
+    }
+  }
+
+  .title-section {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: #3f5e63;
+
+    @include media-breakpoint-up(md) {
+      font-size: 40px;
+      text-align: left;
+    }
+  }
+
+  .content-section {
+    font-size: 14px;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      font-size: 18px;
+      text-align: left;
+    }
+  }
+}
+
+.hero-image {
+  img {
+    height: intrinsic;
+  }
+}
+
+.btn-big-hero {
+  margin-top: 20px;
+}
+
+.padding-video {
+  padding: 0 !important;
+
+  @include media-breakpoint-up(md) {
+    padding: 50px 100px 0 100px !important;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 50px 150px 0 150px !important;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 50px 200px 0 200px !important;
+  }
+}
+
+.kt-accodion-icon-style-basic .kt-blocks-accordion-icon-trigger:after,
+.kt-accodion-icon-style-basic .kt-blocks-accordion-icon-trigger:before,
+.kt-accodion-icon-style-basiccircle .kt-blocks-accordion-icon-trigger:after,
+.kt-accodion-icon-style-basiccircle .kt-blocks-accordion-icon-trigger:before {
+  width: 15px !important;
+  background: #69969d !important;
+}
+
+.wp-block-proterrasancta-news-list-section,
+.wp-block-proterrasancta-project-slides-section,
+.wp-block-proterrasancta-project-map,
+.wp-block-proterrasancta-image-slides-section,
+.wp-block-proterrasancta-image-list-section {
+  .news-card {
+    height: 300px !important;
+    padding: 30px;
+
+    @include media-breakpoint-up(md) {
+      height: 330px !important;
+      padding: 35px;
+    }
+    @include media-breakpoint-up(md) {
+      height: 360px !important;
+      padding: 40px;
+    }
+  }
+
+  .news-card-hover {
+    height: 300px !important;
+
+    @include media-breakpoint-up(md) {
+      height: 330px !important;
+    }
+    @include media-breakpoint-up(md) {
+      height: 360px !important;
+    }
+  }
+}
+
+#block-2-slides-menu {
+  & .heading1 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 20px;
+    word-break: break-word;
+  }
+
+  & .selected {
+    color: white !important;
+    border-bottom: 10px solid #a0bf38;
+  }
+
+  & .heading2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 20px;
+    word-break: break-word;
+  }
+
+  & .not-selected {
+    color: #8e8e8e;
+  }
+
+  @include media-breakpoint-up(md) {
+    & .heading1, & .heading2 {
+      font-size: 14px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 50px;
+
+    & .heading1 {
+      top: -5px;
+      border-radius: 10px;
+    }
+
+    & .selected {
+      color: white;
+      background-color: #a0bf38;
+      border-bottom: unset;
+    }
+
+    & .heading2 {
+      color: #8e8e8e;
+      top: -5px;
+      border-radius: 10px;
+    }
+  }
+
+  & .heading1:hover, & .heading2:hover {
+    color: white;
+    background-color: #a0bf38;
+  }
+}
+
+.wp-block-proterrasancta-block-2-slides {
+  & .content {
+    background-position-x: calc(100% - 10px) !important;
+
+    @include media-breakpoint-up(lg) {
+      background-position-x: calc(100% - 30px) !important;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
+  & .container.main {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    @include media-breakpoint-up(md) {
+      padding-top: 45px;
+      padding-bottom: 45px;
+    }
+  }
+
+  & .title, & .title2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: right;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(md) {
+      font-size: 40px;
+      line-height: 45px;
+    }
+  }
+
+  & .hero-summary-left, & .hero-summary-left2 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: right !important;
+    padding: 20px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+    }
+  }
+
+  & .hero-summary-right, & .hero-summary-right2 {
+    font-size: 23px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: left !important;
+    padding: 15px 0 35px 0;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 23px;
+    }
+  }
+
+  & .additional-text, & .additional-text2 {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left !important;
+    padding: 15px 0 15px 0;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 16px;
+    }
+  }
+
+  & .sources-text, & .sources-text2 {
+    font-size: 10px;
+    font-weight: 400;
+    text-align: left !important;
+    padding: 15px 0 15px 0;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 10px;
+    }
+  }
+
+  & .card {
+    background-color: #e8e5e0;
+    padding: 25px;
+
+    @include media-breakpoint-up(md) {
+      padding: 25px;
+    }
+  }
+}
+
+.campaign-text {
+  font-size: 16px;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 12px;
+  }
+}
+
+.carousel-caret {
+  color: black;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.caret-right-container {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+.caret-left-container {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.icon-icon-list {
+  height: auto;
+  width: 155px;
+  padding: 25px 25px 0 25px;
+
+  @include media-breakpoint-up(md) {
+    width: 115px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 135px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 155px;
+  }
+}
+
+.text-icon-list {
+  width: 155px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+
+  color: #000000;
+  font-family: $font-family-base;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+
+  @include media-breakpoint-up(md) {
+    width: 115px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 135px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 155px;
+  }
+}
+
+.top-hero-box {
+  & .section-title {
+    color: white;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: $font-title;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    padding-bottom: 0;
+
+    @include media-breakpoint-up(md) {
+      font-size: 36px;
+    }
+  }
+
+  & .section-text {
+    color: white;
+    font-family: $font-title;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+
+    @include media-breakpoint-up(md) {
+      font-size: 36px;
+    }
+  }
+
+  & .help-text {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: $font-family-base;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    padding: 0 0 20px 0;
+
+    @include media-breakpoint-up(md) {
+      padding: 0;
+    }
+  }
+
+  & .icon-hero-box {
+    height: 90px;
+    width: auto;
+    margin: 22px 16px 22px 0;
+
+    @include media-breakpoint-up(md) {
+      height: 116px;
+      margin: 11px 35px 11px 0;
+    }
+  }
+
+  & a:hover {
+    opacity: 0.7;
+  }
+}
+
+.animate-up, .animate-up-delay-100, .animate-up-stagger {
+  opacity: 0;
+}
+
+.wp-block-proterrasancta-project-slides-section {
+  & .news-teaser-title {
+    color: #ffffff;
+    font-family: $font-title;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: normal;
+    line-height: normal;
+
+    @include media-breakpoint-up(md) {
+      font-size: 22px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 26px;
+    }
+  }
+}
+
+.wp-block-proterrasancta-project-map {
+  & .news-teaser-title {
+    color: #ffffff;
+    font-family: $font-title;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: normal;
+    line-height: normal;
+
+    @include media-breakpoint-up(md) {
+      font-size: 22px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 26px;
+    }
+  }
+}
+
+.wp-block-proterrasancta-news-slides-section {
+  .news-card {
+    // height: 280px !important;
+
+    @include media-breakpoint-up(md) {
+      // height: 300px !important;
+    }
+    @include media-breakpoint-up(md) {
+      // height: 330px !important;
+    }
+  }
+
+  .news-card-hover {
+    // height: 280px !important;
+
+    @include media-breakpoint-up(md) {
+      // height: 300px !important;
+    }
+    @include media-breakpoint-up(md) {
+      // height: 330px !important;
+    }
+  }
+
+  .news-teaser-title {
+    color: #000000;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: normal;
+    line-height: normal;
+    font-family: $font-title;
+
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+
+    @include media-breakpoint-up(md) {
+      font-size: 28px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 30px;
+    }
+  }
+
+  .news-teaser-tag {
+    color: #000000;
+    font-family: $font-family-base;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: lowercase;
+
+    @include media-breakpoint-up(md) {
+      font-size: 18px;
+    }
+  }
+}
+
+.facebook-block {
+  background-size: 72px 72px;
+  background-repeat: repeat;
+  padding: 30px 0 30px 0;
+
+  .ideas {
+    color: #ffffff;
+    font-family: $font-title;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      text-align: right;
+    }
+  }
+
+  .title {
+    color: #ffffff;
+    font-family: $font-title;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-align: left;
+    padding: 0 0 15px 0;
+  }
+
+  .summary {
+    color: #ffffff;
+    font-family: $font-family-base;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+  }
+
+  .img-container {
+    display: contents;
+  }
+
+  img {
+    height: 147px;
+    width: auto;
+    margin: auto;
+    padding-left: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    @include media-breakpoint-up(lg) {
+      margin: 0;
+      padding-left: 25px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.ibreviary-block {
+  .title {
+    color: #000000;
+    font-family: $font-title;
+    font-size: 28px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-align: center;
+    padding: 0;
+
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+  }
+
+  .summary {
+    color: #000000;
+    font-family: $font-family-base;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+  }
+
+  .img-container img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.newsletter-block {
+  .title {
+    color: #ffffff;
+    font-family: $font-title;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: unset;
+    text-align: center;
+    padding: 0;
+
+    @include media-breakpoint-up(md) {
+      text-align: center;
+    }
+  }
+
+  .summary {
+    color: #ffffff;
+    font-family: $font-family-base;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      text-align: center;
+    }
+  }
+
+  .privacy {
+    color: #ffffff;
+    font-family: $font-family-base;
+    font-size: 9px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      text-align: center;
+    }
+  }
+
+  .img-container img {
+    width: 81px !important;
+    height: 81px !important;
+    margin: 15px 0 15px 0;
+  }
+}
+
+.wp-block-proterrasancta-ibreviary-block {
+  .img-app {
+    width: 160px;
+    height: auto;
+
+    @include media-breakpoint-up(md) {
+      width: 160px;
+      height: auto;
+    }
+  }
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 40px;
+  color: unset;
+}
+
+h3 {
+  font-size: unset;
+  line-height: unset;
+}
+
+h4 {
+  font-size: unset;
+  line-height: unset;
+}
+
+.has-medium-font-size {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.wp-block-proterrasancta-highlights-slides-section {
+  .news-teaser-title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: $font-family-base;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @include media-breakpoint-up(md) {
+      font-size: 24px;
+      line-height: 40px;
+    }
+  }
+
+  .news-teaser-tag {
+    position: absolute;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+  }
+
+  .news-teaser-heading {
+    color: black;
+  }
+
+  .news-column {
+    img {
+      height: 220px;
+    }
+  }
+
+  .btn {
+    background-color: $primary;
+    color: white;
+  }
+}
+
+h3.wp-block-kadence-advancedheading {
+  font-size: 50px !important;
+
+  @include media-breakpoint-up(md) {
+    font-size: 75px !important;
+  }
+}
+
+.project-marker {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: -30px;
+  top: -30px;
+}
+
+.map-container {
+  height: 800px;
+}
+
+.marker-box {
+  position: absolute;
+  left: -90px;
+  top: -220px;
+
+  .title {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    padding: 0;
+  }
+
+  .category {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Castoro", sans-serif;
+    color: black;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .box {
+    background-color: whitesmoke;
+    color: #d31418;
+    padding: 0;
+    position: relative;
+    margin: 40px;
+    border-radius: 10px;
+    border: #d31418 solid 5px;
+  }
+
+  .box.my-arrow-bottom:after {
+    content: ' ';
+    position: absolute;
+    right: 30px;
+    bottom: -15px;
+    border-top: 15px solid black;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: none;
+  }
+}
+
+.marker-container {
+  a {
+    z-index: 1;
+  }
+
+  .marker-box {
+    z-index: 1000;
+  }
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.has-blue-color {
+  color: #374856;
+}
+
+.has-blue-background-color {
+  background-color: #374856;
+}
+
+.has-grey-color {
+  color: #575756;
+}
+
+.has-grey-background-color {
+  background-color: #575756;
+}
+
+.has-orange-color {
+  color: #E26E0E;
+}
+
+.has-orange-background-color {
+  background-color: #E26E0E;
+}
+
+.has-yellow-color {
+  color: #F9BA55;
+}
+
+.has-yellow-background-color {
+  background-color: #F9BA55;
+}
+
+.has-red-color {
+  color: #D31418;
+}
+
+.has-red-background-color {
+  background-color: #D31418;
+}
+
+.has-white-color {
+  color: white;
+}
+
+.has-white-background-color {
+  background-color: white;
+}
+
+.has-black-color {
+  color: black;
+}
+
+.has-black-background-color {
+  background-color: black;
+}
+
+.icon-marker {
+  height: 50px;
+  width: auto;
+}
+
+.wp-block-proterrasancta-project-icon-list {
+  .icon-container {
+    width: 135px;
+    max-width: 135px;
+    margin-right: 35px;
+    margin-top: 30px;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 0;
+    }
+
+    &.beneficiari {
+      margin-left: unset;
+
+      @include media-breakpoint-up(md) {
+        margin-left: auto;
+      }
+    }
+  }
+
+  .icon-icon-list {
+    color: #231f20;
+    height: 70px;
+    object-fit: contain;
+    padding: 0;
+    width: 100%;
+  }
+
+  .icon-icon-number {
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    color: #000000;
+    font-family: $font-family-base;
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .icon-icon-title {
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #050606;
+    font-family: $font-family-base;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 17px;
+    height: 83px;
+  }
+
+  .icon-icon-beneficiaries {
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #050606;
+    font-family: $font-family-base;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 17px;
+  }
+
+  .divider {
+    width: 135px;
+    height: 18px;
+    background-color: #d31418;
+    margin-top: 7px;
+  }
+}
+
+.wp-block-proterrasancta-carousel-slide {
+  height: 316px;
+}
+
+.wp-block-proterrasancta-image-card {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wp-block-proterrasancta-form-donate, .wp-block-proterrasancta-form-anagrafica, .wp-block-proterrasancta-form-checkout, .wp-block-proterrasancta-form-e-cards {
+  background-color: transparent !important;
+
+  .zpacio20{
+    margin:20px;
+  }
+  .container-orizont{
+    display:flex;
+    justify-content:space-between;
+    background-color:whitesmoke;
+  }
+  .input-container-adress{
+    padding: 10px;
+    margin:10px;
+    background-color: white;
+
+  }
+  .input-container-adress.selected {
+    background-color: white;
+
+    .md-form i {
+      color: $primary;
+    }
+
+
+    .md-form input:not(.browser-default) {
+      color: $primary;
+      background-color: white !important;
+    }
+
+    .md-form ::placeholder {
+      color: $primary;
+    }
+
+    .md-form .form-control {
+      border-bottom: 1px solid $primary;
+    }
+  }
+
+
+  input[type=text]:not(.browser-default), input[type=email]:not(.browser-default) {
+    box-sizing: border-box !important;
+  }
+
+  .arrow-back-button {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    width: fit-content;
+    cursor: pointer;
+
+    @media (max-width: 365.98px) {
+      left: 15px;
+    }
+  }
+
+  #form-donate-root, #form-anagrafica-root, .form-cards-root,
+  #form-checkout-root{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 1px solid #e1e1e1;
+    max-width: 600px;
+    margin: auto;
+  }
+  .donate-notmenu {
+    background-color: $primary;
+    color: #E8E8E8;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #e1e1e1;
+    justify-content:center;
+
+    .col-6 {
+      text-align: center;
+      justify-content:center;
+    }
+
+    .text-menu {
+      text-align:center;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .fa-chevron-left{
+      margin-right:40%;
+    }
+
+  }
+
+  .donate-menu {
+    background-color: $primary;
+    color: #E8E8E8;
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #e1e1e1;
+
+    @include media-breakpoint-up(md) {
+      padding: 20px;
+    }
+
+    .col-6 {
+      cursor: pointer;
+    }
+
+    .text-menu {
+      font-weight: 700;
+      font-size: 16px;
+      text-transform: uppercase;
+
+      @include media-breakpoint-up(md) {
+        font-size: 20px;
+      }
+    }
+
+    .ecard-image {
+      @include media-breakpoint-up(md) {
+        height: 300px;
+      }
+    }
+
+    .text-menu.selected {
+      border-bottom: 4px solid #F8F8F8;
+      color: $primary;
+      padding: 15px 15px 17px 15px;
+      background-color: whitesmoke;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+  }
+  .donate-selected-checkout {
+    margin-top:8%;
+    margin-bottom:5%;
+    justify-content:center;
+  }
+
+  .donate-selected {
+    padding: 50px 10px 50px 10px;
+  }
+
+  .donate-selected-small {
+    padding: 20px 10px 20px 10px;
+  }
+
+  .icon-container {
+    width: 80px;
+    height: 100%;
+  }
+
+  .donate-select {
+    .btn {
+      font-size: 20px;
+    }
+
+    div {
+      font-size: 16px;
+    }
+  }
+
+  .donate-icon {
+    color: #231f20;
+    object-fit: contain;
+    padding: 0;
+    width: 80px;
+  }
+
+  .text-thanks {
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    color: $primary;
+    font-family: $font-family-base;
+    font-size: 38px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+
+  .text-thanks-summary {
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    font-family: $font-family-base;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px
+  }
+
+  .sender-text {
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    color: #D31418;
+    font-family: $font-family-base;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 38px;
+    }
+  }
+
+  .sender-text-small {
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    color: #D31418;
+    font-family: $font-family-base;
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 18px;
+    }
+  }
+
+  .icon-price {
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    color: #000000;
+    font-family: $font-family-base;
+    font-size: 38px;
+    font-weight: 800;
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 48px;
+    }
+  }
+
+  .icon-title {
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #050606;
+    font-family: $font-family-base;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .icon-ask {
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #050606;
+    font-family: $font-family-base;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .option-container {
+    padding: 10px;
+  }
+
+  .md-form i {
+    font-size: 26px;
+    color: white;
+  }
+
+  .md-form input:not(.browser-default) {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    background-color: $primary;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 26px;
+    }
+  }
+
+  .md-form textarea:not(.browser-default) {
+    font-size: 20px;
+    font-weight: 700;
+    color: $primary;
+    background-color: white;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 26px;
+    }
+  }
+
+  .md-form input:not(.browser-default).with-icon {
+    padding-left: 35px;
+  }
+
+  ::placeholder {
+    color: white;
+  }
+
+  .input-container {
+    padding: 10px;
+    background-color: $primary;
+  }
+
+  .input-container.selected {
+    background-color: white;
+
+    .md-form i {
+      color: $primary;
+    }
+
+    .md-form input:not(.browser-default) {
+      color: $primary;
+      background-color: white !important;
+    }
+
+    .md-form ::placeholder {
+      color: $primary;
+    }
+
+    .md-form .form-control {
+      border-bottom: 1px solid $primary;
+    }
+  }
+
+  .btn-donate {
+    border-radius: 40px;
+    box-shadow: none;
+  }
+
+  .btn-donate-basic {
+    max-width: 100% !important;
+
+    border-radius: 5px;
+    box-shadow: none;
+  }
+
+  .notes-text {
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+  }
+
+  .btn-blue {
+    color: white;
+    background-color: $primary-color;
+  }
+
+  .btn-options {
+    border-radius: 10px;
+    border: 1px solid #D31418;
+  }
+
+  .btn-options-blue {
+    border-radius: 10px;
+    border: 1px solid rgb(55, 72, 86);
+  }
+
+  .card-container {
+    width: fit-content;
+    margin: auto;
+  }
+
+  .card-icon {
+    width: 70px;
+    padding: 10px;
+
+    @media (max-width: 375.98px) {
+      width: 50px;
+    }
+
+    @include media-breakpoint-up(sm) {
+      width: 70px;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 70px;
+    }
+  }
+
+  .card-icon-button {
+    max-width: 130px;
+    height: 130px;
+    object-fit: contain;
+  }
+
+  .btn-options.selected {
+    background-color: white;
+    color: $primary;
+    box-shadow: none;
+  }
+
+  .btn-options-blue.selected {
+    background-color: white;
+    color: rgb(55, 72, 86);
+    box-shadow: none;
+  }
+
+  .icon-icon-beneficiaries {
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #050606;
+    font-family: $font-family-base;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 17px;
+  }
+
+  .divider {
+    width: 100%;
+    height: 15px;
+    background-color: #d31418;
+    margin-top: 7px;
+  }
+
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    -webkit-text-fill-color: #d31418 !important;
+  }
+
+  .form-check-label {
+    a {
+      color: #d31418;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: inset 0 -3px 0 #d31418;
+      padding-bottom: 4px;
+      transition: all .15s ease-in-out;
+    }
+
+    a:hover {
+      color: #d31418;
+      box-shadow: none;
+    }
+  }
+}
+
+.modal {
+  z-index: 1000;
+}
+
+.wp-block-proterrasancta-news-grid-section {
+  .container-right-cards {
+    height: fit-content;
+
+    @include media-breakpoint-up(md) {
+      height: unset;
+    }
+  }
+
+  .news-grid-card-right {
+    background-color: white;
+    padding-top: 10px;
+
+    @include media-breakpoint-up(md) {
+      padding-top: 0;
+    }
+
+    .img-cover-gradient {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      background-image: linear-gradient(to bottom, transparent 0%, #374856 110%);
+
+      &.grad1 {
+        width: calc(100% - 8px);
+        background-image: linear-gradient(to bottom, transparent 0%, #374856 110%);
+      }
+      &.grad2 {
+        width: calc(100% - 8px);
+        background-image: linear-gradient(to bottom, transparent 0%, rgb(226, 110, 14) 110%);
+
+        @include media-breakpoint-up(md) {
+          width: calc(100% - 4px);
+        }
+      }
+      &.grad3 {
+        width: calc(100% - 8px);
+        background-image: linear-gradient(to bottom, transparent 0%, rgb(249, 186, 85) 110%);
+      }
+      &.grad4 {
+        width: calc(100% - 8px);
+        background-image: linear-gradient(to bottom, transparent 0%, rgb(211, 20, 24) 110%);
+
+        @include media-breakpoint-up(md) {
+          width: calc(100% - 4px);
+        }
+      }
+    }
+
+    .heading {
+      text-align: center;
+      font-family: $font-family-base;
+      font-size: 22px;
+      font-weight: 700;
+      background-color: rgb(55, 72, 86);
+      color: white
+    }
+
+    .btn {
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .news-grid-card {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+
+      @include media-breakpoint-up(xl) {
+        height: 240px;
+      }
+    }
+
+    .block-middle {
+      bottom: 0;
+
+      .heading-text {
+        text-align: left;
+        font-family: $font-family-base;
+        font-size: 14px;
+        font-weight: 700;
+        color: white;
+        text-shadow: 1px 1px black;
+        padding-left: 20px;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 18px;
+        }
+      }
+
+      .text-title {
+        font-size: 16px;
+        font-weight: 700;
+        text-align: left;
+        color: white;
+        text-shadow: 1px 1px black;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        line-height: 16px;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 22px;
+          line-height: 22px;
+        }
+      }
+    }
+
+    .btn {
+      display: none;
+    }
+
+    &:hover {
+      a {
+        opacity: 1 !important;
+      }
+
+      .btn {
+        display: block;
+      }
+    }
+  }
+
+  .news-grid-card-main {
+    background-color: white;
+
+    img {
+      width: 100%;
+      height: 356px;
+      object-fit: cover;
+
+      @include media-breakpoint-up(xl) {
+        height: 516px;
+      }
+    }
+
+    .block-middle-main {
+      bottom: 0;
+      width: 100%;
+
+      .heading-text {
+        text-align: left;
+        font-family: $font-family-base;
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+        text-shadow: 1px 1px black;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 22px;
+        }
+      }
+
+      .text-title {
+        font-size: 28px;
+        font-weight: 700;
+        text-align: left;
+        color: white;
+        text-shadow: 1px 1px black;
+      }
+    }
+
+    .img-cover-gradient {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(to bottom, transparent 50%, #D31418 130%);
+    }
+
+    .heading {
+      text-align: center;
+      font-family: $font-family-base;
+      font-size: 22px;
+      font-weight: 700;
+      background-color: #d31418;
+      color: white
+    }
+  }
+}

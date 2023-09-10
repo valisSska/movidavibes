@@ -1,0 +1,4549 @@
+/*!****************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./scss/library.scss ***!
+  \****************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Open+Sans:wght@300;400;700;800&display=swap);
+/*!********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./scss/library.scss (1) ***!
+  \********************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Satisfy&display=swap);
+/*!********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./scss/library.scss (2) ***!
+  \********************************************************************************************************************************************/
+@charset "UTF-8";
+.wp-block-proterrasancta-divider {
+  padding: 20px;
+}
+
+.cmp-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.terminated {
+  margin-top: 35%;
+  opacity: 0.8;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  height: 45px;
+  width: fit-content;
+  background: #dcdcdc;
+  border: 7px solid #dcdcdc;
+  border-radius: 1px;
+}
+
+.terminated-text {
+  font-size: 25px;
+  font-family: Arial Black;
+  opacity: 0.8;
+}
+
+.btn-campaign {
+  width: auto;
+  margin-left: 10px;
+  border: none;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.btn-campaign-text {
+  color: #b91521;
+  text-align: center;
+}
+
+.btn-campaign:hover {
+  background-color: #D2D2D2;
+  color: #b91521;
+}
+
+.btn-campaign-text:hover {
+  color: #b91521;
+  text-align: center;
+  opacity: initial;
+}
+
+.is-style-shadow {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.is-style-container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .is-style-container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .is-style-container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .is-style-container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .is-style-container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .is-style-container {
+    max-width: 1320px;
+  }
+}
+
+.wp-block-proterrasancta-cover-section .row .cover-section-title {
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-cover-section .row .cover-section-title {
+    font-size: 50px;
+    line-height: 65px;
+  }
+}
+.wp-block-proterrasancta-cover-section .row .cover-section-text {
+  font-size: 16px;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-cover-section .row .cover-section-text {
+    font-size: 18px;
+    padding: 0 10% 0 10%;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-cover-section .row .cover-section-text {
+    padding: 0 25% 0 25%;
+  }
+}
+
+.wp-block-proterrasancta-section-teaser .container,
+.wp-block-proterrasancta-section-hero .container,
+.wp-block-proterrasancta-brand-ambassador .container,
+.wp-block-proterrasancta-section-last-news .container {
+  background-repeat: no-repeat;
+  background-position: 50px 50px;
+}
+.wp-block-proterrasancta-section-teaser .container ul,
+.wp-block-proterrasancta-section-hero .container ul,
+.wp-block-proterrasancta-brand-ambassador .container ul,
+.wp-block-proterrasancta-section-last-news .container ul {
+  list-style-type: none !important;
+}
+.wp-block-proterrasancta-section-teaser .container ul li::before,
+.wp-block-proterrasancta-section-hero .container ul li::before,
+.wp-block-proterrasancta-brand-ambassador .container ul li::before,
+.wp-block-proterrasancta-section-last-news .container ul li::before {
+  content: "•";
+  color: #ffa700;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 30px;
+  display: inline-block;
+  width: 35px;
+  position: relative;
+  top: 8px;
+}
+.wp-block-proterrasancta-section-teaser .container h2,
+.wp-block-proterrasancta-section-hero .container h2,
+.wp-block-proterrasancta-brand-ambassador .container h2,
+.wp-block-proterrasancta-section-last-news .container h2 {
+  font-size: 30px;
+  font-weight: 900 !important;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-teaser .container h2,
+.wp-block-proterrasancta-section-hero .container h2,
+.wp-block-proterrasancta-brand-ambassador .container h2,
+.wp-block-proterrasancta-section-last-news .container h2 {
+    font-size: 40px;
+    line-height: 34pt;
+  }
+}
+
+.btn-circle {
+  width: 69px;
+  height: 69px;
+  border-radius: 50px;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 20px;
+}
+.btn-circle:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.btn-circle i {
+  color: white;
+}
+
+.row .title, .row .title2 {
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 10px;
+  line-height: 35px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (min-width: 768px) {
+  .row .title, .row .title2 {
+    text-align: right;
+  }
+}
+@media (min-width: 992px) {
+  .row .title, .row .title2 {
+    text-align: right;
+    padding: 20px;
+  }
+}
+
+.row .summary-column {
+  padding: 10px;
+}
+@media (min-width: 992px) {
+  .row .summary-column {
+    padding: 20px;
+  }
+}
+
+.wp-block-proterrasancta-section-teaser .title, .wp-block-proterrasancta-section-teaser .summary-column {
+  opacity: 0;
+}
+
+.wp-block-proterrasancta-vision-hero .vision-left, .wp-block-proterrasancta-vision-hero .vision-right {
+  opacity: 0;
+}
+
+.row .brand {
+  position: relative;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 20px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (min-width: 768px) {
+  .row .brand {
+    text-align: right;
+  }
+}
+@media (min-width: 992px) {
+  .row .brand {
+    text-align: right;
+    padding: 50px 0 50px 0;
+  }
+}
+
+.row .section-cover-title,
+.row .cover-title {
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.row .section-cover-title strong,
+.row .cover-title strong {
+  font-weight: 900;
+}
+@media (min-width: 768px) {
+  .row .section-cover-title,
+.row .cover-title {
+    font-size: 50px;
+    line-height: 65px;
+  }
+}
+
+.btn-circle-cover {
+  width: 69px;
+  height: 69px;
+  border-radius: 50px;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: white;
+  opacity: 0.5;
+}
+.btn-circle-cover:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.fix-bottom-block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.row .news-column {
+  padding: 20px;
+}
+
+.news-teaser-heading {
+  color: #ffffff;
+  font-family: "Castoro", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+@media (min-width: 768px) {
+  .news-teaser-heading {
+    font-size: 22px;
+  }
+}
+@media (min-width: 992px) {
+  .news-teaser-heading {
+    font-size: 26px;
+  }
+}
+
+.news-teaser-excerpt {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  position: absolute;
+  bottom: 20px;
+  height: 107px;
+  width: calc(100% - 80px);
+}
+@media (min-width: 768px) {
+  .news-teaser-excerpt {
+    bottom: 40px;
+    height: 57px;
+  }
+}
+
+.news-teaser-date,
+.news-date {
+  color: #d31418;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+@media (min-width: 768px) {
+  .news-teaser-date,
+.news-date {
+    font-size: 18px;
+  }
+}
+
+.news-teaser-date {
+  color: #b91521;
+}
+
+.news-teaser-body {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.news-title {
+  font-size: 36px;
+  line-height: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .news-title {
+    font-size: 50px;
+    line-height: 45px;
+    margin-bottom: 30px;
+  }
+}
+
+.card-news-title {
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #b91521;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .card-news-title {
+    font-size: 20px;
+  }
+}
+
+.news-text {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .news-text {
+    font-size: 18px;
+  }
+}
+
+.post H2,
+.post H2 strong {
+  font-size: 38px;
+  font-weight: 900;
+}
+
+.btn-circle-small {
+  width: 40px;
+  border-radius: 60px;
+  font-size: 26px;
+  text-align: center;
+  display: inline-block;
+}
+.btn-circle-small:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.btn-circle-small i {
+  color: white;
+}
+
+.wp-block-proterrasancta-section-last-news-grid #last-news-grid-root .grid-teaser-heading {
+  font-weight: 900;
+  font-size: 18px;
+  padding: 20px 0 0 20px;
+}
+.wp-block-proterrasancta-section-last-news-grid #last-news-grid-root .grid-teaser-title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 26px;
+  padding: 0 0 20px 20px;
+  margin: 0;
+}
+.wp-block-proterrasancta-section-last-news-grid #last-news-grid-root .btn-circle-small {
+  margin: 0;
+}
+.wp-block-proterrasancta-section-last-news-grid #last-news-grid-root .teaser-column:nth-child(3n+1) {
+  flex: 0 0 auto;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .wp-block-proterrasancta-section-last-news-grid #last-news-grid-root .teaser-column:nth-child(3n+1) {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-section-last-news-grid #last-news-grid-root .teaser-column:nth-child(3n+1) {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+.wp-block-proterrasancta-section-last-news-grid #last-news-grid-root .teaser-column:nth-child(3n+2) {
+  flex: 0 0 auto;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .wp-block-proterrasancta-section-last-news-grid #last-news-grid-root .teaser-column:nth-child(3n+2) {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-section-last-news-grid #last-news-grid-root .teaser-column:nth-child(3n+2) {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+}
+.wp-block-proterrasancta-section-last-news-grid #last-news-grid-root .teaser-column:nth-child(3n+0) {
+  flex: 0 0 auto;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .wp-block-proterrasancta-section-last-news-grid #last-news-grid-root .teaser-column:nth-child(3n+0) {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-section-last-news-grid #last-news-grid-root .teaser-column:nth-child(3n+0) {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+}
+.wp-block-proterrasancta-section-last-news-grid .teaser-column.title {
+  padding-bottom: 0;
+}
+
+.text-Category {
+  margin-left: 5%;
+  margin-top: 5%;
+  color: white;
+  position: absolute;
+  width: 90%;
+  font-size: 25px;
+  text-shadow: 2px 2px 4px black;
+}
+.text-Category .text-Category:hover {
+  opacity: 0.5;
+}
+
+.wp-block-proterrasancta-cover .row .section-cover-title {
+  font-size: 46px;
+}
+
+.wp-block-proterrasancta-news-list .background-div {
+  height: 590px;
+}
+.wp-block-proterrasancta-news-list .cover-text-block {
+  background: white;
+  padding: 20px;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .wp-block-proterrasancta-news-list .cover-text-block {
+    padding: 43px;
+  }
+}
+.wp-block-proterrasancta-news-list .cover-section-text {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-top: 28px;
+}
+.wp-block-proterrasancta-news-list .news-teaser-title {
+  color: #000000;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: normal;
+  line-height: normal;
+  font-family: "Castoro", sans-serif;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-news-list .news-teaser-title {
+    font-size: 22px;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-news-list .news-teaser-title {
+    font-size: 24px;
+  }
+}
+.wp-block-proterrasancta-news-list .news-teaser-tag {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: lowercase;
+}
+.wp-block-proterrasancta-news-list .row .news-column {
+  padding: 20px;
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-news-list .row .news-column {
+    padding: 15px 15px 15px 15px;
+  }
+}
+.wp-block-proterrasancta-news-list img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.wp-block-proterrasancta-campaigns-list .background-div {
+  height: 590px;
+}
+.wp-block-proterrasancta-campaigns-list .cover-text-block {
+  background: white;
+  padding: 20px;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .wp-block-proterrasancta-campaigns-list .cover-text-block {
+    padding: 43px;
+  }
+}
+.wp-block-proterrasancta-campaigns-list .cover-section-text {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-top: 28px;
+}
+.wp-block-proterrasancta-campaigns-list .news-teaser-title {
+  color: white;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: normal;
+  line-height: normal;
+  font-family: "Castoro", sans-serif;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-campaigns-list .news-teaser-title {
+    font-size: 22px;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-campaigns-list .news-teaser-title {
+    font-size: 24px;
+  }
+}
+.wp-block-proterrasancta-campaigns-list .news-teaser-tag {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: lowercase;
+}
+.wp-block-proterrasancta-campaigns-list .news-teaser-date {
+  color: white;
+}
+.wp-block-proterrasancta-campaigns-list .row .news-column {
+  padding: 20px;
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-campaigns-list .row .news-column {
+    padding: 15px 15px 15px 15px;
+  }
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.wp-block-proterrasancta-press-release {
+  height: 230px;
+  width: 230px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.press-title {
+  font-weight: 900;
+  font-size: 16px;
+  text-align: right;
+  margin-top: 50px;
+  padding: 0 20px 0 80px;
+}
+
+.signature-title {
+  font-weight: 900;
+  font-size: 16px;
+  text-align: left;
+}
+
+.btn-circle-press {
+  width: 69px;
+  height: 69px;
+  border-radius: 50px;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 20px;
+}
+.btn-circle-press:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.vision-left .img-title {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  z-index: 1000;
+}
+@media (min-width: 992px) {
+  .vision-left .img-title {
+    top: 40px;
+    right: -20px;
+  }
+}
+
+.vision-right .img-title {
+  position: absolute;
+  left: -20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: left;
+}
+.vision-right .img-title p {
+  margin: 0;
+}
+@media (min-width: 992px) {
+  .vision-right .img-title {
+    background-size: contain;
+  }
+}
+
+.vision-right .img-title .text-vision {
+  display: block;
+  margin: auto 0 auto 0;
+  padding-left: 50px;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .vision-right .img-title .text-vision {
+    padding-left: 100px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  .vision-right .img-title .text-vision {
+    padding-left: 100px;
+    font-size: 22px;
+  }
+}
+
+.vision-title {
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 35px;
+}
+@media (min-width: 768px) {
+  .vision-title {
+    text-align: right;
+  }
+}
+
+.wp-block-proterrasancta-vision-hero {
+  height: 400px;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-vision-hero {
+    height: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-vision-hero {
+    height: 400px;
+  }
+}
+
+.wpcf7-form {
+  max-width: 100%;
+}
+
+.wpcf7-form-control {
+  max-width: 100%;
+}
+
+.kt-blocks-accordion-header:focus {
+  outline: none;
+}
+
+.kt-blocks-accordion-title {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.kt-sc-innter-col {
+  font-size: 18px;
+}
+
+.kt-accordion-panel-inner {
+  background-color: transparent !important;
+  border: none !important;
+  font-size: 18px;
+}
+
+.kt-blocks-accordion-header {
+  background-color: transparent !important;
+  padding-left: 0 !important;
+}
+
+.wp-block-kadence-pane .kt-blocks-accordion-header {
+  border-top: none;
+  border-bottom: 2px solid #cddadc !important;
+}
+
+.wp-block-kadence-pane .kt-blocks-accordion-header {
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.kt-blocks-accordion-icon-trigger {
+  color: #69969d !important;
+}
+
+.blocks-gallery-grid {
+  width: 100%;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 900 !important;
+}
+
+h4.kt-blocks-info-box-title {
+  color: #007ea7;
+  position: relative;
+  margin-bottom: 25px;
+}
+h4.kt-blocks-info-box-title:after {
+  content: "";
+  background: #ffa700;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 6px;
+  width: 40%;
+  margin: 0 30% 0 30%;
+}
+
+h2 {
+  font-size: 22pt;
+  line-height: 34pt;
+}
+
+h3 {
+  font-size: 18pt;
+  line-height: 30pt;
+}
+
+h4 {
+  font-size: 16pt;
+  line-height: 28pt;
+}
+
+.team-block {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 240px;
+  width: 240px;
+  position: relative;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+}
+@media (min-width: 992px) {
+  .team-block {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.team-block .container {
+  background-color: #80ced7;
+  position: absolute;
+  bottom: -25px;
+  border-radius: 50px;
+}
+@media (min-width: 576px) {
+  .team-block .container {
+    left: 75px;
+  }
+}
+
+.advisory-block {
+  height: 170px;
+  width: 170px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  margin: 0 2px 20px 0;
+  position: relative;
+  z-index: 10;
+}
+@media (min-width: 576px) {
+  .advisory-block {
+    margin: 0 20px 20px 0;
+  }
+}
+.advisory-block .btn-circle-small {
+  position: absolute;
+  bottom: -10px;
+  left: 65px;
+  border: 1px solid #D31418;
+  width: 34px;
+  border-radius: 60px;
+  font-size: 22px;
+  padding: 4px;
+}
+.advisory-block .btn-circle-small.collapsed .fa-arrow-up {
+  display: none;
+}
+.advisory-block .btn-circle-small.collapsed .fa-arrow-down {
+  display: block;
+}
+.advisory-block .btn-circle-small:not(.collapsed) .fa-arrow-up {
+  display: block;
+}
+.advisory-block .btn-circle-small:not(.collapsed) .fa-arrow-down {
+  display: none;
+}
+
+.shadow-md {
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.advisory-title {
+  font-weight: 900;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto;
+  position: relative;
+  width: 150px;
+  height: 38px;
+}
+.advisory-title i {
+  position: absolute;
+  bottom: 10px;
+  right: -16px;
+  font-size: 24px;
+}
+
+.advisory {
+  background-color: white;
+}
+.advisory .kt-blocks-accordion-title-wrap {
+  padding-left: 20px;
+}
+.advisory .kt-blocks-accordion-header {
+  padding-bottom: 20px !important;
+}
+.advisory .kt-blocks-accordion-header:after {
+  content: "";
+  background: #ffa700;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  height: 6px;
+  width: 100px;
+  margin-left: 20px;
+}
+.advisory .kt-blocks-accordion-header.kt-accordion-panel-active:after {
+  bottom: 10px !important;
+}
+
+.row .title-row {
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  line-height: 25px;
+  z-index: 10;
+}
+@media (min-width: 768px) {
+  .row .title-row {
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  .row .title-row {
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
+
+.advisory-accordion-block {
+  opacity: 0;
+  height: auto;
+  width: 340px;
+  max-width: 100%;
+  padding: 20px;
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+}
+.advisory-accordion-block .advisory-text {
+  font-size: 14px;
+  color: #5d5d5d;
+}
+.advisory-accordion-block .btn-circle-small {
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+  text-align: center;
+  float: right;
+  color: white;
+  position: relative;
+}
+.advisory-accordion-block .btn-circle-small i {
+  position: absolute;
+  font-size: 22px;
+}
+.advisory-accordion-block .btn-circle-small .fa-chevron-up {
+  top: 5px;
+  left: 6px;
+}
+.advisory-accordion-block .btn-circle-small .fa-chevron-down {
+  top: 5px;
+  left: 6px;
+}
+.advisory-accordion-block .btn-circle-small.collapsed .fa-chevron-up {
+  display: none;
+}
+.advisory-accordion-block .btn-circle-small.collapsed .fa-chevron-down {
+  display: block;
+}
+.advisory-accordion-block .btn-circle-small:not(.collapsed) .fa-chevron-up {
+  display: block;
+}
+.advisory-accordion-block .btn-circle-small:not(.collapsed) .fa-chevron-down {
+  display: none;
+}
+
+.advisory-accordion-title {
+  font-weight: 900;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+}
+.advisory-accordion-title:after {
+  content: "";
+  background: #ffa700;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 6px;
+  width: 100px;
+}
+
+.wp-block-proterrasancta-advisory-card {
+  opacity: 0;
+  position: relative;
+}
+.wp-block-proterrasancta-advisory-card .advisory-text {
+  font-size: 14px;
+  color: #5d5d5d;
+  background-color: #ddf2f6;
+  width: 170px;
+  padding: 20px;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+.advisory-card-background {
+  top: 150px;
+  background-color: #ddf2f6;
+  width: 170px;
+  opacity: 0.8;
+  height: 450px;
+  position: absolute;
+  z-index: 0;
+}
+
+.advisory-accordion-left {
+  width: 360px;
+  max-width: 100%;
+  margin-right: 0;
+}
+@media (max-width: 379px) {
+  .advisory-accordion-left {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 576px) {
+  .advisory-accordion-left {
+    margin-right: 20px;
+  }
+}
+
+.advisory-accordion-right {
+  width: 360px;
+  max-width: 100%;
+  margin-right: 0;
+}
+@media (min-width: 576px) {
+  .advisory-accordion-right {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .advisory-accordion-right {
+    margin-right: 20px;
+    width: 360px;
+  }
+}
+@media (min-width: 992px) {
+  .advisory-accordion-right {
+    width: 740px;
+  }
+}
+@media (min-width: 1200px) {
+  .advisory-accordion-right {
+    width: 930px;
+  }
+}
+@media (max-width: 379px) {
+  .advisory-accordion-right {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+.wp-block-proterrasancta-row {
+  position: relative;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-row {
+    justify-content: flex-start;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.accordion-outline {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  pointer-events: none;
+}
+@media (max-width: 379px) {
+  .accordion-outline {
+    left: 10px;
+  }
+}
+@media (min-width: 380px) {
+  .accordion-outline {
+    left: unset;
+    right: unset;
+  }
+}
+@media (min-width: 576px) {
+  .accordion-outline {
+    right: 100px;
+    left: unset;
+  }
+}
+@media (min-width: 768px) {
+  .accordion-outline {
+    right: unset;
+    left: 0;
+  }
+}
+
+.advisory-accordion-row-right .accordion-outline {
+  position: absolute;
+  top: 8px;
+  left: unset;
+  right: 20px;
+  pointer-events: none;
+}
+@media (max-width: 379px) {
+  .advisory-accordion-row-right .accordion-outline {
+    right: 10px;
+    left: unset;
+  }
+}
+@media (min-width: 380px) {
+  .advisory-accordion-row-right .accordion-outline {
+    right: unset;
+  }
+}
+@media (min-width: 576px) {
+  .advisory-accordion-row-right .accordion-outline {
+    right: 100px;
+    left: unset;
+  }
+}
+@media (min-width: 768px) {
+  .advisory-accordion-row-right .accordion-outline {
+    right: 20px;
+    left: unset;
+  }
+}
+@media (min-width: 768px) {
+  .advisory-accordion-row-right {
+    justify-content: flex-end;
+  }
+}
+
+.accordion-outline path {
+  z-index: 10;
+}
+
+.accordion-outline path {
+  fill: none;
+  stroke: #007ea7;
+  stroke-width: 4px;
+}
+
+.wp-block-proterrasancta-team {
+  opacity: 0;
+}
+.wp-block-proterrasancta-team .row {
+  position: relative;
+}
+
+.linkedin-title {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.linkedin-title i {
+  background-color: #0082ca !important;
+  color: #fff;
+  font-size: 25px;
+  padding: 5px 5px 0 5px;
+  border-radius: 5px;
+}
+
+.wp-block-proterrasancta-history-card,
+.move-me-up {
+  opacity: 0;
+}
+
+.plant-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: #b91521;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .plant-title {
+    font-size: 60px;
+    padding: 30px;
+  }
+}
+
+.plant-summary {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.plant-text {
+  opacity: 0;
+}
+
+.plant-image {
+  opacity: 0;
+}
+.plant-image img {
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+}
+
+.wp-block-proterrasancta-show-numbers-card {
+  background-color: #cddadc;
+  color: #69969d;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.wp-block-proterrasancta-show-numbers-card .number-title {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.inauguration-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 20px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .inauguration-title {
+    font-size: 40px;
+  }
+}
+
+.duration {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+}
+@media (min-width: 768px) {
+  .duration {
+    font-size: 60px;
+  }
+}
+
+.duration-title {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.8;
+  overflow-x: hidden;
+}
+@media (min-width: 768px) {
+  .duration-title {
+    font-size: 20px;
+  }
+}
+
+.inauguration-title .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.inauguration-title .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+#inauguration-date-root {
+  opacity: 0;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+@media (min-width: 768px) {
+  #inauguration-date-root {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}
+
+.wp-block-proterrasancta-cover-branded {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  padding: 20px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-cover-branded {
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    padding: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .wp-block-proterrasancta-cover-branded {
+    padding: 100px;
+  }
+}
+@media (min-width: 2500px) {
+  .wp-block-proterrasancta-cover-branded {
+    height: 1000px;
+  }
+}
+.wp-block-proterrasancta-cover-branded .cover-title {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-cover-branded .cover-title {
+    font-size: 40px;
+    line-height: 55px;
+    padding-left: 0;
+  }
+}
+.wp-block-proterrasancta-cover-branded .img1 {
+  position: absolute;
+  height: auto;
+  width: 130px;
+  bottom: -20px;
+  left: -20px;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-cover-branded .img1 {
+    width: auto;
+    height: 70%;
+    bottom: -40px;
+    left: -200px;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-cover-branded .img1 {
+    height: 80%;
+    bottom: -50px;
+    left: -150px;
+  }
+}
+@media (min-width: 1200px) {
+  .wp-block-proterrasancta-cover-branded .img1 {
+    bottom: -50px;
+    left: 20px;
+  }
+}
+.wp-block-proterrasancta-cover-branded .img2 {
+  height: 120px;
+  width: auto;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-cover-branded .img2 {
+    height: 250px;
+  }
+}
+
+.cover-text-block {
+  padding: 20px;
+}
+@media (min-width: 1200px) {
+  .cover-text-block {
+    padding: 50px;
+  }
+}
+
+.row .section-title {
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: left;
+  overflow-wrap: break-word;
+  padding-bottom: 20px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .row .section-title {
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  .row .section-title {
+    width: 75%;
+    font-size: 40px;
+    line-height: 55px;
+  }
+}
+
+.row .section-left-title {
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: left;
+  overflow-wrap: break-word;
+  padding-bottom: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .row .section-left-title {
+    margin-top: 0;
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  .row .section-left-title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+.row .chef-title {
+  font-size: 20px;
+  font-weight: 900;
+  overflow-wrap: break-word;
+  padding-bottom: 20px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .row .chef-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.row .ingredients-title {
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #3f5e63;
+}
+@media (min-width: 768px) {
+  .row .ingredients-title {
+    font-size: 20px;
+  }
+}
+
+.row .nutrition-text {
+  font-size: 14px;
+}
+.row .nutrition-text strong {
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #3f5e63;
+}
+@media (min-width: 768px) {
+  .row .nutrition-text {
+    font-size: 16px;
+    padding-right: 150px;
+  }
+  .row .nutrition-text strong {
+    font-size: 20px;
+  }
+}
+
+.row .restaurant-title {
+  font-size: 28px;
+  overflow-wrap: break-word;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .row .restaurant-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.row .restaurant-text {
+  font-size: 20px;
+  font-weight: 900;
+  overflow-wrap: break-word;
+  padding-bottom: 20px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .row .restaurant-text {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.row .restaurant-address {
+  font-size: 16px;
+  overflow-wrap: break-word;
+  padding-bottom: 20px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .row .restaurant-address {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.row .restaurant-description {
+  font-size: 12px;
+  overflow-wrap: break-word;
+  padding-bottom: 20px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .row .restaurant-description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.row .chef-text {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .row .chef-text {
+    font-size: 18px;
+  }
+}
+
+.row .recipe-type-text {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .row .recipe-type-text {
+    font-size: 22px;
+  }
+}
+
+.row .chef-by-text {
+  font-size: 12px;
+  color: #69969d;
+}
+@media (min-width: 768px) {
+  .row .chef-by-text {
+    font-size: 16px;
+  }
+}
+
+.row .chef-name-text {
+  font-size: 12px;
+  font-weight: 900;
+  color: #69969d;
+}
+@media (min-width: 768px) {
+  .row .chef-name-text {
+    font-size: 16px;
+  }
+}
+
+.row .recipe-numbers,
+.row .recipe-text {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .row .recipe-numbers,
+.row .recipe-text {
+    font-size: 18px;
+  }
+}
+
+.row .ingredients,
+.row .recipe-text-excerpt {
+  font-size: 14px;
+}
+.row .ingredients .div-hr,
+.row .recipe-text-excerpt .div-hr {
+  border-top: 2px solid;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+@media (min-width: 768px) {
+  .row .ingredients,
+.row .recipe-text-excerpt {
+    font-size: 16px;
+  }
+}
+
+.row .summary-title {
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: left;
+  overflow-wrap: break-word;
+  padding-bottom: 20px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .row .summary-title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+.range-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: #b91521;
+  padding: 20px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .range-title {
+    font-size: 50px;
+    padding: 30px;
+  }
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  color: #b91521;
+  padding: 10px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 40px;
+    padding: 10px;
+  }
+}
+
+.big-hero-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  color: #b91521;
+  padding: 10px 10px 20px 10px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .big-hero-title {
+    font-size: 40px;
+    line-height: 45px;
+    padding: 0 10% 25px 10%;
+  }
+}
+@media (min-width: 992px) {
+  .big-hero-title {
+    font-size: 40px;
+    line-height: 45px;
+    padding: 0 25% 25px 25%;
+  }
+}
+
+.hero-heading {
+  text-align: center;
+  font-size: 18px;
+  color: #b91521;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .hero-heading {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+.recipe-title {
+  font-size: 24px;
+  line-height: 25px;
+  font-weight: 900;
+  color: #b91521;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .recipe-title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+.row .summary-title1 {
+  font-size: 28px;
+  font-weight: 300;
+  text-align: center;
+  overflow-wrap: break-word;
+  padding-bottom: 10px;
+  color: #b91521;
+}
+@media (min-width: 768px) {
+  .row .summary-title1 {
+    text-align: right;
+    font-size: 40px;
+  }
+}
+
+.row .summary-title2 {
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  overflow-wrap: break-word;
+  color: #b91521;
+}
+@media (min-width: 768px) {
+  .row .summary-title2 {
+    text-align: right;
+    font-size: 40px;
+  }
+}
+
+.wp-block-proterrasancta-row .title-row {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: #b91521;
+  padding: 20px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-row .title-row {
+    font-size: 60px;
+    padding: 30px;
+  }
+}
+
+.simple-box {
+  height: 360px;
+}
+
+.values-title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 900;
+  color: #3f5e63;
+  padding-top: 10px;
+}
+@media (min-width: 768px) {
+  .values-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+.row .product-heading {
+  font-size: 14px;
+  font-weight: 900;
+  overflow-wrap: break-word;
+  text-transform: uppercase;
+  color: #b91521;
+}
+@media (min-width: 768px) {
+  .row .product-heading {
+    font-size: 16px;
+  }
+}
+
+.row .product-sub-title {
+  font-size: 16px;
+  overflow-wrap: break-word;
+}
+@media (min-width: 768px) {
+  .row .product-sub-title {
+    font-size: 18px;
+  }
+}
+
+.row .product-text {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .row .product-text {
+    font-size: 16px;
+  }
+}
+
+.values-summary {
+  text-align: left;
+  font-size: 16px;
+  color: black;
+}
+@media (min-width: 768px) {
+  .values-summary {
+    font-size: 20px;
+  }
+}
+
+.wp-block-proterrasancta-simple-box.text-center .values-summary {
+  text-align: center;
+}
+
+.history-block .title {
+  font-size: 32px;
+  font-weight: 900;
+  padding: 10px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .history-block .title {
+    font-size: 40px;
+  }
+}
+
+.history-block .text-content {
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #69969d;
+}
+
+#hero-carousel .carousel-indicators {
+  bottom: 10px;
+}
+
+#hero-carousel .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 3px solid white;
+  opacity: 1;
+  margin-left: 10px;
+}
+
+#hero-carousel .carousel-indicators li.active {
+  background-color: white;
+}
+
+#hero-carousel .values-title {
+  color: white;
+  text-align: right;
+  font-size: 50px;
+  line-height: 60px;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+}
+
+#hero-carousel .values-summary {
+  font-size: 18px;
+  color: white;
+  text-align: right;
+  font-size: 16px;
+  text-align: center;
+}
+
+#hero-carousel .carousel-caption {
+  right: 15%;
+  max-width: 450px;
+  left: initial;
+  text-align: right;
+  right: initial;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#main-hero-image a,
+#hero-carousel a {
+  margin-top: 20px;
+  border-radius: 0;
+  padding: 13px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  background-color: #b91521;
+  border-color: #b91521;
+}
+
+#chef-carousel .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27%233F5E63%27 viewBox=%270 0 8 8%27%3E%3Cpath d=%27M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z%27/%3E%3C/svg%3E") !important;
+}
+
+#chef-carousel .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27%233F5E63%27 width=%278%27 height=%278%27 viewBox=%270 0 8 8%27%3e%3cpath d=%27M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z%27/%3e%3c/svg%3e") !important;
+}
+
+#chef-carousel .carousel-inner {
+  width: 80%;
+  height: 430px;
+  margin: 0 auto;
+}
+
+#chef-carousel .carousel-caption {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #000000;
+}
+
+#chef-carousel .values-summary {
+  color: #222222;
+  font-size: 14px;
+  text-align: left;
+}
+
+#chef-carousel .carousel-control-prev {
+  margin-left: -10px;
+  margin-top: -100px;
+  display: none;
+}
+@media (max-width: 767.98px) {
+  #chef-carousel .carousel-control-prev {
+    margin-top: -250px;
+  }
+}
+
+#chef-carousel .carousel-control-next {
+  margin-right: -10px;
+  margin-top: -100px;
+  display: none;
+}
+@media (max-width: 767.98px) {
+  #chef-carousel .carousel-control-next {
+    margin-top: -250px;
+  }
+}
+
+#chef-carousel .carousel-indicators {
+  display: none;
+  text-align: center;
+  display: block;
+}
+#chef-carousel .carousel-indicators li {
+  display: inline-block;
+}
+
+#carousel-thumb .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27%233F5E63%27 viewBox=%270 0 8 8%27%3E%3Cpath d=%27M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z%27/%3E%3C/svg%3E") !important;
+}
+
+#carousel-thumb .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27%233F5E63%27 width=%278%27 height=%278%27 viewBox=%270 0 8 8%27%3e%3cpath d=%27M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z%27/%3e%3c/svg%3e") !important;
+}
+
+#carousel-thumb .carousel-inner {
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  height: 200px;
+}
+
+#carousel-thumb .carousel-item {
+  background-color: white;
+}
+
+#carousel-thumb .carousel-control-prev {
+  margin-left: -10px;
+  margin-top: -100px;
+  display: none;
+}
+#carousel-thumb .carousel-control-next {
+  margin-right: -10px;
+  margin-top: -100px;
+  display: none;
+}
+#carousel-thumb .carousel-indicators {
+  text-align: center;
+  display: block;
+}
+#carousel-thumb .carousel-indicators li {
+  border-radius: 0;
+  background-color: white;
+  opacity: 1;
+}
+#carousel-thumb .carousel-indicators li.active img {
+  border: 2px solid #69969d;
+}
+#carousel-thumb .carousel-indicators img {
+  -webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+}
+#carousel-thumb .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: white;
+  display: inline-block;
+}
+#carousel-thumb .carousel-indicators li img {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.wp-block-proterrasancta-carousel-hero-slide {
+  height: 500px;
+}
+.wp-block-proterrasancta-carousel-hero-slide img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.product-image {
+  height: 280px;
+}
+.product-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  padding: 0 10px 0 10px;
+}
+
+.collapsible-product-image {
+  height: 280px;
+  width: 460px;
+  max-width: 100%;
+}
+.collapsible-product-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.product-heading {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.product-title {
+  font-size: 40px;
+  line-height: 35px;
+  font-weight: 900;
+  padding: 20px 0 20px 0;
+}
+
+.product-summary {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.product-collapse-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.product-collapse-btn i {
+  color: #b91521;
+  font-size: 40px;
+  cursor: pointer;
+}
+.product-collapse-btn i:hover {
+  opacity: 0.8;
+}
+
+.directions {
+  height: 40px;
+  padding: 20px;
+}
+.directions i {
+  color: #b91521;
+  font-size: 40px;
+}
+
+.fixed-action-btn {
+  height: unset;
+}
+
+.products-list {
+  font-size: 22px;
+}
+.products-list .wp-block-media-text {
+  max-width: 750px;
+  margin: auto;
+  padding: 20px 0 20px 0;
+}
+.products-list .wp-block-media-text__media img {
+  height: 186px;
+  object-fit: cover;
+}
+
+.img-contain {
+  object-fit: contain;
+}
+
+.wp-block-proterrasancta-speak-about-us .section-speak {
+  font-size: 20px;
+  font-weight: 400;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  text-transform: uppercase;
+}
+.wp-block-proterrasancta-speak-about-us .section-image {
+  padding: 20px;
+}
+.wp-block-proterrasancta-speak-about-us .section-image img {
+  width: 160px;
+  object-fit: contain;
+}
+.wp-block-proterrasancta-speak-about-us .section-title {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 35px;
+  text-transform: lowercase;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+}
+
+.wp-block-proterrasancta-section-two-columns img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.wp-block-proterrasancta-section-two-columns .section-title {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 35px;
+  padding: 40px 20px 10px 40px;
+}
+.wp-block-proterrasancta-section-two-columns .section-text {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px 20px 40px 40px;
+}
+.wp-block-proterrasancta-section-two-columns a {
+  text-decoration: underline;
+}
+
+.wp-block-media-text__content,
+.wp-block-media-text__media,
+.wp-block-proterrasancta-simple-box,
+.footer-address.cover-text,
+.range-text,
+.range-image,
+.product-image img {
+  opacity: 0;
+}
+
+.plant-right-box {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 992px) {
+  .plant-right-box {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.number-summary {
+  color: #030303;
+  white-space: nowrap;
+  font-size: 20px;
+}
+
+.range-image .range-left {
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .range-image .range-left {
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+.title-left-container .title-left {
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .title-left-container .title-left {
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+.summery-right-container,
+.title-left-container {
+  opacity: 1;
+}
+
+.summery-right-container .fit-content {
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .summery-right-container .fit-content {
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+.wp-block-proterrasancta-section-2-cards .row .title {
+  text-align: left;
+}
+
+#separator-image img {
+  position: absolute;
+  width: 200px;
+  transform: translate(-50%, -50%);
+}
+
+.range-text .fit-content {
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .range-text .fit-content {
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+.range-summary {
+  font-size: 14px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .range-summary {
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
+.hero-summary {
+  font-size: 18px;
+  padding: 0 10px 10px 10px;
+  text-align: center;
+}
+
+.hero-summary-right,
+.hero-summary-left {
+  font-size: 14px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .hero-summary-right,
+.hero-summary-left {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+.section-text {
+  font-size: 20px;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .section-text {
+    font-size: 20px;
+  }
+}
+
+.section-hero-video-left-upsize-mobile {
+  padding-bottom: 30px;
+}
+
+.section-hero-video-left-side {
+  padding-bottom: 30px;
+}
+
+.row .hero-summary {
+  font-size: 18px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .row .hero-summary {
+    font-size: 18px;
+    padding: 0 10% 0 10%;
+  }
+}
+@media (min-width: 992px) {
+  .row .hero-summary {
+    padding: 0 25% 0 25%;
+  }
+}
+
+.second-products-slide,
+.first-products-slide {
+  background-color: #f0f3f4;
+}
+
+.wp-block-proterrasancta-brand-ambassador .col-12.col-md-5, .wp-block-proterrasancta-brand-ambassador .col-12.col-md-7 {
+  opacity: 0;
+}
+.wp-block-proterrasancta-brand-ambassador .section-title {
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-brand-ambassador .section-title {
+    text-align: right;
+    width: 100%;
+    font-size: 35px;
+    line-height: 40px;
+    padding-bottom: 20px;
+  }
+}
+
+.avatar-img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .avatar-img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.avatar-img-chef {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 30px;
+  border-width: 4px;
+  border-color: white;
+  border-style: solid;
+}
+@media (min-width: 768px) {
+  .avatar-img-chef {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.avatar-big-img-chef {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 130px;
+  border-width: 4px;
+  border-color: white;
+  border-style: solid;
+}
+@media (min-width: 768px) {
+  .avatar-big-img-chef {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.place-over-zindex {
+  position: initial;
+  z-index: initial;
+}
+@media (min-width: 768px) {
+  .place-over-zindex {
+    position: relative;
+    z-index: 2000;
+  }
+}
+
+.section-2-cards .card {
+  border: 0;
+  border-radius: 0;
+}
+
+.section-2-cards .summary-left {
+  line-height: 33px;
+  font-size: 20px;
+  font-size: 16px;
+}
+
+.titlePart1,
+.titlePart3 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.titlePart2 {
+  font-size: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.titlePart2,
+.titlePart1,
+.titlePart3 {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+}
+
+.slip-under-zindex {
+  position: initial;
+  z-index: initial;
+  top: 0;
+}
+@media (min-width: 768px) {
+  .slip-under-zindex {
+    position: relative;
+    top: -50px;
+    z-index: 1000;
+  }
+}
+@media (min-width: 992px) {
+  .slip-under-zindex {
+    position: relative;
+    top: -150px;
+    z-index: 1000;
+  }
+}
+@media (min-width: 1200px) {
+  .slip-under-zindex {
+    position: relative;
+    top: -180px;
+    z-index: 1000;
+  }
+}
+
+#main-hero-map .simple-box {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 991.98px) {
+  #main-hero-map .simple-box {
+    background-image: none !important;
+  }
+}
+#main-hero-map .hero-image {
+  padding-bottom: 140px;
+}
+@media (max-width: 991.98px) {
+  #main-hero-map .hero-image {
+    padding-bottom: 10px;
+  }
+}
+#main-hero-map .top {
+  display: block;
+  position: absolute;
+  top: 32%;
+  left: 10%;
+}
+@media (max-width: 991.98px) {
+  #main-hero-map .top {
+    display: inline-block;
+    position: relative;
+    float: left;
+    top: auto;
+    left: auto;
+  }
+}
+#main-hero-map .bottom {
+  display: block;
+  position: absolute;
+  bottom: -150px;
+  left: 30%;
+}
+@media (max-width: 991.98px) {
+  #main-hero-map .bottom {
+    display: inline-block;
+    position: relative;
+    float: left;
+    bottom: auto;
+    left: auto;
+  }
+}
+#main-hero-map .right {
+  display: block;
+  position: absolute;
+  left: 450px;
+  top: -285px;
+}
+@media (max-width: 991.98px) {
+  #main-hero-map .right {
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+}
+#main-hero-map .container-text-box {
+  height: 420px;
+}
+@media (max-width: 991.98px) {
+  #main-hero-map .container-text-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+  }
+}
+#main-hero-map .hero-image img {
+  display: none;
+}
+@media (max-width: 991.98px) {
+  #main-hero-map .hero-image img {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+#main-hero-map .wp-block-proterrasancta-box-text-map {
+  width: 200px;
+  padding: 5px 0px;
+}
+@media (max-width: 991.98px) {
+  #main-hero-map .wp-block-proterrasancta-box-text-map {
+    width: 355px;
+  }
+}
+@media (max-width: 575.98px) {
+  #main-hero-map .wp-block-proterrasancta-box-text-map {
+    width: 170px;
+  }
+}
+#main-hero-map .wp-block-proterrasancta-box-text-map .title-map {
+  display: inline-block;
+  color: #3f5e63;
+  font-weight: 900;
+  font-size: 19px;
+}
+#main-hero-map .wp-block-proterrasancta-box-text-map .summary-map {
+  color: #3f5e63;
+  font-size: 16px;
+}
+#main-hero-map .wp-block-proterrasancta-box-text-map i {
+  color: #3f5e63;
+}
+
+.mt-7 {
+  margin-top: 5rem !important;
+}
+
+.mt-9 {
+  margin-top: 9rem !important;
+}
+
+#separator-image {
+  margin-bottom: 46px;
+}
+
+.featured-img-recipe {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.recipe-stars {
+  color: #cddadc;
+}
+
+.recipe-stars.checked {
+  color: #b91521;
+}
+
+.row .quote-section-text {
+  font-size: 18px;
+  padding: 0;
+  font-style: italic;
+}
+@media (min-width: 768px) {
+  .row .quote-section-text {
+    font-size: 22px;
+    padding: 0 10% 0 10%;
+  }
+}
+@media (min-width: 992px) {
+  .row .quote-section-text {
+    font-size: 24px;
+    padding: 0 15% 0 15%;
+  }
+}
+
+.product .wp-block-kadence-slider {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+.product .wp-block-kadence-slider .kt-blocks-carousel {
+  padding: 0 0 0 0;
+}
+
+.wp-block-proterrasancta-product-facts {
+  color: #69969d;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  min-height: 160px;
+}
+.wp-block-proterrasancta-product-facts .facts-block {
+  z-index: 20;
+  position: relative;
+}
+.wp-block-proterrasancta-product-facts .fact-circle-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  padding: 20px 15px;
+  top: 0;
+  left: 0;
+}
+.wp-block-proterrasancta-product-facts .fact-circle {
+  height: 120px;
+  width: 120px;
+  background-color: #ebf0f1;
+  border-radius: 65px;
+  z-index: 10;
+  margin: auto;
+}
+
+.wp-block-proterrasancta-section-hero-video .section-title {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-hero-video .section-title {
+    text-align: right;
+  }
+}
+.wp-block-proterrasancta-section-hero-video .section-text {
+  width: 100%;
+  text-align: center;
+  color: #3f5e63;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-hero-video .section-text {
+    width: 100%;
+    text-align: right;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-section-hero-video .section-text {
+    width: 75%;
+    text-align: right;
+  }
+}
+.wp-block-proterrasancta-section-hero-video .wp-block-kadence-videopopup {
+  width: 100%;
+  margin: auto;
+}
+
+.news-column .news-card {
+  display: block;
+}
+.news-column .news-card-hover {
+  display: none;
+}
+.news-column.odd {
+  width: 580px;
+}
+.news-column.even {
+  width: 370px;
+}
+.news-column.same {
+  width: 360px;
+}
+.news-column.projects {
+  width: 360px;
+}
+.news-column:hover .news-card {
+  display: none;
+}
+.news-column:hover .news-card-hover {
+  display: block;
+}
+.news-column:hover .news-card-hover a:hover {
+  opacity: 1;
+}
+
+.recipes .news-teaser-heading.chef {
+  font-size: 16px;
+  color: #69969d;
+}
+.recipes .avatar-img-chef {
+  top: -25px;
+  left: calc(50% - 39px);
+  height: 60px;
+  width: 60px;
+}
+
+.name-retailer {
+  font-size: 18px;
+  font-weight: 900;
+  color: #b91521;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+@media (min-width: 768px) {
+  .name-retailer {
+    font-size: 20px;
+  }
+}
+
+.content-retailer {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .content-retailer {
+    font-size: 18px;
+  }
+}
+
+.link-retailer {
+  font-size: 14px;
+  color: #b91521;
+  overflow-wrap: break-word;
+}
+@media (min-width: 768px) {
+  .link-retailer {
+    font-size: 18px;
+  }
+}
+
+.wp-block-proterrasancta-section-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.wp-block-proterrasancta-section-hero-right {
+  padding: 25px 0 25px 0;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-hero-right {
+    padding: 70px 0 0 0;
+  }
+}
+.wp-block-proterrasancta-section-hero-right img {
+  padding: 20px 0 20px 0;
+  max-width: 130%;
+  width: 190px;
+  height: auto;
+  object-fit: cover;
+}
+
+.wp-block-proterrasancta-section-hero-50 .section-title,
+.wp-block-proterrasancta-section-hero-map .section-title,
+.wp-block-proterrasancta-section-text .section-title {
+  width: 100%;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+}
+.wp-block-proterrasancta-section-hero-50 .section-text,
+.wp-block-proterrasancta-section-hero-map .section-text,
+.wp-block-proterrasancta-section-text .section-text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 34px;
+  color: #1d1d1b;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 0;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-hero-50 .section-text,
+.wp-block-proterrasancta-section-hero-map .section-text,
+.wp-block-proterrasancta-section-text .section-text {
+    padding-left: 20px;
+  }
+}
+.wp-block-proterrasancta-section-hero-50 a,
+.wp-block-proterrasancta-section-hero-map a,
+.wp-block-proterrasancta-section-text a {
+  color: red;
+  text-decoration: underline;
+}
+.wp-block-proterrasancta-section-hero-50 a:hover,
+.wp-block-proterrasancta-section-hero-map a:hover,
+.wp-block-proterrasancta-section-text a:hover {
+  color: red;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.7;
+}
+
+.wp-block-proterrasancta-section-testimonianza .divider {
+  width: calc(100% - 230px);
+  height: 18px;
+  background-color: #d31418;
+  display: inline-block;
+}
+.wp-block-proterrasancta-section-testimonianza .icon-icon-list {
+  width: 30px;
+  margin: 0 10px 0 10px;
+  padding: 0 0 5px;
+}
+.wp-block-proterrasancta-section-testimonianza .testimonianza-text {
+  display: inline-block;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+}
+.wp-block-proterrasancta-section-testimonianza .section-text {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  letter-spacing: normal;
+  line-height: 34px;
+  color: #1d1d1b;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 0;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-testimonianza .section-text {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-hero-right-50 .section-hero-right-50-block {
+    padding-right: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-section-hero-right-50 .section-hero-right-50-block {
+    padding-right: 100px;
+  }
+}
+.wp-block-proterrasancta-section-hero-right-50 .section-title {
+  font-size: 28px;
+  width: 100%;
+  padding-bottom: 0;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-hero-right-50 .section-title {
+    font-size: 40px;
+    line-height: 45px;
+    padding-bottom: 20px;
+  }
+}
+.wp-block-proterrasancta-section-hero-right-50 .section-text {
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-hero-right-50 .section-text {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-hero-video-left .section-left-block {
+    padding-left: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-section-hero-video-left .section-left-block {
+    padding-left: 100px;
+  }
+}
+.wp-block-proterrasancta-section-hero-video-left .kadence-video-intrinsic {
+  height: 215px;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-hero-video-left .kadence-video-intrinsic {
+    height: 420px;
+  }
+}
+.wp-block-proterrasancta-section-hero-video-left .wp-block-kadence-videopopup {
+  width: 100%;
+  margin: auto;
+}
+
+.hero-image {
+  margin: 20px 0;
+}
+@media (min-width: 992px) {
+  .hero-image {
+    margin: 0;
+  }
+}
+
+.navbar-collapse-right-menu {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+#main-hero-image .title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  #main-hero-image .title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+@media (min-width: 992px) {
+  #main-hero-image .title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-text .section-right {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-section-text .section-right {
+    padding-left: 200px;
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-hero .section-left-block {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-section-hero .section-left-block {
+    padding-left: 200px;
+    padding-right: 100px;
+  }
+}
+.wp-block-proterrasancta-section-hero .col-12.col-md-4, .wp-block-proterrasancta-section-hero .col-12.col-md-8 {
+  opacity: 0;
+}
+.wp-block-proterrasancta-section-hero .section-text, .wp-block-proterrasancta-section-hero .section-title {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-hero .section-text, .wp-block-proterrasancta-section-hero .section-title {
+    text-align: left;
+  }
+}
+
+.text-2-cards {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .text-2-cards {
+    font-size: 20px;
+  }
+}
+
+.where-to-buy-square {
+  width: 100px;
+  height: 100px;
+}
+@media (min-width: 992px) {
+  .where-to-buy-square {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.img-sponsor {
+  width: 160px;
+  height: intrinsic;
+}
+
+.wp-block-proterrasancta-section-2-half-columns .text-section {
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-2-half-columns .text-section {
+    padding-bottom: 0;
+  }
+}
+.wp-block-proterrasancta-section-2-half-columns .title-section {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  color: #3f5e63;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-2-half-columns .title-section {
+    font-size: 40px;
+    text-align: right;
+  }
+}
+.wp-block-proterrasancta-section-2-half-columns .content-section {
+  font-size: 14px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-2-half-columns .content-section {
+    font-size: 18px;
+    text-align: right;
+  }
+}
+
+.wp-block-proterrasancta-section-2-quarter-columns .text-section {
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-2-quarter-columns .text-section {
+    padding-bottom: 0;
+  }
+}
+.wp-block-proterrasancta-section-2-quarter-columns .title-section {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  color: #3f5e63;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-2-quarter-columns .title-section {
+    font-size: 40px;
+    text-align: left;
+  }
+}
+.wp-block-proterrasancta-section-2-quarter-columns .content-section {
+  font-size: 14px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-section-2-quarter-columns .content-section {
+    font-size: 18px;
+    text-align: left;
+  }
+}
+
+.hero-image img {
+  height: intrinsic;
+}
+
+.btn-big-hero {
+  margin-top: 20px;
+}
+
+.padding-video {
+  padding: 0 !important;
+}
+@media (min-width: 768px) {
+  .padding-video {
+    padding: 50px 100px 0 100px !important;
+  }
+}
+@media (min-width: 992px) {
+  .padding-video {
+    padding: 50px 150px 0 150px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .padding-video {
+    padding: 50px 200px 0 200px !important;
+  }
+}
+
+.kt-accodion-icon-style-basic .kt-blocks-accordion-icon-trigger:after,
+.kt-accodion-icon-style-basic .kt-blocks-accordion-icon-trigger:before,
+.kt-accodion-icon-style-basiccircle .kt-blocks-accordion-icon-trigger:after,
+.kt-accodion-icon-style-basiccircle .kt-blocks-accordion-icon-trigger:before {
+  width: 15px !important;
+  background: #69969d !important;
+}
+
+.wp-block-proterrasancta-news-list-section .news-card,
+.wp-block-proterrasancta-project-slides-section .news-card,
+.wp-block-proterrasancta-project-map .news-card,
+.wp-block-proterrasancta-image-slides-section .news-card,
+.wp-block-proterrasancta-image-list-section .news-card {
+  height: 300px !important;
+  padding: 30px;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-news-list-section .news-card,
+.wp-block-proterrasancta-project-slides-section .news-card,
+.wp-block-proterrasancta-project-map .news-card,
+.wp-block-proterrasancta-image-slides-section .news-card,
+.wp-block-proterrasancta-image-list-section .news-card {
+    height: 330px !important;
+    padding: 35px;
+  }
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-news-list-section .news-card,
+.wp-block-proterrasancta-project-slides-section .news-card,
+.wp-block-proterrasancta-project-map .news-card,
+.wp-block-proterrasancta-image-slides-section .news-card,
+.wp-block-proterrasancta-image-list-section .news-card {
+    height: 360px !important;
+    padding: 40px;
+  }
+}
+.wp-block-proterrasancta-news-list-section .news-card-hover,
+.wp-block-proterrasancta-project-slides-section .news-card-hover,
+.wp-block-proterrasancta-project-map .news-card-hover,
+.wp-block-proterrasancta-image-slides-section .news-card-hover,
+.wp-block-proterrasancta-image-list-section .news-card-hover {
+  height: 300px !important;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-news-list-section .news-card-hover,
+.wp-block-proterrasancta-project-slides-section .news-card-hover,
+.wp-block-proterrasancta-project-map .news-card-hover,
+.wp-block-proterrasancta-image-slides-section .news-card-hover,
+.wp-block-proterrasancta-image-list-section .news-card-hover {
+    height: 330px !important;
+  }
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-news-list-section .news-card-hover,
+.wp-block-proterrasancta-project-slides-section .news-card-hover,
+.wp-block-proterrasancta-project-map .news-card-hover,
+.wp-block-proterrasancta-image-slides-section .news-card-hover,
+.wp-block-proterrasancta-image-list-section .news-card-hover {
+    height: 360px !important;
+  }
+}
+
+#block-2-slides-menu .heading1 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 20px;
+  word-break: break-word;
+}
+#block-2-slides-menu .selected {
+  color: white !important;
+  border-bottom: 10px solid #a0bf38;
+}
+#block-2-slides-menu .heading2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 20px;
+  word-break: break-word;
+}
+#block-2-slides-menu .not-selected {
+  color: #8e8e8e;
+}
+@media (min-width: 768px) {
+  #block-2-slides-menu .heading1, #block-2-slides-menu .heading2 {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  #block-2-slides-menu {
+    height: 50px;
+  }
+  #block-2-slides-menu .heading1 {
+    top: -5px;
+    border-radius: 10px;
+  }
+  #block-2-slides-menu .selected {
+    color: white;
+    background-color: #a0bf38;
+    border-bottom: unset;
+  }
+  #block-2-slides-menu .heading2 {
+    color: #8e8e8e;
+    top: -5px;
+    border-radius: 10px;
+  }
+}
+#block-2-slides-menu .heading1:hover, #block-2-slides-menu .heading2:hover {
+  color: white;
+  background-color: #a0bf38;
+}
+
+.wp-block-proterrasancta-block-2-slides .content {
+  background-position-x: calc(100% - 10px) !important;
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-block-2-slides .content {
+    background-position-x: calc(100% - 30px) !important;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.wp-block-proterrasancta-block-2-slides .container.main {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-block-2-slides .container.main {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+.wp-block-proterrasancta-block-2-slides .title, .wp-block-proterrasancta-block-2-slides .title2 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  line-height: 45px;
+  text-align: right;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-block-2-slides .title, .wp-block-proterrasancta-block-2-slides .title2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+.wp-block-proterrasancta-block-2-slides .hero-summary-left, .wp-block-proterrasancta-block-2-slides .hero-summary-left2 {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: right !important;
+  padding: 20px;
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-block-2-slides .hero-summary-left, .wp-block-proterrasancta-block-2-slides .hero-summary-left2 {
+    font-size: 24px;
+  }
+}
+.wp-block-proterrasancta-block-2-slides .hero-summary-right, .wp-block-proterrasancta-block-2-slides .hero-summary-right2 {
+  font-size: 23px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left !important;
+  padding: 15px 0 35px 0;
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-block-2-slides .hero-summary-right, .wp-block-proterrasancta-block-2-slides .hero-summary-right2 {
+    font-size: 23px;
+  }
+}
+.wp-block-proterrasancta-block-2-slides .additional-text, .wp-block-proterrasancta-block-2-slides .additional-text2 {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left !important;
+  padding: 15px 0 15px 0;
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-block-2-slides .additional-text, .wp-block-proterrasancta-block-2-slides .additional-text2 {
+    font-size: 16px;
+  }
+}
+.wp-block-proterrasancta-block-2-slides .sources-text, .wp-block-proterrasancta-block-2-slides .sources-text2 {
+  font-size: 10px;
+  font-weight: 400;
+  text-align: left !important;
+  padding: 15px 0 15px 0;
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-block-2-slides .sources-text, .wp-block-proterrasancta-block-2-slides .sources-text2 {
+    font-size: 10px;
+  }
+}
+.wp-block-proterrasancta-block-2-slides .card {
+  background-color: #e8e5e0;
+  padding: 25px;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-block-2-slides .card {
+    padding: 25px;
+  }
+}
+
+.campaign-text {
+  font-size: 16px;
+}
+@media (min-width: 992px) {
+  .campaign-text {
+    font-size: 12px;
+  }
+}
+
+.carousel-caret {
+  color: black;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.caret-right-container {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+.caret-left-container {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.icon-icon-list {
+  height: auto;
+  width: 155px;
+  padding: 25px 25px 0 25px;
+}
+@media (min-width: 768px) {
+  .icon-icon-list {
+    width: 115px;
+  }
+}
+@media (min-width: 992px) {
+  .icon-icon-list {
+    width: 135px;
+  }
+}
+@media (min-width: 1200px) {
+  .icon-icon-list {
+    width: 155px;
+  }
+}
+
+.text-icon-list {
+  width: 155px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+@media (min-width: 768px) {
+  .text-icon-list {
+    width: 115px;
+  }
+}
+@media (min-width: 992px) {
+  .text-icon-list {
+    width: 135px;
+  }
+}
+@media (min-width: 1200px) {
+  .text-icon-list {
+    width: 155px;
+  }
+}
+
+.top-hero-box .section-title {
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: "Castoro", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  padding-bottom: 0;
+}
+@media (min-width: 768px) {
+  .top-hero-box .section-title {
+    font-size: 36px;
+  }
+}
+.top-hero-box .section-text {
+  color: white;
+  font-family: "Castoro", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+@media (min-width: 768px) {
+  .top-hero-box .section-text {
+    font-size: 36px;
+  }
+}
+.top-hero-box .help-text {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  padding: 0 0 20px 0;
+}
+@media (min-width: 768px) {
+  .top-hero-box .help-text {
+    padding: 0;
+  }
+}
+.top-hero-box .icon-hero-box {
+  height: 90px;
+  width: auto;
+  margin: 22px 16px 22px 0;
+}
+@media (min-width: 768px) {
+  .top-hero-box .icon-hero-box {
+    height: 116px;
+    margin: 11px 35px 11px 0;
+  }
+}
+.top-hero-box a:hover {
+  opacity: 0.7;
+}
+
+.animate-up, .animate-up-delay-100, .animate-up-stagger {
+  opacity: 0;
+}
+
+.wp-block-proterrasancta-project-slides-section .news-teaser-title {
+  color: #ffffff;
+  font-family: "Castoro", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: normal;
+  line-height: normal;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-project-slides-section .news-teaser-title {
+    font-size: 22px;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-project-slides-section .news-teaser-title {
+    font-size: 26px;
+  }
+}
+
+.wp-block-proterrasancta-project-map .news-teaser-title {
+  color: #ffffff;
+  font-family: "Castoro", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: normal;
+  line-height: normal;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-project-map .news-teaser-title {
+    font-size: 22px;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-project-map .news-teaser-title {
+    font-size: 26px;
+  }
+}
+
+.wp-block-proterrasancta-news-slides-section .news-teaser-title {
+  color: #000000;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: normal;
+  line-height: normal;
+  font-family: "Castoro", sans-serif;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-news-slides-section .news-teaser-title {
+    font-size: 28px;
+  }
+}
+@media (min-width: 992px) {
+  .wp-block-proterrasancta-news-slides-section .news-teaser-title {
+    font-size: 30px;
+  }
+}
+.wp-block-proterrasancta-news-slides-section .news-teaser-tag {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: lowercase;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-news-slides-section .news-teaser-tag {
+    font-size: 18px;
+  }
+}
+
+.facebook-block {
+  background-size: 72px 72px;
+  background-repeat: repeat;
+  padding: 30px 0 30px 0;
+}
+.facebook-block .ideas {
+  color: #ffffff;
+  font-family: "Castoro", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .facebook-block .ideas {
+    text-align: right;
+  }
+}
+.facebook-block .title {
+  color: #ffffff;
+  font-family: "Castoro", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-align: left;
+  padding: 0 0 15px 0;
+}
+.facebook-block .summary {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+}
+.facebook-block .img-container {
+  display: contents;
+}
+.facebook-block img {
+  height: 147px;
+  width: auto;
+  margin: auto;
+  padding-left: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media (min-width: 992px) {
+  .facebook-block img {
+    margin: 0;
+    padding-left: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.ibreviary-block .title {
+  color: #000000;
+  font-family: "Castoro", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-align: center;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .ibreviary-block .title {
+    text-align: left;
+  }
+}
+.ibreviary-block .summary {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .ibreviary-block .summary {
+    text-align: left;
+  }
+}
+.ibreviary-block .img-container img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.newsletter-block .title {
+  color: #ffffff;
+  font-family: "Castoro", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: unset;
+  text-align: center;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .newsletter-block .title {
+    text-align: center;
+  }
+}
+.newsletter-block .summary {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .newsletter-block .summary {
+    text-align: center;
+  }
+}
+.newsletter-block .privacy {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .newsletter-block .privacy {
+    text-align: center;
+  }
+}
+.newsletter-block .img-container img {
+  width: 81px !important;
+  height: 81px !important;
+  margin: 15px 0 15px 0;
+}
+
+.wp-block-proterrasancta-ibreviary-block .img-app {
+  width: 160px;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-ibreviary-block .img-app {
+    width: 160px;
+    height: auto;
+  }
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 40px;
+  color: unset;
+}
+
+h3 {
+  font-size: unset;
+  line-height: unset;
+}
+
+h4 {
+  font-size: unset;
+  line-height: unset;
+}
+
+.has-medium-font-size {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.wp-block-proterrasancta-highlights-slides-section .news-teaser-title {
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-highlights-slides-section .news-teaser-title {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+.wp-block-proterrasancta-highlights-slides-section .news-teaser-tag {
+  position: absolute;
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+}
+.wp-block-proterrasancta-highlights-slides-section .news-teaser-heading {
+  color: black;
+}
+.wp-block-proterrasancta-highlights-slides-section .news-column img {
+  height: 220px;
+}
+.wp-block-proterrasancta-highlights-slides-section .btn {
+  background-color: #D31418;
+  color: white;
+}
+
+h3.wp-block-kadence-advancedheading {
+  font-size: 50px !important;
+}
+@media (min-width: 768px) {
+  h3.wp-block-kadence-advancedheading {
+    font-size: 75px !important;
+  }
+}
+
+.project-marker {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: -30px;
+  top: -30px;
+}
+
+.map-container {
+  height: 800px;
+}
+
+.marker-box {
+  position: absolute;
+  left: -90px;
+  top: -220px;
+}
+.marker-box .title {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  padding: 0;
+}
+.marker-box .category {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Castoro", sans-serif;
+  color: black;
+  margin-top: 10px;
+  padding: 0;
+}
+.marker-box .box {
+  background-color: whitesmoke;
+  color: #d31418;
+  padding: 0;
+  position: relative;
+  margin: 40px;
+  border-radius: 10px;
+  border: #d31418 solid 5px;
+}
+.marker-box .box.my-arrow-bottom:after {
+  content: " ";
+  position: absolute;
+  right: 30px;
+  bottom: -15px;
+  border-top: 15px solid black;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: none;
+}
+
+.marker-container a {
+  z-index: 1;
+}
+.marker-container .marker-box {
+  z-index: 1000;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.has-blue-color {
+  color: #374856;
+}
+
+.has-blue-background-color {
+  background-color: #374856;
+}
+
+.has-grey-color {
+  color: #575756;
+}
+
+.has-grey-background-color {
+  background-color: #575756;
+}
+
+.has-orange-color {
+  color: #E26E0E;
+}
+
+.has-orange-background-color {
+  background-color: #E26E0E;
+}
+
+.has-yellow-color {
+  color: #F9BA55;
+}
+
+.has-yellow-background-color {
+  background-color: #F9BA55;
+}
+
+.has-red-color {
+  color: #D31418;
+}
+
+.has-red-background-color {
+  background-color: #D31418;
+}
+
+.has-white-color {
+  color: white;
+}
+
+.has-white-background-color {
+  background-color: white;
+}
+
+.has-black-color {
+  color: black;
+}
+
+.has-black-background-color {
+  background-color: black;
+}
+
+.icon-marker {
+  height: 50px;
+  width: auto;
+}
+
+.wp-block-proterrasancta-project-icon-list .icon-container {
+  width: 135px;
+  max-width: 135px;
+  margin-right: 35px;
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-project-icon-list .icon-container {
+    margin-top: 0;
+  }
+}
+.wp-block-proterrasancta-project-icon-list .icon-container.beneficiari {
+  margin-left: unset;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-project-icon-list .icon-container.beneficiari {
+    margin-left: auto;
+  }
+}
+.wp-block-proterrasancta-project-icon-list .icon-icon-list {
+  color: #231f20;
+  height: 70px;
+  object-fit: contain;
+  padding: 0;
+  width: 100%;
+}
+.wp-block-proterrasancta-project-icon-list .icon-icon-number {
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  text-align: center;
+}
+.wp-block-proterrasancta-project-icon-list .icon-icon-title {
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #050606;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 17px;
+  height: 83px;
+}
+.wp-block-proterrasancta-project-icon-list .icon-icon-beneficiaries {
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #050606;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 17px;
+}
+.wp-block-proterrasancta-project-icon-list .divider {
+  width: 135px;
+  height: 18px;
+  background-color: #d31418;
+  margin-top: 7px;
+}
+
+.wp-block-proterrasancta-carousel-slide {
+  height: 316px;
+}
+
+.wp-block-proterrasancta-image-card {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wp-block-proterrasancta-form-donate, .wp-block-proterrasancta-form-anagrafica, .wp-block-proterrasancta-form-checkout, .wp-block-proterrasancta-form-e-cards {
+  background-color: transparent !important;
+}
+.wp-block-proterrasancta-form-donate .zpacio20, .wp-block-proterrasancta-form-anagrafica .zpacio20, .wp-block-proterrasancta-form-checkout .zpacio20, .wp-block-proterrasancta-form-e-cards .zpacio20 {
+  margin: 20px;
+}
+.wp-block-proterrasancta-form-donate .container-orizont, .wp-block-proterrasancta-form-anagrafica .container-orizont, .wp-block-proterrasancta-form-checkout .container-orizont, .wp-block-proterrasancta-form-e-cards .container-orizont {
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+.wp-block-proterrasancta-form-donate .input-container-adress, .wp-block-proterrasancta-form-anagrafica .input-container-adress, .wp-block-proterrasancta-form-checkout .input-container-adress, .wp-block-proterrasancta-form-e-cards .input-container-adress {
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+}
+.wp-block-proterrasancta-form-donate .input-container-adress.selected, .wp-block-proterrasancta-form-anagrafica .input-container-adress.selected, .wp-block-proterrasancta-form-checkout .input-container-adress.selected, .wp-block-proterrasancta-form-e-cards .input-container-adress.selected {
+  background-color: white;
+}
+.wp-block-proterrasancta-form-donate .input-container-adress.selected .md-form i, .wp-block-proterrasancta-form-anagrafica .input-container-adress.selected .md-form i, .wp-block-proterrasancta-form-checkout .input-container-adress.selected .md-form i, .wp-block-proterrasancta-form-e-cards .input-container-adress.selected .md-form i {
+  color: #D31418;
+}
+.wp-block-proterrasancta-form-donate .input-container-adress.selected .md-form input:not(.browser-default), .wp-block-proterrasancta-form-anagrafica .input-container-adress.selected .md-form input:not(.browser-default), .wp-block-proterrasancta-form-checkout .input-container-adress.selected .md-form input:not(.browser-default), .wp-block-proterrasancta-form-e-cards .input-container-adress.selected .md-form input:not(.browser-default) {
+  color: #D31418;
+  background-color: white !important;
+}
+.wp-block-proterrasancta-form-donate .input-container-adress.selected .md-form ::placeholder, .wp-block-proterrasancta-form-anagrafica .input-container-adress.selected .md-form ::placeholder, .wp-block-proterrasancta-form-checkout .input-container-adress.selected .md-form ::placeholder, .wp-block-proterrasancta-form-e-cards .input-container-adress.selected .md-form ::placeholder {
+  color: #D31418;
+}
+.wp-block-proterrasancta-form-donate .input-container-adress.selected .md-form .form-control, .wp-block-proterrasancta-form-anagrafica .input-container-adress.selected .md-form .form-control, .wp-block-proterrasancta-form-checkout .input-container-adress.selected .md-form .form-control, .wp-block-proterrasancta-form-e-cards .input-container-adress.selected .md-form .form-control {
+  border-bottom: 1px solid #D31418;
+}
+.wp-block-proterrasancta-form-donate input[type=text]:not(.browser-default), .wp-block-proterrasancta-form-donate input[type=email]:not(.browser-default), .wp-block-proterrasancta-form-anagrafica input[type=text]:not(.browser-default), .wp-block-proterrasancta-form-anagrafica input[type=email]:not(.browser-default), .wp-block-proterrasancta-form-checkout input[type=text]:not(.browser-default), .wp-block-proterrasancta-form-checkout input[type=email]:not(.browser-default), .wp-block-proterrasancta-form-e-cards input[type=text]:not(.browser-default), .wp-block-proterrasancta-form-e-cards input[type=email]:not(.browser-default) {
+  box-sizing: border-box !important;
+}
+.wp-block-proterrasancta-form-donate .arrow-back-button, .wp-block-proterrasancta-form-anagrafica .arrow-back-button, .wp-block-proterrasancta-form-checkout .arrow-back-button, .wp-block-proterrasancta-form-e-cards .arrow-back-button {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  width: fit-content;
+  cursor: pointer;
+}
+@media (max-width: 365.98px) {
+  .wp-block-proterrasancta-form-donate .arrow-back-button, .wp-block-proterrasancta-form-anagrafica .arrow-back-button, .wp-block-proterrasancta-form-checkout .arrow-back-button, .wp-block-proterrasancta-form-e-cards .arrow-back-button {
+    left: 15px;
+  }
+}
+.wp-block-proterrasancta-form-donate #form-donate-root, .wp-block-proterrasancta-form-donate #form-anagrafica-root, .wp-block-proterrasancta-form-donate .form-cards-root,
+.wp-block-proterrasancta-form-donate #form-checkout-root, .wp-block-proterrasancta-form-anagrafica #form-donate-root, .wp-block-proterrasancta-form-anagrafica #form-anagrafica-root, .wp-block-proterrasancta-form-anagrafica .form-cards-root,
+.wp-block-proterrasancta-form-anagrafica #form-checkout-root, .wp-block-proterrasancta-form-checkout #form-donate-root, .wp-block-proterrasancta-form-checkout #form-anagrafica-root, .wp-block-proterrasancta-form-checkout .form-cards-root,
+.wp-block-proterrasancta-form-checkout #form-checkout-root, .wp-block-proterrasancta-form-e-cards #form-donate-root, .wp-block-proterrasancta-form-e-cards #form-anagrafica-root, .wp-block-proterrasancta-form-e-cards .form-cards-root,
+.wp-block-proterrasancta-form-e-cards #form-checkout-root {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border: 1px solid #e1e1e1;
+  max-width: 600px;
+  margin: auto;
+}
+.wp-block-proterrasancta-form-donate .donate-notmenu, .wp-block-proterrasancta-form-anagrafica .donate-notmenu, .wp-block-proterrasancta-form-checkout .donate-notmenu, .wp-block-proterrasancta-form-e-cards .donate-notmenu {
+  background-color: #D31418;
+  color: #E8E8E8;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid #e1e1e1;
+  justify-content: center;
+}
+.wp-block-proterrasancta-form-donate .donate-notmenu .col-6, .wp-block-proterrasancta-form-anagrafica .donate-notmenu .col-6, .wp-block-proterrasancta-form-checkout .donate-notmenu .col-6, .wp-block-proterrasancta-form-e-cards .donate-notmenu .col-6 {
+  text-align: center;
+  justify-content: center;
+}
+.wp-block-proterrasancta-form-donate .donate-notmenu .text-menu, .wp-block-proterrasancta-form-anagrafica .donate-notmenu .text-menu, .wp-block-proterrasancta-form-checkout .donate-notmenu .text-menu, .wp-block-proterrasancta-form-e-cards .donate-notmenu .text-menu {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+.wp-block-proterrasancta-form-donate .donate-notmenu .fa-chevron-left, .wp-block-proterrasancta-form-anagrafica .donate-notmenu .fa-chevron-left, .wp-block-proterrasancta-form-checkout .donate-notmenu .fa-chevron-left, .wp-block-proterrasancta-form-e-cards .donate-notmenu .fa-chevron-left {
+  margin-right: 40%;
+}
+.wp-block-proterrasancta-form-donate .donate-menu, .wp-block-proterrasancta-form-anagrafica .donate-menu, .wp-block-proterrasancta-form-checkout .donate-menu, .wp-block-proterrasancta-form-e-cards .donate-menu {
+  background-color: #D31418;
+  color: #E8E8E8;
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid #e1e1e1;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-form-donate .donate-menu, .wp-block-proterrasancta-form-anagrafica .donate-menu, .wp-block-proterrasancta-form-checkout .donate-menu, .wp-block-proterrasancta-form-e-cards .donate-menu {
+    padding: 20px;
+  }
+}
+.wp-block-proterrasancta-form-donate .donate-menu .col-6, .wp-block-proterrasancta-form-anagrafica .donate-menu .col-6, .wp-block-proterrasancta-form-checkout .donate-menu .col-6, .wp-block-proterrasancta-form-e-cards .donate-menu .col-6 {
+  cursor: pointer;
+}
+.wp-block-proterrasancta-form-donate .donate-menu .text-menu, .wp-block-proterrasancta-form-anagrafica .donate-menu .text-menu, .wp-block-proterrasancta-form-checkout .donate-menu .text-menu, .wp-block-proterrasancta-form-e-cards .donate-menu .text-menu {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-form-donate .donate-menu .text-menu, .wp-block-proterrasancta-form-anagrafica .donate-menu .text-menu, .wp-block-proterrasancta-form-checkout .donate-menu .text-menu, .wp-block-proterrasancta-form-e-cards .donate-menu .text-menu {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-form-donate .donate-menu .ecard-image, .wp-block-proterrasancta-form-anagrafica .donate-menu .ecard-image, .wp-block-proterrasancta-form-checkout .donate-menu .ecard-image, .wp-block-proterrasancta-form-e-cards .donate-menu .ecard-image {
+    height: 300px;
+  }
+}
+.wp-block-proterrasancta-form-donate .donate-menu .text-menu.selected, .wp-block-proterrasancta-form-anagrafica .donate-menu .text-menu.selected, .wp-block-proterrasancta-form-checkout .donate-menu .text-menu.selected, .wp-block-proterrasancta-form-e-cards .donate-menu .text-menu.selected {
+  border-bottom: 4px solid #F8F8F8;
+  color: #D31418;
+  padding: 15px 15px 17px 15px;
+  background-color: whitesmoke;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.wp-block-proterrasancta-form-donate .donate-selected-checkout, .wp-block-proterrasancta-form-anagrafica .donate-selected-checkout, .wp-block-proterrasancta-form-checkout .donate-selected-checkout, .wp-block-proterrasancta-form-e-cards .donate-selected-checkout {
+  margin-top: 8%;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+.wp-block-proterrasancta-form-donate .donate-selected, .wp-block-proterrasancta-form-anagrafica .donate-selected, .wp-block-proterrasancta-form-checkout .donate-selected, .wp-block-proterrasancta-form-e-cards .donate-selected {
+  padding: 50px 10px 50px 10px;
+}
+.wp-block-proterrasancta-form-donate .donate-selected-small, .wp-block-proterrasancta-form-anagrafica .donate-selected-small, .wp-block-proterrasancta-form-checkout .donate-selected-small, .wp-block-proterrasancta-form-e-cards .donate-selected-small {
+  padding: 20px 10px 20px 10px;
+}
+.wp-block-proterrasancta-form-donate .icon-container, .wp-block-proterrasancta-form-anagrafica .icon-container, .wp-block-proterrasancta-form-checkout .icon-container, .wp-block-proterrasancta-form-e-cards .icon-container {
+  width: 80px;
+  height: 100%;
+}
+.wp-block-proterrasancta-form-donate .donate-select .btn, .wp-block-proterrasancta-form-anagrafica .donate-select .btn, .wp-block-proterrasancta-form-checkout .donate-select .btn, .wp-block-proterrasancta-form-e-cards .donate-select .btn {
+  font-size: 20px;
+}
+.wp-block-proterrasancta-form-donate .donate-select div, .wp-block-proterrasancta-form-anagrafica .donate-select div, .wp-block-proterrasancta-form-checkout .donate-select div, .wp-block-proterrasancta-form-e-cards .donate-select div {
+  font-size: 16px;
+}
+.wp-block-proterrasancta-form-donate .donate-icon, .wp-block-proterrasancta-form-anagrafica .donate-icon, .wp-block-proterrasancta-form-checkout .donate-icon, .wp-block-proterrasancta-form-e-cards .donate-icon {
+  color: #231f20;
+  object-fit: contain;
+  padding: 0;
+  width: 80px;
+}
+.wp-block-proterrasancta-form-donate .text-thanks, .wp-block-proterrasancta-form-anagrafica .text-thanks, .wp-block-proterrasancta-form-checkout .text-thanks, .wp-block-proterrasancta-form-e-cards .text-thanks {
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  color: #D31418;
+  font-family: "Open Sans", sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.wp-block-proterrasancta-form-donate .text-thanks-summary, .wp-block-proterrasancta-form-anagrafica .text-thanks-summary, .wp-block-proterrasancta-form-checkout .text-thanks-summary, .wp-block-proterrasancta-form-e-cards .text-thanks-summary {
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  font-family: "Open Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+}
+.wp-block-proterrasancta-form-donate .sender-text, .wp-block-proterrasancta-form-anagrafica .sender-text, .wp-block-proterrasancta-form-checkout .sender-text, .wp-block-proterrasancta-form-e-cards .sender-text {
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  color: #D31418;
+  font-family: "Open Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .wp-block-proterrasancta-form-donate .sender-text, .wp-block-proterrasancta-form-anagrafica .sender-text, .wp-block-proterrasancta-form-checkout .sender-text, .wp-block-proterrasancta-form-e-cards .sender-text {
+    font-size: 38px;
+  }
+}
+.wp-block-proterrasancta-form-donate .sender-text-small, .wp-block-proterrasancta-form-anagrafica .sender-text-small, .wp-block-proterrasancta-form-checkout .sender-text-small, .wp-block-proterrasancta-form-e-cards .sender-text-small {
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  color: #D31418;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .wp-block-proterrasancta-form-donate .sender-text-small, .wp-block-proterrasancta-form-anagrafica .sender-text-small, .wp-block-proterrasancta-form-checkout .sender-text-small, .wp-block-proterrasancta-form-e-cards .sender-text-small {
+    font-size: 18px;
+  }
+}
+.wp-block-proterrasancta-form-donate .icon-price, .wp-block-proterrasancta-form-anagrafica .icon-price, .wp-block-proterrasancta-form-checkout .icon-price, .wp-block-proterrasancta-form-e-cards .icon-price {
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .wp-block-proterrasancta-form-donate .icon-price, .wp-block-proterrasancta-form-anagrafica .icon-price, .wp-block-proterrasancta-form-checkout .icon-price, .wp-block-proterrasancta-form-e-cards .icon-price {
+    font-size: 48px;
+  }
+}
+.wp-block-proterrasancta-form-donate .icon-title, .wp-block-proterrasancta-form-anagrafica .icon-title, .wp-block-proterrasancta-form-checkout .icon-title, .wp-block-proterrasancta-form-e-cards .icon-title {
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #050606;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.wp-block-proterrasancta-form-donate .icon-ask, .wp-block-proterrasancta-form-anagrafica .icon-ask, .wp-block-proterrasancta-form-checkout .icon-ask, .wp-block-proterrasancta-form-e-cards .icon-ask {
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #050606;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.wp-block-proterrasancta-form-donate .option-container, .wp-block-proterrasancta-form-anagrafica .option-container, .wp-block-proterrasancta-form-checkout .option-container, .wp-block-proterrasancta-form-e-cards .option-container {
+  padding: 10px;
+}
+.wp-block-proterrasancta-form-donate .md-form i, .wp-block-proterrasancta-form-anagrafica .md-form i, .wp-block-proterrasancta-form-checkout .md-form i, .wp-block-proterrasancta-form-e-cards .md-form i {
+  font-size: 26px;
+  color: white;
+}
+.wp-block-proterrasancta-form-donate .md-form input:not(.browser-default), .wp-block-proterrasancta-form-anagrafica .md-form input:not(.browser-default), .wp-block-proterrasancta-form-checkout .md-form input:not(.browser-default), .wp-block-proterrasancta-form-e-cards .md-form input:not(.browser-default) {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background-color: #D31418;
+}
+@media (min-width: 576px) {
+  .wp-block-proterrasancta-form-donate .md-form input:not(.browser-default), .wp-block-proterrasancta-form-anagrafica .md-form input:not(.browser-default), .wp-block-proterrasancta-form-checkout .md-form input:not(.browser-default), .wp-block-proterrasancta-form-e-cards .md-form input:not(.browser-default) {
+    font-size: 26px;
+  }
+}
+.wp-block-proterrasancta-form-donate .md-form textarea:not(.browser-default), .wp-block-proterrasancta-form-anagrafica .md-form textarea:not(.browser-default), .wp-block-proterrasancta-form-checkout .md-form textarea:not(.browser-default), .wp-block-proterrasancta-form-e-cards .md-form textarea:not(.browser-default) {
+  font-size: 20px;
+  font-weight: 700;
+  color: #D31418;
+  background-color: white;
+}
+@media (min-width: 576px) {
+  .wp-block-proterrasancta-form-donate .md-form textarea:not(.browser-default), .wp-block-proterrasancta-form-anagrafica .md-form textarea:not(.browser-default), .wp-block-proterrasancta-form-checkout .md-form textarea:not(.browser-default), .wp-block-proterrasancta-form-e-cards .md-form textarea:not(.browser-default) {
+    font-size: 26px;
+  }
+}
+.wp-block-proterrasancta-form-donate .md-form input:not(.browser-default).with-icon, .wp-block-proterrasancta-form-anagrafica .md-form input:not(.browser-default).with-icon, .wp-block-proterrasancta-form-checkout .md-form input:not(.browser-default).with-icon, .wp-block-proterrasancta-form-e-cards .md-form input:not(.browser-default).with-icon {
+  padding-left: 35px;
+}
+.wp-block-proterrasancta-form-donate ::placeholder, .wp-block-proterrasancta-form-anagrafica ::placeholder, .wp-block-proterrasancta-form-checkout ::placeholder, .wp-block-proterrasancta-form-e-cards ::placeholder {
+  color: white;
+}
+.wp-block-proterrasancta-form-donate .input-container, .wp-block-proterrasancta-form-anagrafica .input-container, .wp-block-proterrasancta-form-checkout .input-container, .wp-block-proterrasancta-form-e-cards .input-container {
+  padding: 10px;
+  background-color: #D31418;
+}
+.wp-block-proterrasancta-form-donate .input-container.selected, .wp-block-proterrasancta-form-anagrafica .input-container.selected, .wp-block-proterrasancta-form-checkout .input-container.selected, .wp-block-proterrasancta-form-e-cards .input-container.selected {
+  background-color: white;
+}
+.wp-block-proterrasancta-form-donate .input-container.selected .md-form i, .wp-block-proterrasancta-form-anagrafica .input-container.selected .md-form i, .wp-block-proterrasancta-form-checkout .input-container.selected .md-form i, .wp-block-proterrasancta-form-e-cards .input-container.selected .md-form i {
+  color: #D31418;
+}
+.wp-block-proterrasancta-form-donate .input-container.selected .md-form input:not(.browser-default), .wp-block-proterrasancta-form-anagrafica .input-container.selected .md-form input:not(.browser-default), .wp-block-proterrasancta-form-checkout .input-container.selected .md-form input:not(.browser-default), .wp-block-proterrasancta-form-e-cards .input-container.selected .md-form input:not(.browser-default) {
+  color: #D31418;
+  background-color: white !important;
+}
+.wp-block-proterrasancta-form-donate .input-container.selected .md-form ::placeholder, .wp-block-proterrasancta-form-anagrafica .input-container.selected .md-form ::placeholder, .wp-block-proterrasancta-form-checkout .input-container.selected .md-form ::placeholder, .wp-block-proterrasancta-form-e-cards .input-container.selected .md-form ::placeholder {
+  color: #D31418;
+}
+.wp-block-proterrasancta-form-donate .input-container.selected .md-form .form-control, .wp-block-proterrasancta-form-anagrafica .input-container.selected .md-form .form-control, .wp-block-proterrasancta-form-checkout .input-container.selected .md-form .form-control, .wp-block-proterrasancta-form-e-cards .input-container.selected .md-form .form-control {
+  border-bottom: 1px solid #D31418;
+}
+.wp-block-proterrasancta-form-donate .btn-donate, .wp-block-proterrasancta-form-anagrafica .btn-donate, .wp-block-proterrasancta-form-checkout .btn-donate, .wp-block-proterrasancta-form-e-cards .btn-donate {
+  border-radius: 40px;
+  box-shadow: none;
+}
+.wp-block-proterrasancta-form-donate .btn-donate-basic, .wp-block-proterrasancta-form-anagrafica .btn-donate-basic, .wp-block-proterrasancta-form-checkout .btn-donate-basic, .wp-block-proterrasancta-form-e-cards .btn-donate-basic {
+  max-width: 100% !important;
+  border-radius: 5px;
+  box-shadow: none;
+}
+.wp-block-proterrasancta-form-donate .notes-text, .wp-block-proterrasancta-form-anagrafica .notes-text, .wp-block-proterrasancta-form-checkout .notes-text, .wp-block-proterrasancta-form-e-cards .notes-text {
+  font-size: 16px;
+  color: grey;
+  text-align: center;
+}
+.wp-block-proterrasancta-form-donate .btn-blue, .wp-block-proterrasancta-form-anagrafica .btn-blue, .wp-block-proterrasancta-form-checkout .btn-blue, .wp-block-proterrasancta-form-e-cards .btn-blue {
+  color: white;
+  background-color: #334857;
+}
+.wp-block-proterrasancta-form-donate .btn-options, .wp-block-proterrasancta-form-anagrafica .btn-options, .wp-block-proterrasancta-form-checkout .btn-options, .wp-block-proterrasancta-form-e-cards .btn-options {
+  border-radius: 10px;
+  border: 1px solid #D31418;
+}
+.wp-block-proterrasancta-form-donate .btn-options-blue, .wp-block-proterrasancta-form-anagrafica .btn-options-blue, .wp-block-proterrasancta-form-checkout .btn-options-blue, .wp-block-proterrasancta-form-e-cards .btn-options-blue {
+  border-radius: 10px;
+  border: 1px solid #374856;
+}
+.wp-block-proterrasancta-form-donate .card-container, .wp-block-proterrasancta-form-anagrafica .card-container, .wp-block-proterrasancta-form-checkout .card-container, .wp-block-proterrasancta-form-e-cards .card-container {
+  width: fit-content;
+  margin: auto;
+}
+.wp-block-proterrasancta-form-donate .card-icon, .wp-block-proterrasancta-form-anagrafica .card-icon, .wp-block-proterrasancta-form-checkout .card-icon, .wp-block-proterrasancta-form-e-cards .card-icon {
+  width: 70px;
+  padding: 10px;
+}
+@media (max-width: 375.98px) {
+  .wp-block-proterrasancta-form-donate .card-icon, .wp-block-proterrasancta-form-anagrafica .card-icon, .wp-block-proterrasancta-form-checkout .card-icon, .wp-block-proterrasancta-form-e-cards .card-icon {
+    width: 50px;
+  }
+}
+@media (min-width: 576px) {
+  .wp-block-proterrasancta-form-donate .card-icon, .wp-block-proterrasancta-form-anagrafica .card-icon, .wp-block-proterrasancta-form-checkout .card-icon, .wp-block-proterrasancta-form-e-cards .card-icon {
+    width: 70px;
+  }
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-form-donate .card-icon, .wp-block-proterrasancta-form-anagrafica .card-icon, .wp-block-proterrasancta-form-checkout .card-icon, .wp-block-proterrasancta-form-e-cards .card-icon {
+    width: 70px;
+  }
+}
+.wp-block-proterrasancta-form-donate .card-icon-button, .wp-block-proterrasancta-form-anagrafica .card-icon-button, .wp-block-proterrasancta-form-checkout .card-icon-button, .wp-block-proterrasancta-form-e-cards .card-icon-button {
+  max-width: 130px;
+  height: 130px;
+  object-fit: contain;
+}
+.wp-block-proterrasancta-form-donate .btn-options.selected, .wp-block-proterrasancta-form-anagrafica .btn-options.selected, .wp-block-proterrasancta-form-checkout .btn-options.selected, .wp-block-proterrasancta-form-e-cards .btn-options.selected {
+  background-color: white;
+  color: #D31418;
+  box-shadow: none;
+}
+.wp-block-proterrasancta-form-donate .btn-options-blue.selected, .wp-block-proterrasancta-form-anagrafica .btn-options-blue.selected, .wp-block-proterrasancta-form-checkout .btn-options-blue.selected, .wp-block-proterrasancta-form-e-cards .btn-options-blue.selected {
+  background-color: white;
+  color: #374856;
+  box-shadow: none;
+}
+.wp-block-proterrasancta-form-donate .icon-icon-beneficiaries, .wp-block-proterrasancta-form-anagrafica .icon-icon-beneficiaries, .wp-block-proterrasancta-form-checkout .icon-icon-beneficiaries, .wp-block-proterrasancta-form-e-cards .icon-icon-beneficiaries {
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #050606;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 17px;
+}
+.wp-block-proterrasancta-form-donate .divider, .wp-block-proterrasancta-form-anagrafica .divider, .wp-block-proterrasancta-form-checkout .divider, .wp-block-proterrasancta-form-e-cards .divider {
+  width: 100%;
+  height: 15px;
+  background-color: #d31418;
+  margin-top: 7px;
+}
+.wp-block-proterrasancta-form-donate input:-webkit-autofill,
+.wp-block-proterrasancta-form-donate textarea:-webkit-autofill,
+.wp-block-proterrasancta-form-donate select:-webkit-autofill, .wp-block-proterrasancta-form-anagrafica input:-webkit-autofill,
+.wp-block-proterrasancta-form-anagrafica textarea:-webkit-autofill,
+.wp-block-proterrasancta-form-anagrafica select:-webkit-autofill, .wp-block-proterrasancta-form-checkout input:-webkit-autofill,
+.wp-block-proterrasancta-form-checkout textarea:-webkit-autofill,
+.wp-block-proterrasancta-form-checkout select:-webkit-autofill, .wp-block-proterrasancta-form-e-cards input:-webkit-autofill,
+.wp-block-proterrasancta-form-e-cards textarea:-webkit-autofill,
+.wp-block-proterrasancta-form-e-cards select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-text-fill-color: #d31418 !important;
+}
+.wp-block-proterrasancta-form-donate .form-check-label a, .wp-block-proterrasancta-form-anagrafica .form-check-label a, .wp-block-proterrasancta-form-checkout .form-check-label a, .wp-block-proterrasancta-form-e-cards .form-check-label a {
+  color: #d31418;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: inset 0 -3px 0 #d31418;
+  padding-bottom: 4px;
+  transition: all 0.15s ease-in-out;
+}
+.wp-block-proterrasancta-form-donate .form-check-label a:hover, .wp-block-proterrasancta-form-anagrafica .form-check-label a:hover, .wp-block-proterrasancta-form-checkout .form-check-label a:hover, .wp-block-proterrasancta-form-e-cards .form-check-label a:hover {
+  color: #d31418;
+  box-shadow: none;
+}
+
+.modal {
+  z-index: 1000;
+}
+
+.wp-block-proterrasancta-news-grid-section .container-right-cards {
+  height: fit-content;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-news-grid-section .container-right-cards {
+    height: unset;
+  }
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card-right {
+  background-color: white;
+  padding-top: 10px;
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-news-grid-section .news-grid-card-right {
+    padding-top: 0;
+  }
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card-right .img-cover-gradient {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-image: linear-gradient(to bottom, transparent 0%, #374856 110%);
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card-right .img-cover-gradient.grad1 {
+  width: calc(100% - 8px);
+  background-image: linear-gradient(to bottom, transparent 0%, #374856 110%);
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card-right .img-cover-gradient.grad2 {
+  width: calc(100% - 8px);
+  background-image: linear-gradient(to bottom, transparent 0%, #e26e0e 110%);
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-news-grid-section .news-grid-card-right .img-cover-gradient.grad2 {
+    width: calc(100% - 4px);
+  }
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card-right .img-cover-gradient.grad3 {
+  width: calc(100% - 8px);
+  background-image: linear-gradient(to bottom, transparent 0%, #f9ba55 110%);
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card-right .img-cover-gradient.grad4 {
+  width: calc(100% - 8px);
+  background-image: linear-gradient(to bottom, transparent 0%, #d31418 110%);
+}
+@media (min-width: 768px) {
+  .wp-block-proterrasancta-news-grid-section .news-grid-card-right .img-cover-gradient.grad4 {
+    width: calc(100% - 4px);
+  }
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card-right .heading {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  background-color: #374856;
+  color: white;
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card-right .btn {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card {
+  position: relative;
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+@media (min-width: 1200px) {
+  .wp-block-proterrasancta-news-grid-section .news-grid-card img {
+    height: 240px;
+  }
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card .block-middle {
+  bottom: 0;
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card .block-middle .heading-text {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px black;
+  padding-left: 20px;
+}
+@media (min-width: 1200px) {
+  .wp-block-proterrasancta-news-grid-section .news-grid-card .block-middle .heading-text {
+    font-size: 18px;
+  }
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card .block-middle .text-title {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: white;
+  text-shadow: 1px 1px black;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  line-height: 16px;
+}
+@media (min-width: 1200px) {
+  .wp-block-proterrasancta-news-grid-section .news-grid-card .block-middle .text-title {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card .btn {
+  display: none;
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card:hover a {
+  opacity: 1 !important;
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card:hover .btn {
+  display: block;
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card-main {
+  background-color: white;
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card-main img {
+  width: 100%;
+  height: 356px;
+  object-fit: cover;
+}
+@media (min-width: 1200px) {
+  .wp-block-proterrasancta-news-grid-section .news-grid-card-main img {
+    height: 516px;
+  }
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card-main .block-middle-main {
+  bottom: 0;
+  width: 100%;
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card-main .block-middle-main .heading-text {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+@media (min-width: 1200px) {
+  .wp-block-proterrasancta-news-grid-section .news-grid-card-main .block-middle-main .heading-text {
+    font-size: 22px;
+  }
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card-main .block-middle-main .text-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: left;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card-main .img-cover-gradient {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent 50%, #D31418 130%);
+}
+.wp-block-proterrasancta-news-grid-section .news-grid-card-main .heading {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  background-color: #d31418;
+  color: white;
+}

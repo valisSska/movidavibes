@@ -1,0 +1,29 @@
+// For a list of Bootstrap variables you can override, look at node_modules\bootstrap\scss\_variables.scss
+// For a list of mdboostrap variables you can override, look at node_modules\mdboostrap\scss\core
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Open+Sans:wght@300;400;700&display=swap');
+
+$font-title: 'Castoro', sans-serif;
+$font-family-base: 'Open Sans', sans-serif;
+
+$primary:        #9A9A9A !default;
+$secondary:      #009846 !default;
+$success:        #1ad334 !default;
+$accent:         #1ad334 !default;
+$menu:           #65B2E8 !default;
+$big-menu:       #D8DDE1 !default;
+$mobile-menu:    #F7F7F7 !default;
+$bottom-menu:    #65B2E8 !default;
+$profile-mobile: #28AFB0 !default;
+$expired:        #FCCC2D !default;
+$turquoise:      #64CBC9 !default;
+$grey:           #9A9A9A !default;
+$icons:           #0DA045 !default;
+$buttons:        rgba(223, 243, 252, 1);;
+
+$primary-color:        #334857 !default;
+$grey-blue-color:      #506679 !default;
+$blue-color:           #0B506B !default;
+$success-color:        #EA0029 !default;
+$accent-color:         #1ad334 !default;
+
+$enable-responsive-font-sizes: true;

@@ -1,0 +1,38 @@
+// For a list of Bootstrap variables you can override, look at node_modules\bootstrap\scss\_variables.scss
+// For a list of mdboostrap variables you can override, look at node_modules\mdboostrap\scss\core
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Open+Sans:wght@300;400;700&display=swap');
+
+$font-title: 'Castoro', sans-serif;
+$font-family-base: 'Open Sans', sans-serif;
+
+$primary:        #D31418 !default;
+$secondary:      #b91521 !default;
+$success:        #1ad334 !default;
+$accent:         #1ad334 !default;
+$menu:           #65B2E8 !default;
+$big-menu:       #D8DDE1 !default;
+$mobile-menu:    #F7F7F7 !default;
+$bottom-menu:    #65B2E8 !default;
+$profile-mobile: #28AFB0 !default;
+$expired:        #FCCC2D !default;
+$turquoise:      #64CBC9 !default;
+$grey:           #9A9A9A !default;
+$icons:           #0DA045 !default;
+$buttons:        rgba(223, 243, 252, 1);;
+
+$primary-color:        #002F3D !default;
+$grey-blue-color:      #506679 !default;
+$blue-color:           #0B506B !default;
+$success-color:        #EA0029 !default;
+$accent-color:         #1ad334 !default;
+
+$enable-responsive-font-sizes: true;
+
+// For each breakpoint, define the maximum width of the container in a media query
+@mixin make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
+  @each $breakpoint, $container-max-width in $max-widths {
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      max-width: $container-max-width;
+    }
+  }
+}
