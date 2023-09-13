@@ -33,9 +33,9 @@ if(is_user_logged_in()){ ?>
             $wpestate_global_payments->show_cart_icon();
         }
         ?>
-        
+        <div id='accountMenu'></div>
         <div class="signuplink" id="topbarlogin"><?php esc_html_e('Login','wprentals');?></div>
-        <div class="signuplink" id="topbarregister"><?php esc_html_e('Sign Up','wprentals')?></div>    
+        <div class="signuplink" id="topbarregister"><?php esc_html_e('Sign Up','wprentals')?></div>
         <?php if(  esc_html ( wprentals_get_option('wp_estate_show_submit','') ) ==='yes'){ ?>
             <a href="<?php print wpestate_get_template_link('user_dashboard_add_step1.php');?>" id="submit_action"><?php esc_html_e('Submit Property','wprentals');?></a>
         <?php } ?>                   

@@ -1,9 +1,9 @@
 {
   "name": "pro-terra-sancta",
   "version": "1.0.0",
-  "description": "Pro Terra Sancta",
-  "productName": "Pro Terra Sancta",
-  "author": "Web devotion <javier.jara@webdevotion.net>",
+  "description": "movidavibes",
+  "productName": "movidavibes",
+  "author": "Valentyn",
   "private": true,
   "scripts": {
     "lint-staged": "lint-staged",

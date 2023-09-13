@@ -21,6 +21,14 @@ const NewsGridSection = lazy(() => import('./components/news-grid-section-front'
 const NewsSlidesSection = lazy(() => import('./components/news-slides-section-front'));
 const HighlightsSlidesSection = lazy(() => import('./components/highlights-slides-section-front'));
 
+const elementAccountMenu = document.querySelector('#accountMenu');
+if (elementAccountMenu) {
+  render(
+      <div>prova test</div>
+  );
+}
+
+
 const element5x1000 = document.querySelector('#fivex1000-section-root');
 if (element5x1000) {
   render(
@@ -196,6 +204,8 @@ if (elementFormsDonate && elementFormsDonate.length > 0) {
     );
   }
 }
+
+
 const elementFormsAnagrafica = document.querySelectorAll('.form-anagrafica-root');
 if (elementFormsAnagrafica && elementFormsAnagrafica.length > 0) {
   elementFormsAnagrafica.forEach((thisElementFormAnagrafica, index) => {
