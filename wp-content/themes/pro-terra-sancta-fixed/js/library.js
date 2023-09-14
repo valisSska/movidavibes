@@ -21,6 +21,8 @@ const NewsGridSection = lazy(() => import('./components/news-grid-section-front'
 const NewsSlidesSection = lazy(() => import('./components/news-slides-section-front'));
 const HighlightsSlidesSection = lazy(() => import('./components/highlights-slides-section-front'));
 
+console.log('////////////////////////////////////////////////////////////////////////////////CIAOOOOOOO');
+
 const elementAccountMenu = document.querySelector('#accountMenu');
 if (elementAccountMenu) {
   render(
