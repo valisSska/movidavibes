@@ -1,0 +1,37 @@
+{
+  "config": {
+    "platform": {
+      "php": "7.3"
+    },
+    "allow-plugins": true
+  },
+  "autoload": {
+    "psr-4": {
+      "MyCache\\": "src/"
+    }
+  },
+  "scripts": {
+    "phpcs": "phpcs -s",
+    "phpcbf": "phpcbf -s",
+    "phpunit": "phpunit",
+    "install-codestandards": [
+      "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
+    ]
+  },
+  "require": {
+    "cheprasov/php-redis-client": "^1.9",
+    "ext-dom": "*",
+    "symfony/dotenv": "^5.0",
+    "ext-curl": "*",
+    "aws/aws-sdk-php": "^3.178",
+    "stripe/stripe-php": "^7.105",
+    "satispay/gbusiness-api-php-sdk": "^1.3",
+    "mikehaertl/php-pdftk": "^0.12.0"
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "*",
+    "object-calisthenics/phpcs-calisthenics-rules": "*",
+    "wp-coding-standards/wpcs": "*",
+    "phpunit/phpunit": "^9.1"
+  }
+}
