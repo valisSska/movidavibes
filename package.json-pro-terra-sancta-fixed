@@ -1,0 +1,83 @@
+{
+  "name": "MoviDavibes",
+  "version": "1.0.0",
+  "description": "movidavibes",
+  "productName": "movidavibes",
+  "author": "Valentyn Anaka",
+  "private": true,
+  "scripts": {
+    "lint-staged": "lint-staged",
+    "postinstall": "husky install",
+    "upg": "yarn upgrade-interactive --latest",
+    "install-theme": "cd ./wp-content/themes/pro-terra-sancta-fixed && yarn install",
+    "dev-theme": "cd ./wp-content/themes/pro-terra-sancta-fixed && yarn build-dev",
+    "lint-theme": "cd ./wp-content/themes/pro-terra-sancta-fixed && yarn lint",
+    "build-theme": "cd ./wp-content/themes/pro-terra-sancta-fixed && yarn build",
+    "outdated-theme": "cd ./wp-content/themes/pro-terra-sancta-fixed && yarn outdated",
+    "upg-theme": "cd ./wp-content/themes/pro-terra-sancta-fixed && yarn upgrade-interactive --latest",
+    "install-blocks": "cd ./wp-content/plugins/proterrasancta-blocks && yarn install",
+    "dev-blocks": "cd ./wp-content/plugins/proterrasancta-blocks && set NODE_ENV=development && yarn start",
+    "lint-blocks": "eslint --ext .js,.html ./wp-content/plugins/proterrasancta-blocks/src",
+    "build-blocks": "cd ./wp-content/plugins/proterrasancta-blocks && yarn build",
+    "outdated-blocks": "cd ./wp-content/plugins/proterrasancta-blocks && yarn outdated",
+    "upg-blocks": "cd ./wp-content/plugins/proterrasancta-blocks && yarn upgrade-interactive --latest",
+    "lint-php": "composer phpcs src tests",
+    "fix-php": "composer phpcbf src wp-content/themes/pro-terra-sancta-fixed tests",
+    "test": "./vendor/bin/phpunit",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint-blocks"
+    }
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.8",
+    "@wordpress/eslint-plugin": "^9.3.0",
+    "bootstrap": "^5.1.3",
+    "husky": "^7.0.4",
+    "jquery": "^3.6.0",
+    "lint-staged": "^11.0.0",
+    "moment": "^2.29.4",
+    "popper.js": "^1.15.0",
+    "react-moment": "^1.1.3",
+    "serve": "^13.0.2"
+  },
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.17.6",
+    "eslint": "^8.4.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-css-modules": "^2.11.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jquery": "^1.5.0",
+    "eslint-plugin-jsdoc": "^37.2.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-sonarjs": "^0.11.0",
+    "eslint-plugin-unicorn": "^39.0.0",
+    "husky": "^7.0.4",
+    "minimist": "^1.2.0",
+    "prettier": "^2.5.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "engines": {
+    "node": ">= 12.x",
+    "npm": ">= 5.6.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}
