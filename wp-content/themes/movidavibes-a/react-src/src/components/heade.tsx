@@ -4,6 +4,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
+import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import Badge from '@mui/material/Badge';
@@ -157,8 +158,15 @@ export default function Heade() {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static">
-                <Toolbar>
+            <AppBar position="static"
+            >
+                <Toolbar
+                    sx={{
+                        height: 100,
+                        color: 'black',
+                        backgroundColor:'white',
+                    }}
+                >
                     <Typography
                         variant="h6"
                         noWrap
@@ -179,17 +187,20 @@ export default function Heade() {
                     </Search>
                     <Box sx={{ flexGrow: 1 }} />
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                        <IconButton
-                            size="large"
-                            edge="end"
-                            aria-label="account of current user"
-                            aria-controls={menuId}
-                            aria-haspopup="true"
+                        <Button
+                            variant="outlined"
                             onClick={handleProfileMenuOpen}
-                            color="inherit"
+                            sx={{
+                                borderColor:'grey',
+                                padding:'5 5 5 5',
+                                color:'grey',
+                                borderRadious:'50'
+                            }}
                         >
-                            <AccountCircle />
-                        </IconButton>
+                            <MenuIcon />
+                            <Box sx={{ width: 10 }} />
+                            <AccountCircle fontSize="large"/>
+                        </Button>
                     </Box>
                     <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
                         <IconButton

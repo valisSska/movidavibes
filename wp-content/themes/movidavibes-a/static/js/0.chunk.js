@@ -22612,6 +22612,36 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "../../../../node_modules/@mui/icons-material/Menu.js":
+/*!****************************************************************************!*\
+  !*** C:/xampp/htdocs/movidavibes/node_modules/@mui/icons-material/Menu.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+"use client";
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../../../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "../../../../node_modules/@mui/icons-material/utils/createSvgIcon.js"));
+
+var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+var _default = (0, _createSvgIcon.default)( /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+  d: "M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+}), 'Menu');
+
+exports.default = _default;
+
+/***/ }),
+
 /***/ "../../../../node_modules/@mui/icons-material/MoreVert.js":
 /*!********************************************************************************!*\
   !*** C:/xampp/htdocs/movidavibes/node_modules/@mui/icons-material/MoreVert.js ***!
@@ -23828,6 +23858,498 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "../../../../node_modules/@mui/material/Button/Button.js":
+/*!*******************************************************************************!*\
+  !*** C:/xampp/htdocs/movidavibes/node_modules/@mui/material/Button/Button.js ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "../../../../node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "../../../../node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "../../../../node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! clsx */ "../../../../node_modules/clsx/dist/clsx.mjs");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/utils */ "../../../../node_modules/@mui/utils/esm/index.js");
+/* harmony import */ var _mui_base_composeClasses__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/base/composeClasses */ "../../../../node_modules/@mui/base/composeClasses/index.js");
+/* harmony import */ var _mui_system__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/system */ "../../../../node_modules/@mui/system/esm/index.js");
+/* harmony import */ var _styles_styled__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/styled */ "../../../../node_modules/@mui/material/styles/styled.js");
+/* harmony import */ var _styles_useThemeProps__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/useThemeProps */ "../../../../node_modules/@mui/material/styles/useThemeProps.js");
+/* harmony import */ var _ButtonBase__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../ButtonBase */ "../../../../node_modules/@mui/material/ButtonBase/index.js");
+/* harmony import */ var _utils_capitalize__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../utils/capitalize */ "../../../../node_modules/@mui/material/utils/capitalize.js");
+/* harmony import */ var _buttonClasses__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./buttonClasses */ "../../../../node_modules/@mui/material/Button/buttonClasses.js");
+/* harmony import */ var _ButtonGroup_ButtonGroupContext__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../ButtonGroup/ButtonGroupContext */ "../../../../node_modules/@mui/material/ButtonGroup/ButtonGroupContext.js");
+/* harmony import */ var _ButtonGroup_ButtonGroupButtonContext__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../ButtonGroup/ButtonGroupButtonContext */ "../../../../node_modules/@mui/material/ButtonGroup/ButtonGroupButtonContext.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__);
+'use client';
+
+
+
+const _excluded = ["children", "color", "component", "className", "disabled", "disableElevation", "disableFocusRipple", "endIcon", "focusVisibleClassName", "fullWidth", "size", "startIcon", "type", "variant"];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const useUtilityClasses = ownerState => {
+  const {
+    color,
+    disableElevation,
+    fullWidth,
+    size,
+    variant,
+    classes
+  } = ownerState;
+  const slots = {
+    root: ['root', variant, `${variant}${Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_11__["default"])(color)}`, `size${Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_11__["default"])(size)}`, `${variant}Size${Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_11__["default"])(size)}`, color === 'inherit' && 'colorInherit', disableElevation && 'disableElevation', fullWidth && 'fullWidth'],
+    label: ['label'],
+    startIcon: ['startIcon', `iconSize${Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_11__["default"])(size)}`],
+    endIcon: ['endIcon', `iconSize${Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_11__["default"])(size)}`]
+  };
+  const composedClasses = Object(_mui_base_composeClasses__WEBPACK_IMPORTED_MODULE_6__["unstable_composeClasses"])(slots, _buttonClasses__WEBPACK_IMPORTED_MODULE_12__["getButtonUtilityClass"], classes);
+  return Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, classes, composedClasses);
+};
+
+const commonIconStyles = ownerState => Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, ownerState.size === 'small' && {
+  '& > *:nth-of-type(1)': {
+    fontSize: 18
+  }
+}, ownerState.size === 'medium' && {
+  '& > *:nth-of-type(1)': {
+    fontSize: 20
+  }
+}, ownerState.size === 'large' && {
+  '& > *:nth-of-type(1)': {
+    fontSize: 22
+  }
+});
+
+const ButtonRoot = Object(_styles_styled__WEBPACK_IMPORTED_MODULE_8__["default"])(_ButtonBase__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  shouldForwardProp: prop => Object(_styles_styled__WEBPACK_IMPORTED_MODULE_8__["rootShouldForwardProp"])(prop) || prop === 'classes',
+  name: 'MuiButton',
+  slot: 'Root',
+  overridesResolver: (props, styles) => {
+    const {
+      ownerState
+    } = props;
+    return [styles.root, styles[ownerState.variant], styles[`${ownerState.variant}${Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_11__["default"])(ownerState.color)}`], styles[`size${Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_11__["default"])(ownerState.size)}`], styles[`${ownerState.variant}Size${Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_11__["default"])(ownerState.size)}`], ownerState.color === 'inherit' && styles.colorInherit, ownerState.disableElevation && styles.disableElevation, ownerState.fullWidth && styles.fullWidth];
+  }
+})(({
+  theme,
+  ownerState
+}) => {
+  var _theme$palette$getCon, _theme$palette;
+
+  const inheritContainedBackgroundColor = theme.palette.mode === 'light' ? theme.palette.grey[300] : theme.palette.grey[800];
+  const inheritContainedHoverBackgroundColor = theme.palette.mode === 'light' ? theme.palette.grey.A100 : theme.palette.grey[700];
+  return Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, theme.typography.button, {
+    minWidth: 64,
+    padding: '6px 16px',
+    borderRadius: (theme.vars || theme).shape.borderRadius,
+    transition: theme.transitions.create(['background-color', 'box-shadow', 'border-color', 'color'], {
+      duration: theme.transitions.duration.short
+    }),
+    '&:hover': Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+      textDecoration: 'none',
+      backgroundColor: theme.vars ? `rgba(${theme.vars.palette.text.primaryChannel} / ${theme.vars.palette.action.hoverOpacity})` : Object(_mui_system__WEBPACK_IMPORTED_MODULE_7__["alpha"])(theme.palette.text.primary, theme.palette.action.hoverOpacity),
+      // Reset on touch devices, it doesn't add specificity
+      '@media (hover: none)': {
+        backgroundColor: 'transparent'
+      }
+    }, ownerState.variant === 'text' && ownerState.color !== 'inherit' && {
+      backgroundColor: theme.vars ? `rgba(${theme.vars.palette[ownerState.color].mainChannel} / ${theme.vars.palette.action.hoverOpacity})` : Object(_mui_system__WEBPACK_IMPORTED_MODULE_7__["alpha"])(theme.palette[ownerState.color].main, theme.palette.action.hoverOpacity),
+      // Reset on touch devices, it doesn't add specificity
+      '@media (hover: none)': {
+        backgroundColor: 'transparent'
+      }
+    }, ownerState.variant === 'outlined' && ownerState.color !== 'inherit' && {
+      border: `1px solid ${(theme.vars || theme).palette[ownerState.color].main}`,
+      backgroundColor: theme.vars ? `rgba(${theme.vars.palette[ownerState.color].mainChannel} / ${theme.vars.palette.action.hoverOpacity})` : Object(_mui_system__WEBPACK_IMPORTED_MODULE_7__["alpha"])(theme.palette[ownerState.color].main, theme.palette.action.hoverOpacity),
+      // Reset on touch devices, it doesn't add specificity
+      '@media (hover: none)': {
+        backgroundColor: 'transparent'
+      }
+    }, ownerState.variant === 'contained' && {
+      backgroundColor: theme.vars ? theme.vars.palette.Button.inheritContainedHoverBg : inheritContainedHoverBackgroundColor,
+      boxShadow: (theme.vars || theme).shadows[4],
+      // Reset on touch devices, it doesn't add specificity
+      '@media (hover: none)': {
+        boxShadow: (theme.vars || theme).shadows[2],
+        backgroundColor: (theme.vars || theme).palette.grey[300]
+      }
+    }, ownerState.variant === 'contained' && ownerState.color !== 'inherit' && {
+      backgroundColor: (theme.vars || theme).palette[ownerState.color].dark,
+      // Reset on touch devices, it doesn't add specificity
+      '@media (hover: none)': {
+        backgroundColor: (theme.vars || theme).palette[ownerState.color].main
+      }
+    }),
+    '&:active': Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, ownerState.variant === 'contained' && {
+      boxShadow: (theme.vars || theme).shadows[8]
+    }),
+    [`&.${_buttonClasses__WEBPACK_IMPORTED_MODULE_12__["default"].focusVisible}`]: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, ownerState.variant === 'contained' && {
+      boxShadow: (theme.vars || theme).shadows[6]
+    }),
+    [`&.${_buttonClasses__WEBPACK_IMPORTED_MODULE_12__["default"].disabled}`]: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+      color: (theme.vars || theme).palette.action.disabled
+    }, ownerState.variant === 'outlined' && {
+      border: `1px solid ${(theme.vars || theme).palette.action.disabledBackground}`
+    }, ownerState.variant === 'contained' && {
+      color: (theme.vars || theme).palette.action.disabled,
+      boxShadow: (theme.vars || theme).shadows[0],
+      backgroundColor: (theme.vars || theme).palette.action.disabledBackground
+    })
+  }, ownerState.variant === 'text' && {
+    padding: '6px 8px'
+  }, ownerState.variant === 'text' && ownerState.color !== 'inherit' && {
+    color: (theme.vars || theme).palette[ownerState.color].main
+  }, ownerState.variant === 'outlined' && {
+    padding: '5px 15px',
+    border: '1px solid currentColor'
+  }, ownerState.variant === 'outlined' && ownerState.color !== 'inherit' && {
+    color: (theme.vars || theme).palette[ownerState.color].main,
+    border: theme.vars ? `1px solid rgba(${theme.vars.palette[ownerState.color].mainChannel} / 0.5)` : `1px solid ${Object(_mui_system__WEBPACK_IMPORTED_MODULE_7__["alpha"])(theme.palette[ownerState.color].main, 0.5)}`
+  }, ownerState.variant === 'contained' && {
+    color: theme.vars ? // this is safe because grey does not change between default light/dark mode
+    theme.vars.palette.text.primary : (_theme$palette$getCon = (_theme$palette = theme.palette).getContrastText) == null ? void 0 : _theme$palette$getCon.call(_theme$palette, theme.palette.grey[300]),
+    backgroundColor: theme.vars ? theme.vars.palette.Button.inheritContainedBg : inheritContainedBackgroundColor,
+    boxShadow: (theme.vars || theme).shadows[2]
+  }, ownerState.variant === 'contained' && ownerState.color !== 'inherit' && {
+    color: (theme.vars || theme).palette[ownerState.color].contrastText,
+    backgroundColor: (theme.vars || theme).palette[ownerState.color].main
+  }, ownerState.color === 'inherit' && {
+    color: 'inherit',
+    borderColor: 'currentColor'
+  }, ownerState.size === 'small' && ownerState.variant === 'text' && {
+    padding: '4px 5px',
+    fontSize: theme.typography.pxToRem(13)
+  }, ownerState.size === 'large' && ownerState.variant === 'text' && {
+    padding: '8px 11px',
+    fontSize: theme.typography.pxToRem(15)
+  }, ownerState.size === 'small' && ownerState.variant === 'outlined' && {
+    padding: '3px 9px',
+    fontSize: theme.typography.pxToRem(13)
+  }, ownerState.size === 'large' && ownerState.variant === 'outlined' && {
+    padding: '7px 21px',
+    fontSize: theme.typography.pxToRem(15)
+  }, ownerState.size === 'small' && ownerState.variant === 'contained' && {
+    padding: '4px 10px',
+    fontSize: theme.typography.pxToRem(13)
+  }, ownerState.size === 'large' && ownerState.variant === 'contained' && {
+    padding: '8px 22px',
+    fontSize: theme.typography.pxToRem(15)
+  }, ownerState.fullWidth && {
+    width: '100%'
+  });
+}, ({
+  ownerState
+}) => ownerState.disableElevation && {
+  boxShadow: 'none',
+  '&:hover': {
+    boxShadow: 'none'
+  },
+  [`&.${_buttonClasses__WEBPACK_IMPORTED_MODULE_12__["default"].focusVisible}`]: {
+    boxShadow: 'none'
+  },
+  '&:active': {
+    boxShadow: 'none'
+  },
+  [`&.${_buttonClasses__WEBPACK_IMPORTED_MODULE_12__["default"].disabled}`]: {
+    boxShadow: 'none'
+  }
+});
+const ButtonStartIcon = Object(_styles_styled__WEBPACK_IMPORTED_MODULE_8__["default"])('span', {
+  name: 'MuiButton',
+  slot: 'StartIcon',
+  overridesResolver: (props, styles) => {
+    const {
+      ownerState
+    } = props;
+    return [styles.startIcon, styles[`iconSize${Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_11__["default"])(ownerState.size)}`]];
+  }
+})(({
+  ownerState
+}) => Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  display: 'inherit',
+  marginRight: 8,
+  marginLeft: -4
+}, ownerState.size === 'small' && {
+  marginLeft: -2
+}, commonIconStyles(ownerState)));
+const ButtonEndIcon = Object(_styles_styled__WEBPACK_IMPORTED_MODULE_8__["default"])('span', {
+  name: 'MuiButton',
+  slot: 'EndIcon',
+  overridesResolver: (props, styles) => {
+    const {
+      ownerState
+    } = props;
+    return [styles.endIcon, styles[`iconSize${Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_11__["default"])(ownerState.size)}`]];
+  }
+})(({
+  ownerState
+}) => Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  display: 'inherit',
+  marginRight: -4,
+  marginLeft: 8
+}, ownerState.size === 'small' && {
+  marginRight: -2
+}, commonIconStyles(ownerState)));
+const Button = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Button(inProps, ref) {
+  // props priority: `inProps` > `contextProps` > `themeDefaultProps`
+  const contextProps = react__WEBPACK_IMPORTED_MODULE_2__["useContext"](_ButtonGroup_ButtonGroupContext__WEBPACK_IMPORTED_MODULE_13__["default"]);
+  const buttonGroupButtonContextPositionClassName = react__WEBPACK_IMPORTED_MODULE_2__["useContext"](_ButtonGroup_ButtonGroupButtonContext__WEBPACK_IMPORTED_MODULE_14__["default"]);
+  const resolvedProps = Object(_mui_utils__WEBPACK_IMPORTED_MODULE_5__["internal_resolveProps"])(contextProps, inProps);
+  const props = Object(_styles_useThemeProps__WEBPACK_IMPORTED_MODULE_9__["default"])({
+    props: resolvedProps,
+    name: 'MuiButton'
+  });
+
+  const {
+    children,
+    color = 'primary',
+    component = 'button',
+    className,
+    disabled = false,
+    disableElevation = false,
+    disableFocusRipple = false,
+    endIcon: endIconProp,
+    focusVisibleClassName,
+    fullWidth = false,
+    size = 'medium',
+    startIcon: startIconProp,
+    type,
+    variant = 'text'
+  } = props,
+        other = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(props, _excluded);
+
+  const ownerState = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, props, {
+    color,
+    component,
+    disabled,
+    disableElevation,
+    disableFocusRipple,
+    fullWidth,
+    size,
+    type,
+    variant
+  });
+
+  const classes = useUtilityClasses(ownerState);
+
+  const startIcon = startIconProp && /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__["jsx"])(ButtonStartIcon, {
+    className: classes.startIcon,
+    ownerState: ownerState,
+    children: startIconProp
+  });
+
+  const endIcon = endIconProp && /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__["jsx"])(ButtonEndIcon, {
+    className: classes.endIcon,
+    ownerState: ownerState,
+    children: endIconProp
+  });
+
+  const positionClassName = buttonGroupButtonContextPositionClassName || '';
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_15__["jsxs"])(ButtonRoot, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    ownerState: ownerState,
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(contextProps.className, classes.root, className, positionClassName),
+    component: component,
+    disabled: disabled,
+    focusRipple: !disableFocusRipple,
+    focusVisibleClassName: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.focusVisible, focusVisibleClassName),
+    ref: ref,
+    type: type
+  }, other, {
+    classes: classes,
+    children: [startIcon, children, endIcon]
+  }));
+});
+ true ? Button.propTypes
+/* remove-proptypes */
+= {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
+  /**
+   * The content of the component.
+   */
+  children: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node,
+
+  /**
+   * Override or extend the styles applied to the component.
+   */
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
+
+  /**
+   * @ignore
+   */
+  className: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
+
+  /**
+   * The color of the component.
+   * It supports both default and custom theme colors, which can be added as shown in the
+   * [palette customization guide](https://mui.com/material-ui/customization/palette/#adding-new-colors).
+   * @default 'primary'
+   */
+  color: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a
+  /* @typescript-to-proptypes-ignore */
+  .oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['inherit', 'primary', 'secondary', 'success', 'error', 'info', 'warning']), prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string]),
+
+  /**
+   * The component used for the root node.
+   * Either a string to use a HTML element or a component.
+   */
+  component: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.elementType,
+
+  /**
+   * If `true`, the component is disabled.
+   * @default false
+   */
+  disabled: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool,
+
+  /**
+   * If `true`, no elevation is used.
+   * @default false
+   */
+  disableElevation: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool,
+
+  /**
+   * If `true`, the  keyboard focus ripple is disabled.
+   * @default false
+   */
+  disableFocusRipple: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool,
+
+  /**
+   * If `true`, the ripple effect is disabled.
+   *
+   * ⚠️ Without a ripple there is no styling for :focus-visible by default. Be sure
+   * to highlight the element by applying separate styles with the `.Mui-focusVisible` class.
+   * @default false
+   */
+  disableRipple: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool,
+
+  /**
+   * Element placed after the children.
+   */
+  endIcon: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node,
+
+  /**
+   * @ignore
+   */
+  focusVisibleClassName: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
+
+  /**
+   * If `true`, the button will take up the full width of its container.
+   * @default false
+   */
+  fullWidth: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool,
+
+  /**
+   * The URL to link to when the button is clicked.
+   * If defined, an `a` element will be used as the root node.
+   */
+  href: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
+
+  /**
+   * The size of the component.
+   * `small` is equivalent to the dense button styling.
+   * @default 'medium'
+   */
+  size: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a
+  /* @typescript-to-proptypes-ignore */
+  .oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['small', 'medium', 'large']), prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string]),
+
+  /**
+   * Element placed before the children.
+   */
+  startIcon: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node,
+
+  /**
+   * The system prop that allows defining system overrides as well as additional CSS styles.
+   */
+  sx: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func, prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object, prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool])), prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func, prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object]),
+
+  /**
+   * @ignore
+   */
+  type: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['button', 'reset', 'submit']), prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string]),
+
+  /**
+   * The variant to use.
+   * @default 'text'
+   */
+  variant: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a
+  /* @typescript-to-proptypes-ignore */
+  .oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['contained', 'outlined', 'text']), prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string])
+} : undefined;
+/* harmony default export */ __webpack_exports__["default"] = (Button);
+
+/***/ }),
+
+/***/ "../../../../node_modules/@mui/material/Button/buttonClasses.js":
+/*!**************************************************************************************!*\
+  !*** C:/xampp/htdocs/movidavibes/node_modules/@mui/material/Button/buttonClasses.js ***!
+  \**************************************************************************************/
+/*! exports provided: getButtonUtilityClass, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getButtonUtilityClass", function() { return getButtonUtilityClass; });
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils */ "../../../../node_modules/@mui/utils/esm/index.js");
+/* harmony import */ var _generateUtilityClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../generateUtilityClass */ "../../../../node_modules/@mui/material/generateUtilityClass/index.js");
+
+
+function getButtonUtilityClass(slot) {
+  return Object(_generateUtilityClass__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiButton', slot);
+}
+const buttonClasses = Object(_mui_utils__WEBPACK_IMPORTED_MODULE_0__["unstable_generateUtilityClasses"])('MuiButton', ['root', 'text', 'textInherit', 'textPrimary', 'textSecondary', 'textSuccess', 'textError', 'textInfo', 'textWarning', 'outlined', 'outlinedInherit', 'outlinedPrimary', 'outlinedSecondary', 'outlinedSuccess', 'outlinedError', 'outlinedInfo', 'outlinedWarning', 'contained', 'containedInherit', 'containedPrimary', 'containedSecondary', 'containedSuccess', 'containedError', 'containedInfo', 'containedWarning', 'disableElevation', 'focusVisible', 'disabled', 'colorInherit', 'textSizeSmall', 'textSizeMedium', 'textSizeLarge', 'outlinedSizeSmall', 'outlinedSizeMedium', 'outlinedSizeLarge', 'containedSizeSmall', 'containedSizeMedium', 'containedSizeLarge', 'sizeMedium', 'sizeSmall', 'sizeLarge', 'fullWidth', 'startIcon', 'endIcon', 'iconSizeSmall', 'iconSizeMedium', 'iconSizeLarge']);
+/* harmony default export */ __webpack_exports__["default"] = (buttonClasses);
+
+/***/ }),
+
+/***/ "../../../../node_modules/@mui/material/Button/index.js":
+/*!******************************************************************************!*\
+  !*** C:/xampp/htdocs/movidavibes/node_modules/@mui/material/Button/index.js ***!
+  \******************************************************************************/
+/*! exports provided: default, buttonClasses, getButtonUtilityClass */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Button */ "../../../../node_modules/@mui/material/Button/Button.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Button__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+/* harmony import */ var _buttonClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./buttonClasses */ "../../../../node_modules/@mui/material/Button/buttonClasses.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "buttonClasses", function() { return _buttonClasses__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getButtonUtilityClass", function() { return _buttonClasses__WEBPACK_IMPORTED_MODULE_1__["getButtonUtilityClass"]; });
+
+'use client';
+
+
+
+
+
+/***/ }),
+
 /***/ "../../../../node_modules/@mui/material/ButtonBase/ButtonBase.js":
 /*!***************************************************************************************!*\
   !*** C:/xampp/htdocs/movidavibes/node_modules/@mui/material/ButtonBase/ButtonBase.js ***!
@@ -24978,6 +25500,58 @@ function getTouchRippleUtilityClass(slot) {
 }
 const touchRippleClasses = Object(_mui_utils__WEBPACK_IMPORTED_MODULE_0__["unstable_generateUtilityClasses"])('MuiTouchRipple', ['root', 'ripple', 'rippleVisible', 'ripplePulsate', 'child', 'childLeaving', 'childPulsate']);
 /* harmony default export */ __webpack_exports__["default"] = (touchRippleClasses);
+
+/***/ }),
+
+/***/ "../../../../node_modules/@mui/material/ButtonGroup/ButtonGroupButtonContext.js":
+/*!******************************************************************************************************!*\
+  !*** C:/xampp/htdocs/movidavibes/node_modules/@mui/material/ButtonGroup/ButtonGroupButtonContext.js ***!
+  \******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+/**
+ * @ignore - internal component.
+ */
+
+const ButtonGroupButtonContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createContext"](undefined);
+
+if (true) {
+  ButtonGroupButtonContext.displayName = 'ButtonGroupButtonContext';
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ButtonGroupButtonContext);
+
+/***/ }),
+
+/***/ "../../../../node_modules/@mui/material/ButtonGroup/ButtonGroupContext.js":
+/*!************************************************************************************************!*\
+  !*** C:/xampp/htdocs/movidavibes/node_modules/@mui/material/ButtonGroup/ButtonGroupContext.js ***!
+  \************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+/**
+ * @ignore - internal component.
+ */
+
+const ButtonGroupContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createContext"]({});
+
+if (true) {
+  ButtonGroupContext.displayName = 'ButtonGroupContext';
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ButtonGroupContext);
 
 /***/ }),
 
