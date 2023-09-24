@@ -8,8 +8,7 @@
     "main.js.map": "/wp-content/themes/movidavibes-a/static/js/main.chunk.js.map",
     "runtime-main.js": "/wp-content/themes/movidavibes-a/static/js/bundle.js",
     "runtime-main.js.map": "/wp-content/themes/movidavibes-a/static/js/bundle.js.map",
-    "index.php": "/wp-content/themes/movidavibes-a/index.php",
-    "static/media/logo.svg": "/wp-content/themes/movidavibes-a/static/media/logo.5d5d9eef.svg"
+    "index.php": "/wp-content/themes/movidavibes-a/index.php"
   },
   "entrypoints": [
     "static/js/bundle.js",
