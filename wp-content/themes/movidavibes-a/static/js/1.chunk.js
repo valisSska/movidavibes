@@ -22612,36 +22612,6 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ "../../../../node_modules/@mui/icons-material/Menu.js":
-/*!****************************************************************************!*\
-  !*** C:/xampp/htdocs/movidavibes/node_modules/@mui/icons-material/Menu.js ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-"use client";
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../../../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "../../../../node_modules/@mui/icons-material/utils/createSvgIcon.js"));
-
-var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-var _default = (0, _createSvgIcon.default)( /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
-  d: "M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-}), 'Menu');
-
-exports.default = _default;
-
-/***/ }),
-
 /***/ "../../../../node_modules/@mui/icons-material/MoreVert.js":
 /*!********************************************************************************!*\
   !*** C:/xampp/htdocs/movidavibes/node_modules/@mui/icons-material/MoreVert.js ***!
