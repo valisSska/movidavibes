@@ -62,17 +62,31 @@ function App() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ButtonAppBar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Heade; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _mui_material_AppBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/AppBar */ "../../../../node_modules/@mui/material/AppBar/index.js");
-/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/Box */ "../../../../node_modules/@mui/material/Box/index.js");
-/* harmony import */ var _mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/Toolbar */ "../../../../node_modules/@mui/material/Toolbar/index.js");
-/* harmony import */ var _mui_material_Typography__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Typography */ "../../../../node_modules/@mui/material/Typography/index.js");
-/* harmony import */ var _mui_material_Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/Button */ "../../../../node_modules/@mui/material/Button/index.js");
-/* harmony import */ var _mui_material_IconButton__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/IconButton */ "../../../../node_modules/@mui/material/IconButton/index.js");
-/* harmony import */ var _mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/icons-material/Menu */ "../../../../node_modules/@mui/icons-material/Menu.js");
-/* harmony import */ var _mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/styles */ "../../../../node_modules/@mui/material/styles/index.js");
+/* harmony import */ var _mui_material_AppBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/AppBar */ "../../../../node_modules/@mui/material/AppBar/index.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/Box */ "../../../../node_modules/@mui/material/Box/index.js");
+/* harmony import */ var _mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Toolbar */ "../../../../node_modules/@mui/material/Toolbar/index.js");
+/* harmony import */ var _mui_material_IconButton__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/IconButton */ "../../../../node_modules/@mui/material/IconButton/index.js");
+/* harmony import */ var _mui_material_Typography__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/Typography */ "../../../../node_modules/@mui/material/Typography/index.js");
+/* harmony import */ var _mui_material_InputBase__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material/InputBase */ "../../../../node_modules/@mui/material/InputBase/index.js");
+/* harmony import */ var _mui_material_Badge__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/material/Badge */ "../../../../node_modules/@mui/material/Badge/index.js");
+/* harmony import */ var _mui_material_MenuItem__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/material/MenuItem */ "../../../../node_modules/@mui/material/MenuItem/index.js");
+/* harmony import */ var _mui_material_Menu__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/material/Menu */ "../../../../node_modules/@mui/material/Menu/index.js");
+/* harmony import */ var _mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/icons-material/Menu */ "../../../../node_modules/@mui/icons-material/Menu.js");
+/* harmony import */ var _mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _mui_icons_material_Search__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/icons-material/Search */ "../../../../node_modules/@mui/icons-material/Search.js");
+/* harmony import */ var _mui_icons_material_Search__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_Search__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _mui_icons_material_AccountCircle__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @mui/icons-material/AccountCircle */ "../../../../node_modules/@mui/icons-material/AccountCircle.js");
+/* harmony import */ var _mui_icons_material_AccountCircle__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_AccountCircle__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _mui_icons_material_Mail__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @mui/icons-material/Mail */ "../../../../node_modules/@mui/icons-material/Mail.js");
+/* harmony import */ var _mui_icons_material_Mail__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_Mail__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _mui_icons_material_Notifications__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @mui/icons-material/Notifications */ "../../../../node_modules/@mui/icons-material/Notifications.js");
+/* harmony import */ var _mui_icons_material_Notifications__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_Notifications__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _mui_icons_material_MoreVert__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @mui/icons-material/MoreVert */ "../../../../node_modules/@mui/icons-material/MoreVert.js");
+/* harmony import */ var _mui_icons_material_MoreVert__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_MoreVert__WEBPACK_IMPORTED_MODULE_16__);
 var _jsxFileName = "C:\\xampp\\htdocs\\movidavibes\\wp-content\\themes\\movidavibes-a\\react-src\\src\\components\\heade.tsx";
 
 
@@ -82,74 +96,479 @@ var _jsxFileName = "C:\\xampp\\htdocs\\movidavibes\\wp-content\\themes\\movidavi
 
 
 
-function ButtonAppBar() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Box__WEBPACK_IMPORTED_MODULE_2__["default"], {
+
+
+
+
+
+
+
+
+
+const Search = Object(_mui_material_styles__WEBPACK_IMPORTED_MODULE_1__["styled"])('div')(({
+  theme
+}) => ({
+  position: 'relative',
+  borderRadius: theme.shape.borderRadius,
+  backgroundColor: Object(_mui_material_styles__WEBPACK_IMPORTED_MODULE_1__["alpha"])(theme.palette.common.white, 0.15),
+  '&:hover': {
+    backgroundColor: Object(_mui_material_styles__WEBPACK_IMPORTED_MODULE_1__["alpha"])(theme.palette.common.white, 0.25)
+  },
+  marginRight: theme.spacing(2),
+  marginLeft: 0,
+  width: '100%',
+  [theme.breakpoints.up('sm')]: {
+    marginLeft: theme.spacing(3),
+    width: 'auto'
+  }
+}));
+const SearchIconWrapper = Object(_mui_material_styles__WEBPACK_IMPORTED_MODULE_1__["styled"])('div')(({
+  theme
+}) => ({
+  padding: theme.spacing(0, 2),
+  height: '100%',
+  position: 'absolute',
+  pointerEvents: 'none',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center'
+}));
+const StyledInputBase = Object(_mui_material_styles__WEBPACK_IMPORTED_MODULE_1__["styled"])(_mui_material_InputBase__WEBPACK_IMPORTED_MODULE_7__["default"])(({
+  theme
+}) => ({
+  color: 'inherit',
+  '& .MuiInputBase-input': {
+    padding: theme.spacing(1, 1, 1, 0),
+    // vertical padding + font size from searchIcon
+    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+    transition: theme.transitions.create('width'),
+    width: '100%',
+    [theme.breakpoints.up('md')]: {
+      width: '20ch'
+    }
+  }
+}));
+function Heade() {
+  const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0__["useState"](null);
+  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0__["useState"](null);
+  const isMenuOpen = Boolean(anchorEl);
+  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+
+  const handleProfileMenuOpen = event => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMobileMenuClose = () => {
+    setMobileMoreAnchorEl(null);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+    handleMobileMenuClose();
+  };
+
+  const handleMobileMenuOpen = event => {
+    setMobileMoreAnchorEl(event.currentTarget);
+  };
+
+  const menuId = 'primary-search-account-menu';
+  const renderMenu = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Menu__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    anchorEl: anchorEl,
+    anchorOrigin: {
+      vertical: 'top',
+      horizontal: 'right'
+    },
+    id: menuId,
+    keepMounted: true,
+    transformOrigin: {
+      vertical: 'top',
+      horizontal: 'right'
+    },
+    open: isMenuOpen,
+    onClose: handleMenuClose,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_MenuItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    onClick: handleMenuClose,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101,
+      columnNumber: 13
+    }
+  }, "Profile"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_MenuItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    onClick: handleMenuClose,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102,
+      columnNumber: 13
+    }
+  }, "My account"));
+  const mobileMenuId = 'primary-search-account-menu-mobile';
+  const renderMobileMenu = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Menu__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    anchorEl: mobileMoreAnchorEl,
+    anchorOrigin: {
+      vertical: 'top',
+      horizontal: 'right'
+    },
+    id: mobileMenuId,
+    keepMounted: true,
+    transformOrigin: {
+      vertical: 'top',
+      horizontal: 'right'
+    },
+    open: isMobileMenuOpen,
+    onClose: handleMobileMenuClose,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 108,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_MenuItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    size: "large",
+    "aria-label": "show 4 new mails",
+    color: "inherit",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Badge__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    badgeContent: 4,
+    color: "error",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_icons_material_Mail__WEBPACK_IMPORTED_MODULE_14___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 25
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 129,
+      columnNumber: 17
+    }
+  }, "Messages")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_MenuItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 131,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    size: "large",
+    "aria-label": "show 17 new notifications",
+    color: "inherit",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 132,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Badge__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    badgeContent: 17,
+    color: "error",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 137,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_icons_material_Notifications__WEBPACK_IMPORTED_MODULE_15___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 138,
+      columnNumber: 25
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 141,
+      columnNumber: 17
+    }
+  }, "Notifications")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_MenuItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    onClick: handleProfileMenuOpen,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 143,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    size: "large",
+    "aria-label": "account of current user",
+    "aria-controls": "primary-search-account-menu",
+    "aria-haspopup": "true",
+    color: "inherit",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 144,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_icons_material_AccountCircle__WEBPACK_IMPORTED_MODULE_13___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 151,
+      columnNumber: 21
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 153,
+      columnNumber: 17
+    }
+  }, "Profile")));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
     sx: {
       flexGrow: 1
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 159,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_AppBar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_AppBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
     position: "static",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 160,
       columnNumber: 13
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 161,
       columnNumber: 17
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: "large",
     edge: "start",
     color: "inherit",
-    "aria-label": "menu",
+    "aria-label": "open drawer",
     sx: {
       mr: 2
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 162,
       columnNumber: 21
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_7___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_11___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 169,
       columnNumber: 25
     }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
     variant: "h6",
+    noWrap: true,
     component: "div",
+    sx: {
+      display: {
+        xs: 'none',
+        sm: 'block'
+      }
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 171,
+      columnNumber: 21
+    }
+  }, "MUI"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](Search, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 179,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](SearchIconWrapper, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 180,
+      columnNumber: 25
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_icons_material_Search__WEBPACK_IMPORTED_MODULE_12___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 181,
+      columnNumber: 29
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](StyledInputBase, {
+    placeholder: "Search\u2026",
+    inputProps: {
+      'aria-label': 'search'
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 183,
+      columnNumber: 25
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
     sx: {
       flexGrow: 1
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 188,
       columnNumber: 21
     }
-  }, "News"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    sx: {
+      display: {
+        xs: 'none',
+        md: 'flex'
+      }
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 189,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    size: "large",
+    "aria-label": "show 4 new mails",
     color: "inherit",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 190,
+      columnNumber: 25
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Badge__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    badgeContent: 4,
+    color: "error",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 191,
+      columnNumber: 29
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_icons_material_Mail__WEBPACK_IMPORTED_MODULE_14___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 192,
+      columnNumber: 33
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    size: "large",
+    "aria-label": "show 17 new notifications",
+    color: "inherit",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 195,
+      columnNumber: 25
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Badge__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    badgeContent: 17,
+    color: "error",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 200,
+      columnNumber: 29
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_icons_material_Notifications__WEBPACK_IMPORTED_MODULE_15___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 201,
+      columnNumber: 33
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    size: "large",
+    edge: "end",
+    "aria-label": "account of current user",
+    "aria-controls": menuId,
+    "aria-haspopup": "true",
+    onClick: handleProfileMenuOpen,
+    color: "inherit",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 204,
+      columnNumber: 25
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_icons_material_AccountCircle__WEBPACK_IMPORTED_MODULE_13___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 213,
+      columnNumber: 29
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    sx: {
+      display: {
+        xs: 'flex',
+        md: 'none'
+      }
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 216,
       columnNumber: 21
     }
-  }, "Login"))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    size: "large",
+    "aria-label": "show more",
+    "aria-controls": mobileMenuId,
+    "aria-haspopup": "true",
+    onClick: handleMobileMenuOpen,
+    color: "inherit",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 217,
+      columnNumber: 25
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_icons_material_MoreVert__WEBPACK_IMPORTED_MODULE_16___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 225,
+      columnNumber: 29
+    }
+  }))))), renderMobileMenu, renderMenu);
 }
 
 /***/ }),
@@ -325,5 +744,5 @@ module.exports = __webpack_require__(/*! C:\xampp\htdocs\movidavibes\wp-content\
 
 /***/ })
 
-},[[0,"runtime-main",0]]]);
+},[[0,"runtime-main",1]]]);
 //# sourceMappingURL=main.chunk.js.map
