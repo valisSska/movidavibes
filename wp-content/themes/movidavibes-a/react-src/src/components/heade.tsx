@@ -156,6 +156,8 @@ export default function Heade() {
         </Menu>
     );
 
+    // @ts-ignore
+    // @ts-ignore
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static"
@@ -173,10 +175,17 @@ export default function Heade() {
                         component="div"
                         sx={{ display: { xs: 'none', sm: 'block' } }}
                     >
-                        MoviDavibes
+                        MovidaVibes
                     </Typography>
                     <Box sx={{ flexGrow: 1 }} />
-                    <Search>
+                    <Search sx={{
+                        border:'2px gray solid',
+                        borderRadius:'30px',
+                        width:'70%',
+                        height:'45px',
+                        flexGrow:1
+                    }}
+                    >
                         <SearchIconWrapper>
                             <SearchIcon />
                         </SearchIconWrapper>
@@ -189,12 +198,12 @@ export default function Heade() {
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                         <Button
                             variant="outlined"
+                            color="secondary"
                             onClick={handleProfileMenuOpen}
                             sx={{
-                                borderColor:'grey',
                                 padding:'5 5 5 5',
                                 color:'grey',
-                                borderRadious:'50'
+                                borderRadius:'50px'
                             }}
                         >
                             <MenuIcon />

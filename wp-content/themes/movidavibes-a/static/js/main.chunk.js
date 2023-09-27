@@ -346,7 +346,9 @@ function Heade() {
       lineNumber: 154,
       columnNumber: 17
     }
-  }, "Profile")));
+  }, "Profile"))); // @ts-ignore
+  // @ts-ignore
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
     sx: {
       flexGrow: 1
@@ -354,7 +356,7 @@ function Heade() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 160,
+      lineNumber: 162,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_AppBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -362,7 +364,7 @@ function Heade() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 161,
+      lineNumber: 163,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Toolbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -374,7 +376,7 @@ function Heade() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 163,
+      lineNumber: 165,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -390,38 +392,45 @@ function Heade() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 170,
+      lineNumber: 172,
       columnNumber: 21
     }
-  }, "MoviDavibes"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "MovidaVibes"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
     sx: {
       flexGrow: 1
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 178,
+      lineNumber: 180,
       columnNumber: 21
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](Search, {
+    sx: {
+      border: '2px gray solid',
+      borderRadius: '30px',
+      width: '70%',
+      height: '45px',
+      flexGrow: 1
+    },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 179,
+      lineNumber: 181,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](SearchIconWrapper, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 180,
+      lineNumber: 189,
       columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_icons_material_Search__WEBPACK_IMPORTED_MODULE_13___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 181,
+      lineNumber: 190,
       columnNumber: 29
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](StyledInputBase, {
@@ -432,7 +441,7 @@ function Heade() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 183,
+      lineNumber: 192,
       columnNumber: 25
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -442,7 +451,7 @@ function Heade() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 188,
+      lineNumber: 197,
       columnNumber: 21
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -455,29 +464,29 @@ function Heade() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 189,
+      lineNumber: 198,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Button__WEBPACK_IMPORTED_MODULE_6__["default"], {
     variant: "outlined",
+    color: "secondary",
     onClick: handleProfileMenuOpen,
     sx: {
-      borderColor: 'grey',
       padding: '5 5 5 5',
       color: 'grey',
-      borderRadious: '50'
+      borderRadius: '50px'
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 190,
+      lineNumber: 199,
       columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_12___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 200,
+      lineNumber: 209,
       columnNumber: 29
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -487,7 +496,7 @@ function Heade() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 201,
+      lineNumber: 210,
       columnNumber: 29
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_icons_material_AccountCircle__WEBPACK_IMPORTED_MODULE_14___default.a, {
@@ -495,7 +504,7 @@ function Heade() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 202,
+      lineNumber: 211,
       columnNumber: 29
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -508,7 +517,7 @@ function Heade() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 205,
+      lineNumber: 214,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_material_IconButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -521,14 +530,14 @@ function Heade() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 206,
+      lineNumber: 215,
       columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_mui_icons_material_MoreVert__WEBPACK_IMPORTED_MODULE_17___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 214,
+      lineNumber: 223,
       columnNumber: 29
     }
   }))))), renderMobileMenu, renderMenu);

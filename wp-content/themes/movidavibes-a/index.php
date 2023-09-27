@@ -39,7 +39,7 @@
         Learn how to configure a non-root public URL by running `npm run wpbuild`.
     -->
     <title>React WordPress Theme</title>
-<link href="/wp-content/themes/movidavibes-a/static/css/main.chunk.css?9a5e4d2850148002993d" rel="stylesheet"></head>
+<link href="/wp-content/themes/movidavibes-a/static/css/main.chunk.css?30f2cc78cd8e5df56f21" rel="stylesheet"></head>
     <body>
     <noscript>
         You need to enable JavaScript to run this app.
@@ -55,5 +55,5 @@
         To begin the development, run `npm run wpstart` or `yarn wpstart`.
         To create a production bundle, use `npm run wpbuild` or `yarn wpbuild`.
     -->
-    <script src="/wp-content/themes/movidavibes-a/static/js/bundle.js?9a5e4d2850148002993d"></script><script src="/wp-content/themes/movidavibes-a/static/js/0.chunk.js?9a5e4d2850148002993d"></script><script src="/wp-content/themes/movidavibes-a/static/js/main.chunk.js?9a5e4d2850148002993d"></script></body>
+    <script src="/wp-content/themes/movidavibes-a/static/js/bundle.js?30f2cc78cd8e5df56f21"></script><script src="/wp-content/themes/movidavibes-a/static/js/0.chunk.js?30f2cc78cd8e5df56f21"></script><script src="/wp-content/themes/movidavibes-a/static/js/main.chunk.js?30f2cc78cd8e5df56f21"></script></body>
 </html>
