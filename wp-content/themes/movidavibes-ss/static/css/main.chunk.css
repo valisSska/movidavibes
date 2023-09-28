@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.heade{
+    height:80px;
+    width:100%;
+    background-color: #fafafa;
+    border-bottom: 1px rgb(221, 221, 221) solid;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+}
+.search-input{
+    width:30%;
+    height:30px;
+    background-color: #fafafa;
+    padding: 5px 15px 5px 15px;
+    border: solid rgb(221, 221, 221) 1px;
+    border-radius:30px;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+}
+.search-input-text{
+    font-size: large;
+    height:26px;
+    width:96%;
+    border: none;
+    outline: none;
+    background-color: #fafafa;
+}  
+.button-menu-content{
+    height:40px;
+    width:70px;
+    border: none;
+    background-color: #fafafa;
+    border-radius:30px;
+    border: solid rgb(221, 221, 221) 1px;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+.button-menu-content:hover{
+    background-color: #f2f2f2;
+}
+.menu-profile-list{
+    margin-top:21px;
+    margin-left:-9%;
+    position:absolute;
+    width:15%;
+    background-color:  #ffffff;
+    border: solid rgb(221, 221, 221) 1px;
+    border-bottom: solid rgb(221, 221, 221) 2px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.menu-profile-list-content{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    height: 35px;
+}
+.menu-profile-list-content:hover{
+    background-color: #fafafa;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#content-page-routes{
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/*# sourceMappingURL=main.chunk.css.map*/
