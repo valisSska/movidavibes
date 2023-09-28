@@ -6,8 +6,8 @@
   "author": "Valentyn Anaka",
   "private": true,
   "scripts": {
-    "install-theme": "cd ./wp-content/themes/movidavibes-a/react-src && yarn install",
-    "start-theme": "cd ./wp-content/themes/movidavibes-a/react-src && yarn start"
+    "install-theme": "cd ./wp-content/themes/movidavibes-ss/react-src && yarn install",
+    "start-theme": "cd ./wp-content/themes/movidavibes-ss/react-src && yarn start"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
