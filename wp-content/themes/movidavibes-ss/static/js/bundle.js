@@ -137,7 +137,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/wp-content/themes/movidavibes-ss/";
+/******/ 	__webpack_require__.p = "/movidavibes/wp-content/themes/movidavibes-ss/";
 /******/
 /******/ 	var jsonpArray = this["webpackJsonpmovidavibes-ss"] = this["webpackJsonpmovidavibes-ss"] || [];
 /******/ 	var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);

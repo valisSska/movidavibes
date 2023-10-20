@@ -1,14 +1,14 @@
 {
   "files": {
-    "static/js/0.chunk.js": "/wp-content/themes/movidavibes-ss/static/js/0.chunk.js",
-    "static/js/0.chunk.js.map": "/wp-content/themes/movidavibes-ss/static/js/0.chunk.js.map",
-    "main.css": "/wp-content/themes/movidavibes-ss/static/css/main.chunk.css",
-    "main.js": "/wp-content/themes/movidavibes-ss/static/js/main.chunk.js",
-    "main.css.map": "/wp-content/themes/movidavibes-ss/static/css/main.chunk.css.map",
-    "main.js.map": "/wp-content/themes/movidavibes-ss/static/js/main.chunk.js.map",
-    "runtime-main.js": "/wp-content/themes/movidavibes-ss/static/js/bundle.js",
-    "runtime-main.js.map": "/wp-content/themes/movidavibes-ss/static/js/bundle.js.map",
-    "index.php": "/wp-content/themes/movidavibes-ss/index.php"
+    "static/js/0.chunk.js": "/movidavibes/wp-content/themes/movidavibes-ss/static/js/0.chunk.js",
+    "static/js/0.chunk.js.map": "/movidavibes/wp-content/themes/movidavibes-ss/static/js/0.chunk.js.map",
+    "main.css": "/movidavibes/wp-content/themes/movidavibes-ss/static/css/main.chunk.css",
+    "main.js": "/movidavibes/wp-content/themes/movidavibes-ss/static/js/main.chunk.js",
+    "main.css.map": "/movidavibes/wp-content/themes/movidavibes-ss/static/css/main.chunk.css.map",
+    "main.js.map": "/movidavibes/wp-content/themes/movidavibes-ss/static/js/main.chunk.js.map",
+    "runtime-main.js": "/movidavibes/wp-content/themes/movidavibes-ss/static/js/bundle.js",
+    "runtime-main.js.map": "/movidavibes/wp-content/themes/movidavibes-ss/static/js/bundle.js.map",
+    "index.php": "/movidavibes/wp-content/themes/movidavibes-ss/index.php"
   },
   "entrypoints": [
     "static/js/bundle.js",
