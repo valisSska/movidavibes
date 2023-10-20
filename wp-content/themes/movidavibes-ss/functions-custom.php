@@ -17,6 +17,15 @@ if($results){
     $wpdb->print_error();
 }
 
-include "index.php";
+
+function enqueue_react_app() {
+    wp_enqueue_script('react-app', get_template_directory_uri() . '/build/static/js/main.js', array(), null, true);
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_react_app');
 
 ?>
+
+<script>
+    var homeurl = <?php echo json_encode(get_home_url()); ?>;
+</script>

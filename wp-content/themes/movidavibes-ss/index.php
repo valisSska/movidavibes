@@ -1,4 +1,5 @@
 <?php
+include "functions-custom.php";
   $TEMPLATE_PATH = parse_url(get_template_directory_uri(), PHP_URL_PATH);
 ?>
 <!DOCTYPE html>
@@ -12,7 +13,7 @@
 <script> wpThemeClient.start("ws", "127.0.0.1", "8090"); </script>
 
 <meta charset="utf-8" />
-    <link rel="shortcut icon" href="/wp-content/themes/movidavibes-ss/favicon.ico" />
+    <link rel="shortcut icon" href="/movidavibes/wp-content/themes/movidavibes-ss/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -29,17 +30,17 @@
         If you're reading this from "view source" in your browser, it might not make sense as
         these tokens have already been evaluated and replaced, even in this remark blurb.
 
-        Notice the use of "php echo $TEMPLATE_PATH;" and /wp-content/themes/movidavibes-ss in the tags above.
-        Both will be replaced with the URL of the `public` folder during the build (/wp-content/themes/movidavibes-ss) or
+        Notice the use of "php echo $TEMPLATE_PATH;" and /movidavibes/wp-content/themes/movidavibes-ss in the tags above.
+        Both will be replaced with the URL of the `public` folder during the build (/movidavibes/wp-content/themes/movidavibes-ss) or
         at render time (php echo $TEMPLATE_PATH;)
         Only files inside the `public` folder can be referenced like this.
 
-        Unlike "/favicon.ico" or "favicon.ico", "/wp-content/themes/movidavibes-ss/favicon.ico" will
+        Unlike "/favicon.ico" or "favicon.ico", "/movidavibes/wp-content/themes/movidavibes-ss/favicon.ico" will
         work correctly both with client-side routing and a non-root public URL.
         Learn how to configure a non-root public URL by running `npm run wpbuild`.
     -->
     <title>React WordPress Theme</title>
-<link href="/wp-content/themes/movidavibes-ss/static/css/main.chunk.css?017c074d1d4efcc2eaaf" rel="stylesheet"></head>
+<link href="/movidavibes/wp-content/themes/movidavibes-ss/static/css/main.chunk.css?8a15e837b86233cd01bd" rel="stylesheet"></head>
     <body>
     <noscript>
         You need to enable JavaScript to run this app.
@@ -55,5 +56,5 @@
         To begin the development, run `npm run wpstart` or `yarn wpstart`.
         To create a production bundle, use `npm run wpbuild` or `yarn wpbuild`.
     -->
-    <script src="/wp-content/themes/movidavibes-ss/static/js/bundle.js?017c074d1d4efcc2eaaf"></script><script src="/wp-content/themes/movidavibes-ss/static/js/0.chunk.js?017c074d1d4efcc2eaaf"></script><script src="/wp-content/themes/movidavibes-ss/static/js/main.chunk.js?017c074d1d4efcc2eaaf"></script></body>
+    <script src="/movidavibes/wp-content/themes/movidavibes-ss/static/js/bundle.js?8a15e837b86233cd01bd"></script><script src="/movidavibes/wp-content/themes/movidavibes-ss/static/js/0.chunk.js?8a15e837b86233cd01bd"></script><script src="/movidavibes/wp-content/themes/movidavibes-ss/static/js/main.chunk.js?8a15e837b86233cd01bd"></script></body>
 </html>
