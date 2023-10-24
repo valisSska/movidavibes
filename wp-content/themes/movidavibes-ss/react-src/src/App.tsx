@@ -25,13 +25,6 @@ function App() {
     return (
         <div className="App">
         <Heade />
-                <Router>
-                    <Routes>
-                        <Route path={`${url}/`} element={<HomePage />} />
-                        <Route path={`${url}/sign-in`} element={<SignIn />} />
-                        {/* Altre rotte */}
-                    </Routes>
-                </Router>
         </div>
     );
 }
