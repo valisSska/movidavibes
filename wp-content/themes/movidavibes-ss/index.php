@@ -1,5 +1,4 @@
 <?php
-include "functions-custom.php";
   $TEMPLATE_PATH = parse_url(get_template_directory_uri(), PHP_URL_PATH);
 ?>
 <!DOCTYPE html>
@@ -40,7 +39,7 @@ include "functions-custom.php";
         Learn how to configure a non-root public URL by running `npm run wpbuild`.
     -->
     <title>React WordPress Theme</title>
-<link href="/movidavibes/wp-content/themes/movidavibes-ss/static/css/main.chunk.css?8a15e837b86233cd01bd" rel="stylesheet"></head>
+<link href="/movidavibes/wp-content/themes/movidavibes-ss/static/css/main.chunk.css?74b82b03440c151c8972" rel="stylesheet"></head>
     <body>
     <noscript>
         You need to enable JavaScript to run this app.
@@ -56,5 +55,5 @@ include "functions-custom.php";
         To begin the development, run `npm run wpstart` or `yarn wpstart`.
         To create a production bundle, use `npm run wpbuild` or `yarn wpbuild`.
     -->
-    <script src="/movidavibes/wp-content/themes/movidavibes-ss/static/js/bundle.js?8a15e837b86233cd01bd"></script><script src="/movidavibes/wp-content/themes/movidavibes-ss/static/js/0.chunk.js?8a15e837b86233cd01bd"></script><script src="/movidavibes/wp-content/themes/movidavibes-ss/static/js/main.chunk.js?8a15e837b86233cd01bd"></script></body>
+    <script src="/movidavibes/wp-content/themes/movidavibes-ss/static/js/bundle.js?74b82b03440c151c8972"></script><script src="/movidavibes/wp-content/themes/movidavibes-ss/static/js/0.chunk.js?74b82b03440c151c8972"></script><script src="/movidavibes/wp-content/themes/movidavibes-ss/static/js/main.chunk.js?74b82b03440c151c8972"></script></body>
 </html>
