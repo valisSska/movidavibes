@@ -1831,6 +1831,12 @@ registerBlockType('movidavibes/movidavibes-header-block', {
   title: 'Movidavibes Header',
   icon: '',
   category: 'movidavibes',
+  attributes: {
+    formType: {
+      type: 'string',
+      default: 'standard',
+    },
+  },
   edit: editHeade,
   save: saveHeade,
 });

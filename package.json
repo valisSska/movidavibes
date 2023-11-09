@@ -6,10 +6,11 @@
   "author": "Valik",
   "private": true,
   "scripts": {
-    "install-theme": "cd ./wp-content/themes/movidavibes-ss/react-src && yarn install",
-    "start-theme": "cd ./wp-content/themes/movidavibes-ss/react-src && yarn start",
+    "install-theme": "cd ./wp-content/themes/movidavibes-blocks-theme && yarn install",
+    "start-theme": "cd ./wp-content/themes/movidavibes-blocks-theme && yarn start",
     "install-blocks": "cd ./wp-content/plugins/movidavibes-blocks-s && yarn install",
-    "start-blocks": "cd ./wp-content/plugins/movidavibes-blocks-s && set NODE_ENV=development && yarn start"
+    "start-blocks": "cd ./wp-content/plugins/movidavibes-blocks-s && set NODE_ENV=development && yarn start",
+    "build-theme": "cd ./wp-content/themes/movidavibes-blocks-theme && yarn build"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",

@@ -13,16 +13,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "editHeade": function() { return /* binding */ editHeade; },
 /* harmony export */   "saveHeade": function() { return /* binding */ saveHeade; }
 /* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
-/* harmony import */ var _babel_runtime_helpers_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/objectDestructuringEmpty */ "./node_modules/@babel/runtime/helpers/esm/objectDestructuringEmpty.js");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _logo_movidavibes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./logo-movidavibes */ "./src/components-movidavibes/logo-movidavibes.js");
-/* harmony import */ var _components_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components.css */ "./src/components-movidavibes/components.css");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _logo_movidavibes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./logo-movidavibes */ "./src/components-movidavibes/logo-movidavibes.js");
+/* harmony import */ var _components_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components.css */ "./src/components-movidavibes/components.css");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_6__);
 
 
 
@@ -31,82 +33,76 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var editHeade = function editHeade(_ref) {
-  (0,_babel_runtime_helpers_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref);
+  var attributes = _ref.attributes,
+      setAttributes = _ref.setAttributes;
 
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false),
-      _useState2 = (0,_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
-      viewMenuProfile = _useState2[0],
-      setViewMenuProfile = _useState2[1];
+  var onChangeFormType = function onChangeFormType(value) {
+    setAttributes({
+      formType: value
+    });
+  };
 
-  function viewMenuProfileFunction() {
-    if (viewMenuProfile === false) {
-      setViewMenuProfile(true);
-    } else {
-      setViewMenuProfile(false);
-    }
-  }
-
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("div", {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_6__.SelectControl, {
+    onChange: onChangeFormType,
+    value: attributes.formType,
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Seleziona il tipo form'),
+    options: [{
+      value: 'standard',
+      label: 'Standard'
+    }, {
+      value: 'search',
+      label: 'Con il filtro'
+    }]
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "heade"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)(_logo_movidavibes__WEBPACK_IMPORTED_MODULE_5__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("div", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_logo_movidavibes__WEBPACK_IMPORTED_MODULE_3__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "search-input"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("input", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     className: "search-input-text"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("svg", {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "20",
     height: "20",
     fill: "#959595",
     className: "bi bi-search",
     viewBox: "0 0 16 16"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("path", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
     d: "M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("div", {
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "button-menu"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("button", {
-    className: "button-menu-content",
-    onClick: viewMenuProfileFunction
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("svg", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    className: "button-menu-content"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "20",
     height: "20",
     fill: "#959595",
     className: "bi bi-list",
     viewBox: "0 0 16 16"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("path", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
     "fill-rule": "evenodd",
     d: "M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("svg", {
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "30",
     height: "30",
     fill: "#959595",
     className: "bi bi-person-circle",
     viewBox: "0 0 16 16"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("path", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
     className: "icon-profile",
     d: "M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("path", {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
     className: "icon-profile2",
     "fill-rule": "evenodd",
     d: "M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
-  }))), viewMenuProfile === true && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("div", {
-    className: "menu-profile-list"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("div", {
-    className: "menu-profile-list-content"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("a", {
-    href: window.location + "/tesst"
-  }, "Accedi")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("div", {
-    className: "menu-profile-list-content"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("p", null, "Registrati")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("div", {
-    style: {
-      height: '15px'
-    }
-  }))));
+  }))))));
 };
-var saveHeade = function saveHeade() {
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("div", {
-    id: "movidavibes-header-block"
+var saveHeade = function saveHeade(_ref2) {
+  var attributes = _ref2.attributes;
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    id: "movidavibes-header-block",
+    "data-form-type": attributes.formType
   });
 };
 
@@ -7834,6 +7830,12 @@ var UnderlineButton = function UnderlineButton(props) {
   title: 'Movidavibes Header',
   icon: '',
   category: 'movidavibes',
+  attributes: {
+    formType: {
+      type: 'string',
+      default: 'standard'
+    }
+  },
   edit: _components_movidavibes_heade_block__WEBPACK_IMPORTED_MODULE_29__.editHeade,
   save: _components_movidavibes_heade_block__WEBPACK_IMPORTED_MODULE_29__.saveHeade
 });
