@@ -18,6 +18,7 @@ import { registerFormatType, toggleFormat } from '@wordpress/rich-text';
 import { editProjectSlidesSection, saveProjectSlidesSection } from './components/project-slides-section';
 import { editProjectMap, saveProjectMap } from './components/project-map';
 import { editFormDonate, saveFormDonate } from './components/form-donate';
+import { editMoviLogin, saveMoviLogin } from './components-movidavibes/movidavibes-login-form';
 import { editFormAnagrafica, saveFormAnagrafica } from './components/form-anagrafica';
 import { editFormCheckout, saveFormCheckout } from './components/form-checkout';
 import { editFormCards, saveFormCards } from './components/form-e-cards';
@@ -37,6 +38,8 @@ import { editImageCard, saveImageCard } from './components/image-card';
 import paletteProterrasancta from './components/palette-proterrasancta';
 import './index.scss';
 import locale from './locale.json';
+import { editMoviSignUp, saveMoviSignUp } from './components-movidavibes/movidavibes-signup-form';
+import { editHeade, saveHeade } from './components-movidavibes/heade-block';
 
 const HrButton = (props) => (
   <RichTextToolbarButton
@@ -1809,6 +1812,27 @@ registerBlockType('proterrasancta/project-map', {
   },
   edit: editProjectMap,
   save: saveProjectMap,
+});
+registerBlockType('movidavibes/movidavibes-login-form', {
+  title: 'Movidavibes Login Form',
+  icon: '',
+  category: 'movidavibes',
+  edit: editMoviLogin,
+  save: saveMoviLogin,
+});
+registerBlockType('movidavibes/movidavibes-signup-form', {
+  title: 'Movidavibes SignUp Form',
+  icon: '',
+  category: 'movidavibes',
+  edit: editMoviSignUp,
+  save: saveMoviSignUp,
+});
+registerBlockType('movidavibes/movidavibes-header-block', {
+  title: 'Movidavibes Header',
+  icon: '',
+  category: 'movidavibes',
+  edit: editHeade,
+  save: saveHeade,
 });
 
 registerBlockType('proterrasancta/form-donate', {

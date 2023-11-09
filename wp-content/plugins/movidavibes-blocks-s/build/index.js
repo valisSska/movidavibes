@@ -2,6 +2,274 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/components-movidavibes/heade-block.js":
+/*!***************************************************!*\
+  !*** ./src/components-movidavibes/heade-block.js ***!
+  \***************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "editHeade": function() { return /* binding */ editHeade; },
+/* harmony export */   "saveHeade": function() { return /* binding */ saveHeade; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/objectDestructuringEmpty */ "./node_modules/@babel/runtime/helpers/esm/objectDestructuringEmpty.js");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _logo_movidavibes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./logo-movidavibes */ "./src/components-movidavibes/logo-movidavibes.js");
+/* harmony import */ var _components_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components.css */ "./src/components-movidavibes/components.css");
+
+
+
+
+
+
+
+var editHeade = function editHeade(_ref) {
+  (0,_babel_runtime_helpers_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref);
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false),
+      _useState2 = (0,_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+      viewMenuProfile = _useState2[0],
+      setViewMenuProfile = _useState2[1];
+
+  function viewMenuProfileFunction() {
+    if (viewMenuProfile === false) {
+      setViewMenuProfile(true);
+    } else {
+      setViewMenuProfile(false);
+    }
+  }
+
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("div", {
+    className: "heade"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)(_logo_movidavibes__WEBPACK_IMPORTED_MODULE_5__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("div", {
+    className: "search-input"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("input", {
+    className: "search-input-text"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "20",
+    height: "20",
+    fill: "#959595",
+    className: "bi bi-search",
+    viewBox: "0 0 16 16"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("path", {
+    d: "M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("div", {
+    className: "button-menu"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("button", {
+    className: "button-menu-content",
+    onClick: viewMenuProfileFunction
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "20",
+    height: "20",
+    fill: "#959595",
+    className: "bi bi-list",
+    viewBox: "0 0 16 16"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("path", {
+    "fill-rule": "evenodd",
+    d: "M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "30",
+    height: "30",
+    fill: "#959595",
+    className: "bi bi-person-circle",
+    viewBox: "0 0 16 16"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("path", {
+    className: "icon-profile",
+    d: "M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("path", {
+    className: "icon-profile2",
+    "fill-rule": "evenodd",
+    d: "M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+  }))), viewMenuProfile === true && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("div", {
+    className: "menu-profile-list"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("div", {
+    className: "menu-profile-list-content"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("a", {
+    href: window.location + "/tesst"
+  }, "Accedi")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("div", {
+    className: "menu-profile-list-content"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("p", null, "Registrati")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("div", {
+    style: {
+      height: '15px'
+    }
+  }))));
+};
+var saveHeade = function saveHeade() {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_2__.createElement)("div", {
+    id: "movidavibes-header-block"
+  });
+};
+
+/***/ }),
+
+/***/ "./src/components-movidavibes/logo-movidavibes.js":
+/*!********************************************************!*\
+  !*** ./src/components-movidavibes/logo-movidavibes.js ***!
+  \********************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components.css */ "./src/components-movidavibes/components.css");
+
+
+/* eslint-disable */
+
+
+
+function LogoMovidavibes() {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "logo-movidavibes"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    className: "logo-movidavibes-text"
+  }, "MovidaVibes"));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (LogoMovidavibes);
+
+/***/ }),
+
+/***/ "./src/components-movidavibes/movidavibes-login-form.js":
+/*!**************************************************************!*\
+  !*** ./src/components-movidavibes/movidavibes-login-form.js ***!
+  \**************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "editMoviLogin": function() { return /* binding */ editMoviLogin; },
+/* harmony export */   "saveMoviLogin": function() { return /* binding */ saveMoviLogin; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/objectDestructuringEmpty */ "./node_modules/@babel/runtime/helpers/esm/objectDestructuringEmpty.js");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components.css */ "./src/components-movidavibes/components.css");
+
+
+
+
+
+var editMoviLogin = function editMoviLogin(_ref) {
+  (0,_babel_runtime_helpers_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref);
+
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+    className: "flex-center"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+    className: "container-login-forms"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+    className: "header-login-forms"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("p", {
+    className: "text-welcome-login-forms"
+  }, "Accedi")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("p", {
+    className: "text-welcome-login-forms"
+  }, "Benvenuto su Movidavibes"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+    className: "container-inputs-login-forms"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("input", {
+    className: "input-user-login-forms",
+    placeholder: "User",
+    disabled: true
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("input", {
+    className: "input-password-login-forms",
+    type: "password",
+    placeholder: "Password",
+    disabled: true
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("p", {
+    className: "text-privacy-login-forms"
+  }, "Informativa sulla Privacy"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+    className: "container-button-login-forms"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("button", {
+    className: "button-login-forms"
+  }, "Accedi"))));
+};
+var saveMoviLogin = function saveMoviLogin() {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+    id: "movidavibes-login-form"
+  });
+};
+
+/***/ }),
+
+/***/ "./src/components-movidavibes/movidavibes-signup-form.js":
+/*!***************************************************************!*\
+  !*** ./src/components-movidavibes/movidavibes-signup-form.js ***!
+  \***************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "editMoviSignUp": function() { return /* binding */ editMoviSignUp; },
+/* harmony export */   "saveMoviSignUp": function() { return /* binding */ saveMoviSignUp; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/objectDestructuringEmpty */ "./node_modules/@babel/runtime/helpers/esm/objectDestructuringEmpty.js");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components.css */ "./src/components-movidavibes/components.css");
+
+
+
+
+
+var editMoviSignUp = function editMoviSignUp(_ref) {
+  (0,_babel_runtime_helpers_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref);
+
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+    className: "flex-center"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+    className: "container-login-forms"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+    className: "header-login-forms"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("p", {
+    className: "text-welcome-login-forms"
+  }, "Registrati")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("p", {
+    className: "text-welcome-login-forms"
+  }, "Benvenuto su Movidavibes"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+    className: "container-inputs-login-forms"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("input", {
+    className: "input-user-login-forms",
+    placeholder: "User",
+    disabled: true
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("input", {
+    className: "input-password-login-forms",
+    type: "password",
+    placeholder: "Password",
+    disabled: true
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("p", {
+    className: "text-privacy-login-forms"
+  }, "Informativa sulla Privacy"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+    className: "container-button-login-forms"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("button", {
+    className: "button-login-forms"
+  }, "Registrati"))));
+};
+var saveMoviSignUp = function saveMoviSignUp() {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+    id: "movidavibes-signup-form"
+  });
+};
+
+/***/ }),
+
 /***/ "./src/components/campaigns-list.js":
 /*!******************************************!*\
   !*** ./src/components/campaigns-list.js ***!
@@ -5269,6 +5537,18 @@ var saveVideoCover = function saveVideoCover(_ref3) {
 
 /***/ }),
 
+/***/ "./src/components-movidavibes/components.css":
+/*!***************************************************!*\
+  !*** ./src/components-movidavibes/components.css ***!
+  \***************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./src/index.scss":
 /*!************************!*\
   !*** ./src/index.scss ***!
@@ -5467,6 +5747,22 @@ function _nonIterableRest() {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/helpers/esm/objectDestructuringEmpty.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/objectDestructuringEmpty.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _objectDestructuringEmpty; }
+/* harmony export */ });
+function _objectDestructuringEmpty(obj) {
+  if (obj == null) throw new TypeError("Cannot destructure undefined");
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js":
 /*!******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js ***!
@@ -5614,24 +5910,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_project_slides_section__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/project-slides-section */ "./src/components/project-slides-section.js");
 /* harmony import */ var _components_project_map__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/project-map */ "./src/components/project-map.js");
 /* harmony import */ var _components_form_donate__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/form-donate */ "./src/components/form-donate.js");
-/* harmony import */ var _components_form_anagrafica__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/form-anagrafica */ "./src/components/form-anagrafica.js");
-/* harmony import */ var _components_form_checkout__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/form-checkout */ "./src/components/form-checkout.js");
-/* harmony import */ var _components_form_e_cards__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/form-e-cards */ "./src/components/form-e-cards.js");
-/* harmony import */ var _components_news_slides_section__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/news-slides-section */ "./src/components/news-slides-section.js");
-/* harmony import */ var _components_news_grid_section__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/news-grid-section */ "./src/components/news-grid-section.js");
-/* harmony import */ var _components_highlights_slides_section__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/highlights-slides-section */ "./src/components/highlights-slides-section.js");
-/* harmony import */ var _components_video_cover__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/video-cover */ "./src/components/video-cover.js");
-/* harmony import */ var _components_section_hero__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/section-hero */ "./src/components/section-hero.js");
-/* harmony import */ var _components_news_list__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/news-list */ "./src/components/news-list.js");
-/* harmony import */ var _components_campaigns_list__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/campaigns-list */ "./src/components/campaigns-list.js");
-/* harmony import */ var _components_cover_section__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/cover-section */ "./src/components/cover-section.js");
-/* harmony import */ var _components_section_hero_50__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/section-hero-50 */ "./src/components/section-hero-50.js");
-/* harmony import */ var _components_section_hero_map__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/section-hero-map */ "./src/components/section-hero-map.js");
-/* harmony import */ var _components_section_testimonianza__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/section-testimonianza */ "./src/components/section-testimonianza.js");
-/* harmony import */ var _components_image_card__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/image-card */ "./src/components/image-card.js");
-/* harmony import */ var _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/palette-proterrasancta */ "./src/components/palette-proterrasancta.js");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./index.scss */ "./src/index.scss");
-/* harmony import */ var _locale_json__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./locale.json */ "./src/locale.json");
+/* harmony import */ var _components_movidavibes_movidavibes_login_form__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components-movidavibes/movidavibes-login-form */ "./src/components-movidavibes/movidavibes-login-form.js");
+/* harmony import */ var _components_form_anagrafica__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/form-anagrafica */ "./src/components/form-anagrafica.js");
+/* harmony import */ var _components_form_checkout__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/form-checkout */ "./src/components/form-checkout.js");
+/* harmony import */ var _components_form_e_cards__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/form-e-cards */ "./src/components/form-e-cards.js");
+/* harmony import */ var _components_news_slides_section__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/news-slides-section */ "./src/components/news-slides-section.js");
+/* harmony import */ var _components_news_grid_section__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/news-grid-section */ "./src/components/news-grid-section.js");
+/* harmony import */ var _components_highlights_slides_section__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/highlights-slides-section */ "./src/components/highlights-slides-section.js");
+/* harmony import */ var _components_video_cover__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/video-cover */ "./src/components/video-cover.js");
+/* harmony import */ var _components_section_hero__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/section-hero */ "./src/components/section-hero.js");
+/* harmony import */ var _components_news_list__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/news-list */ "./src/components/news-list.js");
+/* harmony import */ var _components_campaigns_list__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/campaigns-list */ "./src/components/campaigns-list.js");
+/* harmony import */ var _components_cover_section__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/cover-section */ "./src/components/cover-section.js");
+/* harmony import */ var _components_section_hero_50__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/section-hero-50 */ "./src/components/section-hero-50.js");
+/* harmony import */ var _components_section_hero_map__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/section-hero-map */ "./src/components/section-hero-map.js");
+/* harmony import */ var _components_section_testimonianza__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/section-testimonianza */ "./src/components/section-testimonianza.js");
+/* harmony import */ var _components_image_card__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/image-card */ "./src/components/image-card.js");
+/* harmony import */ var _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/palette-proterrasancta */ "./src/components/palette-proterrasancta.js");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./index.scss */ "./src/index.scss");
+/* harmony import */ var _locale_json__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./locale.json */ "./src/locale.json");
+/* harmony import */ var _components_movidavibes_movidavibes_signup_form__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components-movidavibes/movidavibes-signup-form */ "./src/components-movidavibes/movidavibes-signup-form.js");
+/* harmony import */ var _components_movidavibes_heade_block__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components-movidavibes/heade-block */ "./src/components-movidavibes/heade-block.js");
 
 
 /* eslint-disable no-console */
@@ -5641,6 +5940,9 @@ __webpack_require__.r(__webpack_exports__);
 /* eslint-disable consistent-return */
 
 /* eslint-disable no-undef */
+
+
+
 
 
 
@@ -5738,7 +6040,7 @@ var UnderlineButton = function UnderlineButton(props) {
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Background Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.backgroundColor,
         onChange: onChangeBackgroundColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Background Color')
@@ -5805,7 +6107,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Background Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.backgroundColor,
         onChange: onChangeBackgroundColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Background Color')
@@ -5813,7 +6115,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Title Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.textColor,
         onChange: onChangeTextColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Color')
@@ -5896,7 +6198,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Background Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.backgroundColor,
         onChange: onChangeBackgroundColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Background Color')
@@ -5904,7 +6206,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Title Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.textColor,
         onChange: onChangeTextColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Color')
@@ -6123,7 +6425,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Background Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.backgroundColor,
         onChange: onChangeBackgroundColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Background Color')
@@ -6131,7 +6433,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Text Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.textColor,
         onChange: onChangeTextColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Text Color')
@@ -6159,7 +6461,7 @@ var UnderlineButton = function UnderlineButton(props) {
       alt: "icon-campaign"
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "icon-icon-title"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang][attributes.icon1]), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang][attributes.icon1]), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "divider"
     })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "col icon-container"
@@ -6169,7 +6471,7 @@ var UnderlineButton = function UnderlineButton(props) {
       alt: "icon-campaign"
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "icon-icon-title"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang][attributes.icon2]), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang][attributes.icon2]), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "divider"
     })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "col icon-container"
@@ -6179,7 +6481,7 @@ var UnderlineButton = function UnderlineButton(props) {
       alt: "icon-campaign"
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "icon-icon-title"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang][attributes.icon3]), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang][attributes.icon3]), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "divider"
     })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "col icon-container"
@@ -6189,7 +6491,7 @@ var UnderlineButton = function UnderlineButton(props) {
       alt: "icon-campaign"
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "icon-icon-title"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang][attributes.icon4]), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang][attributes.icon4]), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "divider"
     })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "col icon-container",
@@ -6202,7 +6504,7 @@ var UnderlineButton = function UnderlineButton(props) {
       alt: "icon-campaign"
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "icon-icon-beneficiaries"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang].beneficiari), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang].beneficiari), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "icon-icon-number"
     }, attributes.number))))));
   },
@@ -6224,7 +6526,7 @@ var UnderlineButton = function UnderlineButton(props) {
       alt: "icon-campaign"
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "icon-icon-title"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang][attributes.icon1]), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang][attributes.icon1]), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "divider"
     })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "col icon-container"
@@ -6234,7 +6536,7 @@ var UnderlineButton = function UnderlineButton(props) {
       alt: "icon-campaign"
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "icon-icon-title"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang][attributes.icon2]), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang][attributes.icon2]), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "divider"
     })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "col icon-container"
@@ -6244,7 +6546,7 @@ var UnderlineButton = function UnderlineButton(props) {
       alt: "icon-campaign"
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "icon-icon-title"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang][attributes.icon3]), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang][attributes.icon3]), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "divider"
     })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "col icon-container"
@@ -6254,7 +6556,7 @@ var UnderlineButton = function UnderlineButton(props) {
       alt: "icon-campaign"
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "icon-icon-title"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang][attributes.icon4]), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang][attributes.icon4]), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "divider"
     })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "col icon-container beneficiari"
@@ -6264,7 +6566,7 @@ var UnderlineButton = function UnderlineButton(props) {
       alt: "icon-campaign"
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "icon-icon-beneficiaries"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang].beneficiari), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang].beneficiari), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "icon-icon-number"
     }, attributes.number)))));
   }
@@ -6305,7 +6607,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Background Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.backgroundColor,
         onChange: onChangeBackgroundColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Background Color')
@@ -6313,7 +6615,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Title Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.textColor,
         onChange: onChangeTextColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Color')
@@ -6424,7 +6726,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Background Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.backgroundColor,
         onChange: onChangeBackgroundColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Background Color')
@@ -6432,7 +6734,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Title Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.textColor,
         onChange: onChangeTextColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Color')
@@ -6840,7 +7142,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Background Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.backgroundColor,
         onChange: onChangeBackgroundColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Background Color')
@@ -6848,7 +7150,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Title Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.textColor,
         onChange: onChangeTextColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Color')
@@ -6913,13 +7215,13 @@ var UnderlineButton = function UnderlineButton(props) {
       className: "m-auto ml-md-auto mr-md-0 row align-items-center ideas-group"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "ideas"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang].BATTESIMO), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang].BATTESIMO), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "ideas"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang].COMUNIONE), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang].COMUNIONE), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "ideas"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang].CRESIMA), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang].CRESIMA), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "ideas"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang].MATRIMONIO))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang].MATRIMONIO))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "img-container"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
       src: "/wp-content/themes/pro-terra-sancta/images/donazione-fb.png",
@@ -6930,9 +7232,9 @@ var UnderlineButton = function UnderlineButton(props) {
       className: "left-text"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "title"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang].idee), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang].idee), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "summary"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang].ideeSummmary)))))));
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang].ideeSummmary)))))));
   }
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('proterrasancta/ibreviary-block', {
@@ -7012,7 +7314,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Background Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.backgroundColor,
         onChange: onChangeBackgroundColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Background Color')
@@ -7020,7 +7322,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Title Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.textColor,
         onChange: onChangeTextColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Color')
@@ -7054,9 +7356,9 @@ var UnderlineButton = function UnderlineButton(props) {
       className: "left-text"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "title"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang]['ibreviary-title']), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang]['ibreviary-title']), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "summary"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang]['ibreviary-summary']))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang]['ibreviary-summary']))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "col-12 col-md-2 row no-gutters"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "img-app m-auto m-md-0"
@@ -7096,9 +7398,9 @@ var UnderlineButton = function UnderlineButton(props) {
       className: "left-text"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "title"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang]['ibreviary-title']), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang]['ibreviary-title']), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "summary"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang]['ibreviary-summary']))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang]['ibreviary-summary']))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "col-12 col-md-2 row no-gutters"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "img-app m-auto m-md-0"
@@ -7190,7 +7492,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Background Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.backgroundColor,
         onChange: onChangeBackgroundColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Background Color')
@@ -7198,7 +7500,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Title Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.textColor,
         onChange: onChangeTextColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Color')
@@ -7232,9 +7534,9 @@ var UnderlineButton = function UnderlineButton(props) {
       className: "left-text"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "title"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang]['newsletter-title']), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang]['newsletter-title']), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "summary"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang]['newsletter-summary']))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang]['newsletter-summary']))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "col-12 col-md-6 row no-gutters"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "img-app m-auto m-md-0"
@@ -7264,9 +7566,9 @@ var UnderlineButton = function UnderlineButton(props) {
       className: "left-text"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "title"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang]['newsletter-title']), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang]['newsletter-title']), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "summary"
-    }, _locale_json__WEBPACK_IMPORTED_MODULE_26__[attributes.lang]['newsletter-summary']))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, _locale_json__WEBPACK_IMPORTED_MODULE_27__[attributes.lang]['newsletter-summary']))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "col-12 col-lg-6 row no-gutters"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "img-app m-auto m-md-0 w-100"
@@ -7380,7 +7682,7 @@ var UnderlineButton = function UnderlineButton(props) {
     })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Background Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.backgroundColor,
         onChange: onChangeBackgroundColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Background Color')
@@ -7388,7 +7690,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Text Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.textColor,
         onChange: onChangeTextColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Text Color')
@@ -7455,8 +7757,8 @@ var UnderlineButton = function UnderlineButton(props) {
     name: 'small-padding',
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Small Padding')
   }],
-  edit: _components_video_cover__WEBPACK_IMPORTED_MODULE_15__.editVideoCover,
-  save: _components_video_cover__WEBPACK_IMPORTED_MODULE_15__.saveVideoCover
+  edit: _components_video_cover__WEBPACK_IMPORTED_MODULE_16__.editVideoCover,
+  save: _components_video_cover__WEBPACK_IMPORTED_MODULE_16__.saveVideoCover
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('proterrasancta/project-slides-section', {
   title: 'Proterrasancta Project Slides Section',
@@ -7513,6 +7815,27 @@ var UnderlineButton = function UnderlineButton(props) {
   },
   edit: _components_project_map__WEBPACK_IMPORTED_MODULE_7__.editProjectMap,
   save: _components_project_map__WEBPACK_IMPORTED_MODULE_7__.saveProjectMap
+});
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('movidavibes/movidavibes-login-form', {
+  title: 'Movidavibes Login Form',
+  icon: '',
+  category: 'movidavibes',
+  edit: _components_movidavibes_movidavibes_login_form__WEBPACK_IMPORTED_MODULE_9__.editMoviLogin,
+  save: _components_movidavibes_movidavibes_login_form__WEBPACK_IMPORTED_MODULE_9__.saveMoviLogin
+});
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('movidavibes/movidavibes-signup-form', {
+  title: 'Movidavibes SignUp Form',
+  icon: '',
+  category: 'movidavibes',
+  edit: _components_movidavibes_movidavibes_signup_form__WEBPACK_IMPORTED_MODULE_28__.editMoviSignUp,
+  save: _components_movidavibes_movidavibes_signup_form__WEBPACK_IMPORTED_MODULE_28__.saveMoviSignUp
+});
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('movidavibes/movidavibes-header-block', {
+  title: 'Movidavibes Header',
+  icon: '',
+  category: 'movidavibes',
+  edit: _components_movidavibes_heade_block__WEBPACK_IMPORTED_MODULE_29__.editHeade,
+  save: _components_movidavibes_heade_block__WEBPACK_IMPORTED_MODULE_29__.saveHeade
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('proterrasancta/form-donate', {
   title: 'Proterrasancta Form Donazione',
@@ -7695,8 +8018,8 @@ var UnderlineButton = function UnderlineButton(props) {
   supports: {
     multiple: true
   },
-  edit: _components_form_anagrafica__WEBPACK_IMPORTED_MODULE_9__.editFormAnagrafica,
-  save: _components_form_anagrafica__WEBPACK_IMPORTED_MODULE_9__.saveFormAnagrafica
+  edit: _components_form_anagrafica__WEBPACK_IMPORTED_MODULE_10__.editFormAnagrafica,
+  save: _components_form_anagrafica__WEBPACK_IMPORTED_MODULE_10__.saveFormAnagrafica
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('proterrasancta/form-checkout', {
   title: 'Proterrasancta Form Checkout',
@@ -7787,8 +8110,8 @@ var UnderlineButton = function UnderlineButton(props) {
   supports: {
     multiple: true
   },
-  edit: _components_form_checkout__WEBPACK_IMPORTED_MODULE_10__.editFormCheckout,
-  save: _components_form_checkout__WEBPACK_IMPORTED_MODULE_10__.saveFormCheckout
+  edit: _components_form_checkout__WEBPACK_IMPORTED_MODULE_11__.editFormCheckout,
+  save: _components_form_checkout__WEBPACK_IMPORTED_MODULE_11__.saveFormCheckout
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('proterrasancta/form-e-cards', {
   title: 'Proterrasancta Form eCards',
@@ -7895,8 +8218,8 @@ var UnderlineButton = function UnderlineButton(props) {
   supports: {
     multiple: true
   },
-  edit: _components_form_e_cards__WEBPACK_IMPORTED_MODULE_11__.editFormCards,
-  save: _components_form_e_cards__WEBPACK_IMPORTED_MODULE_11__.saveFormCards
+  edit: _components_form_e_cards__WEBPACK_IMPORTED_MODULE_12__.editFormCards,
+  save: _components_form_e_cards__WEBPACK_IMPORTED_MODULE_12__.saveFormCards
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('proterrasancta/news-slides-section', {
   title: 'Proterrasancta News Slides Section',
@@ -7923,8 +8246,8 @@ var UnderlineButton = function UnderlineButton(props) {
   supports: {
     multiple: false
   },
-  edit: _components_news_slides_section__WEBPACK_IMPORTED_MODULE_12__.editNewsSlidesSection,
-  save: _components_news_slides_section__WEBPACK_IMPORTED_MODULE_12__.saveNewsSlidesSection
+  edit: _components_news_slides_section__WEBPACK_IMPORTED_MODULE_13__.editNewsSlidesSection,
+  save: _components_news_slides_section__WEBPACK_IMPORTED_MODULE_13__.saveNewsSlidesSection
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('proterrasancta/news-grid-section', {
   title: 'Proterrasancta News Grid Section',
@@ -8027,8 +8350,8 @@ var UnderlineButton = function UnderlineButton(props) {
   supports: {
     multiple: false
   },
-  edit: _components_news_grid_section__WEBPACK_IMPORTED_MODULE_13__.editNewsGridSection,
-  save: _components_news_grid_section__WEBPACK_IMPORTED_MODULE_13__.saveNewsGridSection
+  edit: _components_news_grid_section__WEBPACK_IMPORTED_MODULE_14__.editNewsGridSection,
+  save: _components_news_grid_section__WEBPACK_IMPORTED_MODULE_14__.saveNewsGridSection
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('proterrasancta/highlights-slides-section', {
   title: 'Proterrasancta Highlights Slides Section',
@@ -8059,8 +8382,8 @@ var UnderlineButton = function UnderlineButton(props) {
   supports: {
     multiple: false
   },
-  edit: _components_highlights_slides_section__WEBPACK_IMPORTED_MODULE_14__.editHighlightsSlidesSection,
-  save: _components_highlights_slides_section__WEBPACK_IMPORTED_MODULE_14__.saveHighlightsSlidesSection
+  edit: _components_highlights_slides_section__WEBPACK_IMPORTED_MODULE_15__.editHighlightsSlidesSection,
+  save: _components_highlights_slides_section__WEBPACK_IMPORTED_MODULE_15__.saveHighlightsSlidesSection
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('proterrasancta/section-hero', {
   title: 'Proterrasancta Section Hero',
@@ -8125,8 +8448,8 @@ var UnderlineButton = function UnderlineButton(props) {
     name: 'small-padding',
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Small Padding')
   }],
-  edit: _components_section_hero__WEBPACK_IMPORTED_MODULE_16__.editSectionHero,
-  save: _components_section_hero__WEBPACK_IMPORTED_MODULE_16__.saveSectionHero
+  edit: _components_section_hero__WEBPACK_IMPORTED_MODULE_17__.editSectionHero,
+  save: _components_section_hero__WEBPACK_IMPORTED_MODULE_17__.saveSectionHero
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('proterrasancta/news-list', {
   title: 'Proterrasancta News List',
@@ -8157,8 +8480,8 @@ var UnderlineButton = function UnderlineButton(props) {
   supports: {
     multiple: false
   },
-  edit: _components_news_list__WEBPACK_IMPORTED_MODULE_17__.editNewsList,
-  save: _components_news_list__WEBPACK_IMPORTED_MODULE_17__.saveNewsList
+  edit: _components_news_list__WEBPACK_IMPORTED_MODULE_18__.editNewsList,
+  save: _components_news_list__WEBPACK_IMPORTED_MODULE_18__.saveNewsList
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('proterrasancta/campaigns-list', {
   title: 'Proterrasancta Campaigns List',
@@ -8189,8 +8512,8 @@ var UnderlineButton = function UnderlineButton(props) {
   supports: {
     multiple: false
   },
-  edit: _components_campaigns_list__WEBPACK_IMPORTED_MODULE_18__.editCampaignsList,
-  save: _components_campaigns_list__WEBPACK_IMPORTED_MODULE_18__.saveCampaignsList
+  edit: _components_campaigns_list__WEBPACK_IMPORTED_MODULE_19__.editCampaignsList,
+  save: _components_campaigns_list__WEBPACK_IMPORTED_MODULE_19__.saveCampaignsList
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('proterrasancta/cover-section', {
   title: 'Proterrasancta Cover Section',
@@ -8222,8 +8545,8 @@ var UnderlineButton = function UnderlineButton(props) {
       type: 'string'
     }
   },
-  edit: _components_cover_section__WEBPACK_IMPORTED_MODULE_19__.editCoverSection,
-  save: _components_cover_section__WEBPACK_IMPORTED_MODULE_19__.saveCoverSection
+  edit: _components_cover_section__WEBPACK_IMPORTED_MODULE_20__.editCoverSection,
+  save: _components_cover_section__WEBPACK_IMPORTED_MODULE_20__.saveCoverSection
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('proterrasancta/section-hero-50', {
   title: 'Proterrasancta Section Hero 50',
@@ -8279,8 +8602,8 @@ var UnderlineButton = function UnderlineButton(props) {
     name: 'small-padding',
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Small Padding')
   }],
-  edit: _components_section_hero_50__WEBPACK_IMPORTED_MODULE_20__.editSectionHero50,
-  save: _components_section_hero_50__WEBPACK_IMPORTED_MODULE_20__.saveSectionHero50
+  edit: _components_section_hero_50__WEBPACK_IMPORTED_MODULE_21__.editSectionHero50,
+  save: _components_section_hero_50__WEBPACK_IMPORTED_MODULE_21__.saveSectionHero50
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('proterrasancta/section-hero-map', {
   title: 'Proterrasancta Section Hero Map',
@@ -8342,8 +8665,8 @@ var UnderlineButton = function UnderlineButton(props) {
     name: 'small-padding',
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Small Padding')
   }],
-  edit: _components_section_hero_map__WEBPACK_IMPORTED_MODULE_21__.editSectionHeroMap,
-  save: _components_section_hero_map__WEBPACK_IMPORTED_MODULE_21__.saveSectionHeroMap
+  edit: _components_section_hero_map__WEBPACK_IMPORTED_MODULE_22__.editSectionHeroMap,
+  save: _components_section_hero_map__WEBPACK_IMPORTED_MODULE_22__.saveSectionHeroMap
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('proterrasancta/section-testimonianza', {
   title: 'Proterrasancta Section Testimonianza',
@@ -8398,8 +8721,8 @@ var UnderlineButton = function UnderlineButton(props) {
     name: 'small-padding',
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Small Padding')
   }],
-  edit: _components_section_testimonianza__WEBPACK_IMPORTED_MODULE_22__.editSectionTestimonianza,
-  save: _components_section_testimonianza__WEBPACK_IMPORTED_MODULE_22__.saveSectionTestimonianza
+  edit: _components_section_testimonianza__WEBPACK_IMPORTED_MODULE_23__.editSectionTestimonianza,
+  save: _components_section_testimonianza__WEBPACK_IMPORTED_MODULE_23__.saveSectionTestimonianza
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('proterrasancta/carousel', {
   title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Proterrasancta Carousel', 'proterrasancta'),
@@ -8457,7 +8780,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Background Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.backgroundColor,
         onChange: onChangeBackgroundColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Background Color')
@@ -8465,7 +8788,7 @@ var UnderlineButton = function UnderlineButton(props) {
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.PanelColorSettings, {
       title: 'Text Color',
       colorSettings: [{
-        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_24__["default"],
+        colors: _components_palette_proterrasancta__WEBPACK_IMPORTED_MODULE_25__["default"],
         value: attributes.textColor,
         onChange: onChangeTextColor,
         label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title Color')
@@ -8568,8 +8891,8 @@ var UnderlineButton = function UnderlineButton(props) {
       type: 'string'
     }
   },
-  edit: _components_image_card__WEBPACK_IMPORTED_MODULE_23__.editImageCard,
-  save: _components_image_card__WEBPACK_IMPORTED_MODULE_23__.saveImageCard
+  edit: _components_image_card__WEBPACK_IMPORTED_MODULE_24__.editImageCard,
+  save: _components_image_card__WEBPACK_IMPORTED_MODULE_24__.saveImageCard
 });
 }();
 /******/ })()

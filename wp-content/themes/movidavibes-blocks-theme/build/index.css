@@ -121,6 +121,7 @@ a:hover {
 }
 .button-menu-content:hover{
     background-color: #f2f2f2;
+    cursor: pointer;
 }
 .menu-profile-list{
     margin-top:21px;
@@ -157,7 +158,147 @@ a:hover {
 }
 .menu-profile-list-content:hover{
     background-color: #fafafa;
+    cursor: pointer;
+}
+.flex-center{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding:100px;
+    background-color: #fafafa;
+}
+.container-login-forms{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    width:400px;
+    background-color: #fafafa;
+    border: 1px rgb(221, 221, 221) solid;
+    border-radius: 15px;
+}
+.header-login-forms{
+    border-bottom: 1px rgb(221, 221, 221) solid;
+}
+.container-inputs-login-forms{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    text-align:center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+   justify-content: center;
+}
+.input-user-login-forms{
+    width:80%;
+    height:35px;
+    background-color: #fafafa;
+    padding: 5px 15px 5px 15px;
+    border: solid rgb(221, 221, 221) 1px;
+    border-radius:15px 15px 0px 0px;
+    font-size: large;
+    outline: none;
+    background-color: #fafafa;
+    text-align:center;
+}
+.input-password-login-forms{
+    width:80%;
+    height:35px;
+    background-color: #fafafa;
+    padding: 5px 15px 5px 15px;
+    border: solid rgb(221, 221, 221) 1px;
+    border-radius:0px 0px 15px 15px;
+    font-size: large;
+    outline: none;
+    background-color: #fafafa;
+    text-align:center;
+}
+.text-privacy-login-forms{
+    margin:50px;
+    font-size: small;
+}
+.container-button-login-forms{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+}
+.button-login-forms{
+    width:80%;
+    height:40px;
+    margin:30px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    outline: none;
+    background-color: #e31c5f;
+    border-radius:15px;
+    color:white;
+    font-size: large;
+        /* Altri stili personalizzati per il pulsante */
+}
+.button-login-forms:hover{
+    background-color: #e62754;
+    cursor: pointer;
+}
+.button-login-forms:active {
+    -webkit-animation-name: click-animation-button-login-forms;
+            animation-name: click-animation-button-login-forms;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
 }
 
+@-webkit-keyframes click-animation-button-login-forms {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+@keyframes click-animation-button-login-forms {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
 
 /*# sourceMappingURL=index.css.map*/

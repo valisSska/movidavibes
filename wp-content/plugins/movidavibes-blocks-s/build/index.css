@@ -2,6 +2,257 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/index.scss ***!
   \***************************************************************************************************************************************************************************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Open+Sans:wght@300;400;700&display=swap);
+/*!***********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/components-movidavibes/components.css ***!
+  \***********************************************************************************************************************************************************************************************/
+.heade{
+    height:80px;
+    width:100%;
+    background-color: #fafafa;
+    border-bottom: 1px rgb(221, 221, 221) solid;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+.search-input{
+    width:30%;
+    height:30px;
+    background-color: #fafafa;
+    padding: 5px 15px 5px 15px;
+    border: solid rgb(221, 221, 221) 1px;
+    border-radius:30px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.search-input-text{
+    font-size: large;
+    height:26px;
+    width:96%;
+    border: none;
+    outline: none;
+    background-color: #fafafa;
+}  
+.button-menu-content{
+    height:40px;
+    width:70px;
+    border: none;
+    background-color: #fafafa;
+    border-radius:30px;
+    border: solid rgb(221, 221, 221) 1px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.button-menu-content:hover{
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+.menu-profile-list{
+    margin-top:21px;
+    margin-left:-9%;
+    position:absolute;
+    width:15%;
+    background-color:  #ffffff;
+    border: solid rgb(221, 221, 221) 1px;
+    border-bottom: solid rgb(221, 221, 221) 2px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+}
+.menu-profile-list-content{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    height: 35px;
+}
+.menu-profile-list-content:hover{
+    background-color: #fafafa;
+    cursor: pointer;
+}
+.flex-center{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding:100px;
+    background-color: #fafafa;
+}
+.container-login-forms{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    width:400px;
+    background-color: #fafafa;
+    border: 1px rgb(221, 221, 221) solid;
+    border-radius: 15px;
+}
+.header-login-forms{
+    border-bottom: 1px rgb(221, 221, 221) solid;
+}
+.container-inputs-login-forms{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    text-align:center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+   justify-content: center;
+}
+.input-user-login-forms{
+    width:80%;
+    height:35px;
+    background-color: #fafafa;
+    padding: 5px 15px 5px 15px;
+    border: solid rgb(221, 221, 221) 1px;
+    border-radius:15px 15px 0px 0px;
+    font-size: large;
+    outline: none;
+    background-color: #fafafa;
+    text-align:center;
+}
+.input-password-login-forms{
+    width:80%;
+    height:35px;
+    background-color: #fafafa;
+    padding: 5px 15px 5px 15px;
+    border: solid rgb(221, 221, 221) 1px;
+    font-size: large;
+    outline: none;
+    background-color: #fafafa;
+    text-align:center;
+}
+.text-privacy-login-forms{
+    margin:50px;
+    font-size: small;
+}
+.container-button-login-forms{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+}
+.button-login-forms{
+    width:80%;
+    height:40px;
+    margin:30px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    outline: none;
+    background-color: #e31c5f;
+    border-radius:15px;
+    color:white;
+    font-size: large;
+        /* Altri stili personalizzati per il pulsante */
+}
+.button-login-forms:hover{
+    background-color: #e62754;
+    cursor: pointer;
+}
+.button-login-forms:active {
+    -webkit-animation-name: click-animation-button-login-forms;
+            animation-name: click-animation-button-login-forms;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+}
+
+@-webkit-keyframes click-animation-button-login-forms {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+@keyframes click-animation-button-login-forms {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
 /*!*******************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/index.scss (1) ***!
   \*******************************************************************************************************************************************************************************************************************************************/

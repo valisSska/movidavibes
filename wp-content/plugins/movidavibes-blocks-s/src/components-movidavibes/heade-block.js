@@ -1,23 +1,22 @@
-/* eslint-disable */
-import React from "react";
-import useState from "react";
+import { useState } from 'react';
+import React, { __ } from '@wordpress/i18n';
 import LogoMovidavibes from "./logo-movidavibes";
-import "./components.css";
 
+import './components.css';
 
-function Heade() {
-const [viewMenuProfile, setViewMenuProfile] = useState(false);
-function viewMenuProfileFunction (){
-    if(viewMenuProfile===false)
-    {
-    setViewMenuProfile(true);
-    }
-    else{
-        setViewMenuProfile(false);
-    }
-}
-    return (
-       <div className="heade" >
+export const editHeade = ({  }) => {
+    const [viewMenuProfile, setViewMenuProfile] = useState(false);
+    function viewMenuProfileFunction (){
+        if(viewMenuProfile===false)
+        {
+        setViewMenuProfile(true);
+        }
+        else{
+            setViewMenuProfile(false);
+        }
+    }    
+  return (
+    <div className="heade" >
         <LogoMovidavibes />
         <div className="search-input">
             <input className="search-input-text"/>
@@ -38,7 +37,7 @@ function viewMenuProfileFunction (){
         </button> 
         {viewMenuProfile === true  && (
             <div className="menu-profile-list">
-                    <div className="menu-profile-list-content"><p href={window. location + "/tessst"}>Accedi</p></div>
+                    <div className="menu-profile-list-content"><a href={window. location + "/tesst"}>Accedi</a></div>
                     <div className="menu-profile-list-content"><p>Registrati</p></div>
                     <div style={{height:'15px'}}></div>
             </div>
@@ -47,7 +46,12 @@ function viewMenuProfileFunction (){
         </div>
         
        </div> 
-    );
-}
+  );
+};
 
-export default Heade;
+export const saveHeade = () => (
+      <div
+        id="movidavibes-header-block"
+        />
+      
+);
