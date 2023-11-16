@@ -30,13 +30,11 @@ body {
 }
 @media screen and (min-width: 520px) {
   body {
-    padding: 20px;
     font-size: 1.1rem;
   }
 }
 @media screen and (min-width: 768px) {
   body {
-    padding: 60px;
     font-size: 1.2rem;
   }
 }
@@ -66,8 +64,12 @@ a:hover {
     -webkit-box-align:center;
         -ms-flex-align:center;
             align-items:center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.logo-movidavibes{
+    margin-left:40px;
 }
 .search-input{
     width:30%;
@@ -99,6 +101,7 @@ a:hover {
     background-color: #fafafa;
 }  
 .button-menu-content{
+    margin-right:40px;
     height:40px;
     width:70px;
     border: none;
@@ -156,6 +159,10 @@ a:hover {
             justify-content:center;
     height: 35px;
 }
+.visual-href-text-nolink{
+    text-decoration: none !important; 
+    color: black !important;
+}
 .menu-profile-list-content:hover{
     background-color: #fafafa;
     cursor: pointer;
@@ -184,7 +191,7 @@ a:hover {
         -ms-flex-direction:column;
             flex-direction:column;
     width:400px;
-    background-color: #fafafa;
+    background-color: #ffffff;
     border: 1px rgb(221, 221, 221) solid;
     border-radius: 15px;
 }

@@ -1836,6 +1836,10 @@ registerBlockType('movidavibes/movidavibes-header-block', {
       type: 'string',
       default: 'standard',
     },
+    menuTags: {
+      type: 'array',
+      default: [],
+    },
   },
   edit: editHeade,
   save: saveHeade,

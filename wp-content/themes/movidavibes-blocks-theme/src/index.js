@@ -8,7 +8,9 @@ import MoviSignUp from './components/movidavibes-signup-form-front';
 const moviHeader=document.querySelector('#movidavibes-header-block');
 
 if(moviHeader){
-    ReactDOM.render(<Heade />,moviHeader)
+    const formType=moviHeader.getAttribute('data-form-type');
+    const menuTags=moviHeader.getAttribute('data-tags-menu');
+    ReactDOM.render(<Heade formType={formType} menuTags={JSON.parse(menuTags)} />,moviHeader)
 };
 
 

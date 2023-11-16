@@ -2,6 +2,151 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./node_modules/@react-hook/media-query/dist/module/index.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@react-hook/media-query/dist/module/index.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   useMediaQueries: function() { return /* binding */ useMediaQueries; },
+/* harmony export */   useMediaQuery: function() { return /* binding */ useMediaQuery; }
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function queriesDidChange(prevQueries, nextQueries) {
+  if (nextQueries === prevQueries) return false;
+  const nextQueriesArr = Object.values(nextQueries);
+  const prevQueriesArr = Object.values(prevQueries);
+  if (nextQueriesArr.length !== prevQueriesArr.length) return true;
+  if (nextQueriesArr.some((q, i) => q !== prevQueriesArr[i])) return true;
+  const prevKeys = Object.keys(prevQueries);
+  return Object.keys(nextQueries).some((n, i) => n !== prevKeys[i]);
+}
+
+function _ref(curr, key) {
+  curr.matches[key] = false;
+  curr.mediaQueries[key] = {};
+  return curr;
+}
+
+function init(queries) {
+  const queryKeys = Object.keys(queries);
+  /* istanbul ignore next */
+
+  if (typeof window === 'undefined') return queryKeys.reduce(_ref, {
+    mediaQueries: {},
+    matches: {}
+  });
+  return queryKeys.reduce((state, name) => {
+    const mql = window.matchMedia(queries[name]);
+    state.mediaQueries[name] = mql;
+    state.matches[name] = mql.matches;
+    return state;
+  }, {
+    mediaQueries: {},
+    matches: {}
+  });
+}
+
+function reducer(state, action) {
+  function _ref2(prev, key) {
+    prev[key] = state.mediaQueries[key].matches;
+    return prev;
+  }
+
+  switch (action.type) {
+    case 'updateMatches':
+      return {
+        matches: Object.keys(state.mediaQueries).reduce(_ref2, {}),
+        mediaQueries: state.mediaQueries
+      };
+
+    case 'setQueries':
+      return init(action.queries);
+  }
+}
+/**
+ * A hook that returns a [`MediaQueryMatches`](#mediaquerymatches) object which will
+ * tell you if specific media queries matched, all media queries matched, or
+ * any media queries matched. Matches in this hook will always return `false` when
+ * rendering on the server.
+ *
+ * @param queryMap The media queries you want to match against e.g. `{screen: "screen", width: "(min-width: 12em)"}`
+ */
+
+
+function useMediaQueries(queryMap) {
+  const prevQueries = react__WEBPACK_IMPORTED_MODULE_0__.useRef(queryMap);
+  const [state, dispatch] = react__WEBPACK_IMPORTED_MODULE_0__.useReducer(reducer, queryMap, init);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (queriesDidChange(queryMap, prevQueries.current)) {
+      dispatch({
+        type: 'setQueries',
+        queries: queryMap
+      });
+      prevQueries.current = queryMap;
+    }
+  }, [queryMap]);
+
+  function _ref3() {
+    return dispatch({
+      type: 'updateMatches'
+    });
+  }
+
+  function _ref4(mq) {
+    const callback = _ref3;
+    if (typeof mq.addListener !== 'undefined') mq.addListener(callback);else mq.addEventListener('change', callback);
+    return callback;
+  }
+
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    const queries = Object.values(state.mediaQueries);
+    const callbacks = queries.map(_ref4);
+
+    function _ref5(mq, i) {
+      if (typeof mq.addListener !== 'undefined') mq.removeListener(callbacks[i]);else mq.removeEventListener('change', callbacks[i]);
+    }
+
+    return () => {
+      queries.forEach(_ref5);
+    };
+  }, [state.mediaQueries]);
+  const {
+    matches
+  } = state;
+  const matchValues = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => Object.values(matches), [matches]);
+  return {
+    matches,
+    matchesAny: matchValues.some(Boolean),
+    matchesAll: matchValues.length > 0 && matchValues.every(Boolean)
+  };
+}
+/**
+ * A hook that returns `true` if the media query matched and `false` if not. This
+ * hook will always return `false` when rendering on the server.
+ *
+ * @param query The media query you want to match against e.g. `"only screen and (min-width: 12em)"`
+ */
+
+function useMediaQuery(query) {
+  return useMediaQueries(getObj(query)).matchesAll;
+}
+const cache = {};
+
+function getObj(query) {
+  if (cache[query] === void 0) cache[query] = {
+    default: query
+  };
+  return cache[query];
+}
+
+/***/ }),
+
 /***/ "./src/components/heade.js":
 /*!*********************************!*\
   !*** ./src/components/heade.js ***!
@@ -15,29 +160,46 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _logo_movidavibes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./logo-movidavibes */ "./src/components/logo-movidavibes.js");
+/* harmony import */ var _react_hook_media_query__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @react-hook/media-query */ "./node_modules/@react-hook/media-query/dist/module/index.js");
 /* harmony import */ var _components_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components.css */ "./src/components/components.css");
 
 
-/* eslint-disable */
 
 
 
 
-function Heade() {
+function Heade(elems) {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false),
     _useState2 = (0,_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
     viewMenuProfile = _useState2[0],
     setViewMenuProfile = _useState2[1];
+  //const [isMobile, setIsMobile] = useState(false);
+  //setIsMobile(useMediaQuery('(max-width: 767px)'));
+
+  var formType = elems.formType;
+  var menuRef = (0,react__WEBPACK_IMPORTED_MODULE_2__.useRef)(null);
+  var menuTags = elems.menuTags;
+  var isMobile = (0,_react_hook_media_query__WEBPACK_IMPORTED_MODULE_5__.useMediaQuery)('(max-width: 767px)');
+  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(function () {
+    var handleClickOutside = function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setViewMenuProfile(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return function () {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuRef]);
   function viewMenuProfileFunction() {
-    if (viewMenuProfile === false) {
-      setViewMenuProfile(true);
-    } else {
-      setViewMenuProfile(false);
-    }
+    setViewMenuProfile(!viewMenuProfile);
+  }
+  if (isMobile) {
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", null, elems.menuTags[0].name);
   }
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
     className: "heade"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_logo_movidavibes__WEBPACK_IMPORTED_MODULE_3__["default"], null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_logo_movidavibes__WEBPACK_IMPORTED_MODULE_3__["default"], null), formType === "search" && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
     className: "search-input"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("input", {
     className: "search-input-text"
@@ -63,7 +225,7 @@ function Heade() {
     className: "bi bi-list",
     viewBox: "0 0 16 16"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("path", {
-    "fill-rule": "evenodd",
+    fillRule: "evenodd",
     d: "M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
@@ -77,19 +239,28 @@ function Heade() {
     d: "M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("path", {
     className: "icon-profile2",
-    "fill-rule": "evenodd",
+    fillRule: "evenodd",
     d: "M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
   }))), viewMenuProfile === true && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
-    className: "menu-profile-list"
+    className: "menu-profile-list",
+    ref: menuRef
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
     className: "menu-profile-list-content"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("a", {
+    className: "visual-href-text-nolink",
     href: window.location + "/tesst"
   }, "Accedi")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
     className: "menu-profile-list-content"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("p", null, "Registrati")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("p", null, "Registrati")), menuTags.map(function (tag, index) {
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+      className: "menu-profile-list-content"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("a", {
+      className: "visual-href-text-nolink",
+      href: tag.url
+    }, tag.name));
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
     style: {
-      height: '15px'
+      height: "15px"
     }
   }))));
 }
@@ -116,8 +287,9 @@ __webpack_require__.r(__webpack_exports__);
 function LogoMovidavibes() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "logo-movidavibes"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    className: "logo-movidavibes-text"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    className: "logo-movidavibes-text visual-href-text-nolink",
+    href: "/"
   }, "MovidaVibes"));
 }
 /* harmony default export */ __webpack_exports__["default"] = (LogoMovidavibes);
@@ -503,7 +675,12 @@ __webpack_require__.r(__webpack_exports__);
 
 var moviHeader = document.querySelector('#movidavibes-header-block');
 if (moviHeader) {
-  react_dom__WEBPACK_IMPORTED_MODULE_4___default().render((0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_heade__WEBPACK_IMPORTED_MODULE_2__["default"], null), moviHeader);
+  var formType = moviHeader.getAttribute('data-form-type');
+  var menuTags = moviHeader.getAttribute('data-tags-menu');
+  react_dom__WEBPACK_IMPORTED_MODULE_4___default().render((0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_heade__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    formType: formType,
+    menuTags: JSON.parse(menuTags)
+  }), moviHeader);
 }
 ;
 var moviLogin = document.querySelector('#movidavibes-login-form');

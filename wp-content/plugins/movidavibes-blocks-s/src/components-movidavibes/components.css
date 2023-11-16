@@ -64,6 +64,10 @@
     justify-content:center;
     height: 35px;
 }
+.menu-profile-list-content a {
+    text-decoration: none;
+    color: black;
+  }
 .menu-profile-list-content:hover{
     background-color: #fafafa;
     cursor: pointer;

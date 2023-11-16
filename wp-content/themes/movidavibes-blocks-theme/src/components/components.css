@@ -6,7 +6,10 @@
     display:flex;
     flex-direction: row;
     align-items:center;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.logo-movidavibes{
+    margin-left:40px;
 }
 .search-input{
     width:30%;
@@ -29,6 +32,7 @@
     background-color: #fafafa;
 }  
 .button-menu-content{
+    margin-right:40px;
     height:40px;
     width:70px;
     border: none;
@@ -64,6 +68,10 @@
     justify-content:center;
     height: 35px;
 }
+.visual-href-text-nolink{
+    text-decoration: none !important; 
+    color: black !important;
+}
 .menu-profile-list-content:hover{
     background-color: #fafafa;
     cursor: pointer;
@@ -81,7 +89,7 @@
     text-align: center;
     flex-direction:column;
     width:400px;
-    background-color: #fafafa;
+    background-color: #ffffff;
     border: 1px rgb(221, 221, 221) solid;
     border-radius: 15px;
 }

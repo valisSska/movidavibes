@@ -3,22 +3,48 @@ import React, { __ } from '@wordpress/i18n';
 import LogoMovidavibes from "./logo-movidavibes";
 
 import './components.css';
+import './inspector-style.css';
 import { InspectorControls } from '@wordpress/block-editor';
-import {SelectControl} from "@wordpress/components";
+import {SelectControl, __experimentalInputControl as InputControl,Button} from "@wordpress/components";
 
 export const editHeade = ({ attributes, setAttributes }) => {
+    const [inputNameLink, setInputNameLink] = useState('');
+    const [inputUrlLink, setInputUrlLink] = useState('');
+    const [menuTags, setMenuTags] = useState(attributes.menuTags);
     const onChangeFormType = (value) => {
         setAttributes({
             formType: value,
         });
     };
+    const onChangeAddTags = () => {
+        if(inputNameLink !== '' && inputUrlLink !== '')
+        {
+            setMenuTags((prevTags) => {
+      const newTags = [...prevTags, { id:menuTags.length+1, name:inputNameLink, url:inputUrlLink}];
+      setAttributes({
+        menuTags: newTags,
+      });
+      setInputNameLink('');
+      setInputUrlLink('');
+      return newTags;
+      });
+        }
+    };
+    const onChangeDeleteTags = (index) => {
+        setMenuTags((prevTags) => {
+          const updatedTags = prevTags.filter((_, i) => i !== index);
+          setAttributes({ menuTags: updatedTags });
+          return updatedTags;
+        });
+      };
   return (
       <>
           <InspectorControls>
+          <div className='inspector-divider'/>
+          <p className="inspector-title">Seleziona il tipo menu</p>
           <SelectControl
               onChange={onChangeFormType}
               value={attributes.formType}
-              label={__('Seleziona il tipo form')}
               options={[
                   {
                       value: 'standard',
@@ -30,7 +56,28 @@ export const editHeade = ({ attributes, setAttributes }) => {
                   },
               ]}
           />
-              </InspectorControls>
+         <div className='inspector-divider'/> 
+         <div className='inspector-container-list-tags-menu'>
+                <p className="inspector-title">Menu List</p>
+                {menuTags.map((tag, index) => (
+                <div key={index} className='inspector-container-list-tag-menu'><div className='inspector-list-tag-menu'>- {tag.name}</div><button className='inspector-button-tag-menu' onClick={() => onChangeDeleteTags(index)}>x</button></div> 
+                ))}
+                </div>
+                <input
+                className='inspector-input'
+                placeholder='Tag'
+                value={inputNameLink}
+                onChange={(e) => setInputNameLink(e.target.value)}
+                />
+               <input
+                className='inspector-input'
+                placeholder='Url'
+                value={inputUrlLink}
+                onChange={(e) => setInputUrlLink(e.target.value)}
+                />
+               <button className='inspector-button' onClick={onChangeAddTags}>Aggiungi</button>
+             <div className='inspector-divider'/>
+            </InspectorControls>
     <div className="heade" >
         <LogoMovidavibes />
         <div className="search-input">
@@ -58,10 +105,14 @@ export const editHeade = ({ attributes, setAttributes }) => {
   );
 };
 
-export const saveHeade = ({ attributes }) => (
-      <div
-        id="movidavibes-header-block"
-        data-form-type={attributes.formType}
+export const saveHeade = ({ attributes }) => {
+    const tagsAsString = JSON.stringify(attributes.menuTags);
+
+    return (
+        <div
+            id="movidavibes-header-block"
+            data-form-type={attributes.formType}
+            data-tags-menu={tagsAsString}
         />
-      
-);
+    );
+};

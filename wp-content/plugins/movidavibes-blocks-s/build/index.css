@@ -110,6 +110,10 @@
             justify-content:center;
     height: 35px;
 }
+.menu-profile-list-content a {
+    text-decoration: none;
+    color: black;
+  }
 .menu-profile-list-content:hover{
     background-color: #fafafa;
     cursor: pointer;
@@ -13326,6 +13330,73 @@ textarea.form-control-lg {
   height: 15px;
   background-color: #d31418;
   margin-top: 7px;
+}
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/components-movidavibes/inspector-style.css ***!
+  \****************************************************************************************************************************************************************************************************/
+.inspector-title{
+    font-size: large;
+}
+.inspector-divider{
+    width:100%;
+    height:10px;
+    border-bottom:solid rgb(221, 221, 221) 1px;
+    margin-bottom:10px;
+}
+.inspector-button{
+    width:35%;
+    height:30px;
+    margin:20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    outline: none;
+    background-color:  #4682B4;
+    border-radius:5px;
+    color:white;
+    font-size: small;
+}
+.inspector-button:hover{
+    cursor:pointer;
+    background-color: rgb(30, 83, 126);
+}
+.inspector-input{
+    width:97%;
+    margin:5px;
+}
+.inspector-container-list-tag-menu{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.inspector-container-list-tags-menu{
+    padding:5px;
+    font-size: small;
+}
+.inspector-container-list-tag-menu:hover{
+    background-color: rgb(243, 255, 255);
+}
+.inspector-button-tag-menu{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    outline: none;
+    font-size: small;
+    background-color: rgba(0, 0, 0, 0);
+    color:black;
+}
+.inspector-button-tag-menu:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color:red;
 }
 
 /*# sourceMappingURL=index.css.map*/
