@@ -371,13 +371,29 @@ var MoviSignUp = function MoviSignUp() {
     className: "text-welcome-login-forms"
   }, "Benvenuto su Movidavibes"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "container-inputs-login-forms"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "container-inputs-signUp-row-forms"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
-    className: "input-user-login-forms",
+    className: "input-name-Signup-forms",
+    placeholder: "Nome"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+    className: "input-surname-Signup-forms",
+    placeholder: "Cognome"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+    className: "input-user-SignUp-forms",
     placeholder: "User"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
-    className: "input-password-login-forms",
+    className: "input-user-SignUp-forms",
+    placeholder: "Email",
+    type: "email"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+    className: "input-password-SignUp-forms",
     type: "password",
     placeholder: "Password"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+    className: "input-password-SignUp-forms",
+    type: "password",
+    placeholder: "Conferma Password"
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "text-privacy-login-forms"
   }, "Informativa sulla Privacy"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -658,12 +674,12 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
-/* harmony import */ var _components_heade__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/heade */ "./src/components/heade.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom */ "react-dom");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "react-dom");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
+/* harmony import */ var _components_heade__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/heade */ "./src/components/heade.js");
 /* harmony import */ var _components_movidavibes_login_form_front__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/movidavibes-login-form-front */ "./src/components/movidavibes-login-form-front.js");
 /* harmony import */ var _components_movidavibes_signup_form_front__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/movidavibes-signup-form-front */ "./src/components/movidavibes-signup-form-front.js");
 
@@ -677,7 +693,7 @@ var moviHeader = document.querySelector('#movidavibes-header-block');
 if (moviHeader) {
   var formType = moviHeader.getAttribute('data-form-type');
   var menuTags = moviHeader.getAttribute('data-tags-menu');
-  react_dom__WEBPACK_IMPORTED_MODULE_4___default().render((0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_heade__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  react_dom__WEBPACK_IMPORTED_MODULE_2___default().render((0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_heade__WEBPACK_IMPORTED_MODULE_4__["default"], {
     formType: formType,
     menuTags: JSON.parse(menuTags)
   }), moviHeader);
@@ -685,12 +701,12 @@ if (moviHeader) {
 ;
 var moviLogin = document.querySelector('#movidavibes-login-form');
 if (moviLogin) {
-  react_dom__WEBPACK_IMPORTED_MODULE_4___default().render((0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_movidavibes_login_form_front__WEBPACK_IMPORTED_MODULE_5__["default"], null), moviLogin);
+  react_dom__WEBPACK_IMPORTED_MODULE_2___default().render((0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_movidavibes_login_form_front__WEBPACK_IMPORTED_MODULE_5__["default"], null), moviLogin);
 }
 ;
 var moviSignUp = document.querySelector('#movidavibes-signup-form');
 if (moviSignUp) {
-  react_dom__WEBPACK_IMPORTED_MODULE_4___default().render((0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_movidavibes_signup_form_front__WEBPACK_IMPORTED_MODULE_6__["default"], null), moviSignUp);
+  react_dom__WEBPACK_IMPORTED_MODULE_2___default().render((0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_movidavibes_signup_form_front__WEBPACK_IMPORTED_MODULE_6__["default"], null), moviSignUp);
 }
 ;
 }();

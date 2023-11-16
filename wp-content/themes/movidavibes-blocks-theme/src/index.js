@@ -1,7 +1,9 @@
-import './styles/main.scss';
-import Heade from './components/heade';
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+
+import './styles/main.scss';
+import Heade from './components/heade';
 import MoviLogin from './components/movidavibes-login-form-front';
 import MoviSignUp from './components/movidavibes-signup-form-front';
 

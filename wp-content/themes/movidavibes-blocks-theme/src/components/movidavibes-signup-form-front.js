@@ -11,8 +11,14 @@ const  MoviSignUp = () => {
       </div>
     <p className="text-welcome-login-forms">Benvenuto su Movidavibes</p>
     <div className="container-inputs-login-forms">
-    <input className="input-user-login-forms" placeholder='User'></input>
-    <input className="input-password-login-forms" type='password' placeholder='Password'></input>
+      <div className="container-inputs-signUp-row-forms">
+        <input className="input-name-Signup-forms" placeholder='Nome'/>
+        <input className="input-surname-Signup-forms" placeholder='Cognome'/>
+      </div>
+    <input className="input-user-SignUp-forms" placeholder='User'/>
+      <input className="input-user-SignUp-forms" placeholder='Email' type='email'/>
+    <input className="input-password-SignUp-forms" type='password' placeholder='Password'/>
+    <input className="input-password-SignUp-forms" type='password' placeholder='Conferma Password'/>
     </div>
     <p className="text-privacy-login-forms">Informativa sulla Privacy</p>
     <div className="container-button-login-forms">
