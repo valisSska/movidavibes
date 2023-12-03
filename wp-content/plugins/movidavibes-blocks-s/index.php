@@ -69,3 +69,9 @@ function fontawesome_dashboard()
   wp_enqueue_script('fontawesome-kit', 'https://kit.fontawesome.com/52eb9865a2.js', [], '5.13.1', true);
 }
 add_action('admin_init', 'fontawesome_dashboard');
+
+
+
+
+//importazione file custom php
+// include ('custom-functions.php');

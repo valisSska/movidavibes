@@ -250,8 +250,18 @@ a:hover {
     background-color: #fafafa;
     text-align:center;
 }
+.container-inputs-signUp-row-forms{
+    width:87.8%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
 .input-name-Signup-forms{
-    width:35.78%;
+    /*width:35.78%;*/
+    width:100%;
     height:35px;
     background-color: #fafafa;
     padding: 5px 15px 5px 15px;
@@ -263,7 +273,8 @@ a:hover {
     text-align:center;
 }
 .input-surname-Signup-forms{
-    width:36.1%;
+    /*width:36.1%;*/
+    width:100%;
     height:35px;
     background-color: #fafafa;
     padding: 5px 15px 5px 15px;
@@ -353,5 +364,60 @@ a:hover {
                 transform: scale(1);
     }
 }
+.input-password-SignUp-forms.error {
+    border: 2px solid red; /* Puoi personalizzare lo stile dell'errore */
+    -webkit-animation: shake 0.3s;
+            animation: shake 0.3s; /* Aggiungi un'animazione di "shaking" */
+  }
+  
+  @-webkit-keyframes shake {
+    0%, 100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    25%, 75% {
+      -webkit-transform: translateX(-5px);
+              transform: translateX(-5px);
+    }
+    50% {
+      -webkit-transform: translateX(5px);
+              transform: translateX(5px);
+    }
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    25%, 75% {
+      -webkit-transform: translateX(-5px);
+              transform: translateX(-5px);
+    }
+    50% {
+      -webkit-transform: translateX(5px);
+              transform: translateX(5px);
+    }
+  }
+  .input-password-login-forms.error {
+    border: 2px solid red; /* Puoi personalizzare lo stile dell'errore */
+    -webkit-animation: shake 0.3s;
+            animation: shake 0.3s; /* Aggiungi un'animazione di "shaking" */
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    25%, 75% {
+      -webkit-transform: translateX(-5px);
+              transform: translateX(-5px);
+    }
+    50% {
+      -webkit-transform: translateX(5px);
+              transform: translateX(5px);
+    }
+  }
 
 /*# sourceMappingURL=index.css.map*/

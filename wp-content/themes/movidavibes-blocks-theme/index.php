@@ -1,5 +1,5 @@
 <?php
-
+include "custom-functions.php";
 get_header(); ?>
 
     <!-- example react component -->
@@ -17,3 +17,5 @@ get_header(); ?>
 }
 
 get_footer();
+
+
