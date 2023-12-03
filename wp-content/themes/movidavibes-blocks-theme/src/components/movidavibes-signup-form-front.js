@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
 import './components.css';
 import MoviAllert from "./Movi-allert";
@@ -16,6 +18,7 @@ const  MoviSignUp = () => {
   const [userPasswordControl, setUserPasswordControl] = useState(false);
   const [textError, setTextError] = useState('');
   const [emailError, setEmailError] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handlePhoneNumberChange = (e) => {
 
@@ -35,7 +38,7 @@ const  MoviSignUp = () => {
         data: userNicename,
         // Altri dati che desideri inviare
       };
-
+      setLoading(true);
       const jsonData = JSON.stringify(userData);
       console.log('Dati JSON inviati:', jsonData);
 
@@ -55,6 +58,7 @@ const  MoviSignUp = () => {
       console.log('Risposta dal server:', responseUsersText);
 
       if(responseUsersText!=='[]'){
+        setLoading(false);
         setUserNicenameError(true);
         setTextError('Questo nome utente è già registrato');
       };
@@ -62,6 +66,7 @@ const  MoviSignUp = () => {
 
 
     } catch (error) {
+      setLoading(false);
       console.error('Errore nell\'invio dei dati a PHP:', error);
     }
   };
@@ -71,6 +76,7 @@ const  MoviSignUp = () => {
         data: userEmail,
         // Altri dati che desideri inviare
       };
+      setLoading(true);
 
       const jsonData = JSON.stringify(userData);
       console.log('Dati JSON inviati:', jsonData);
@@ -91,6 +97,7 @@ const  MoviSignUp = () => {
       console.log('Risposta dal server:', responseEmailText);
 
       if(responseEmailText!=='[]'){
+        setLoading(false);
         setEmailError(true);
         setTextError('Questa email è già registrata');
       };
@@ -98,6 +105,7 @@ const  MoviSignUp = () => {
 
 
     } catch (error) {
+      setLoading(false);
       console.error('Errore nell\'invio dei dati a PHP:', error);
     }
   };
@@ -124,8 +132,14 @@ const  MoviSignUp = () => {
     setTextError('Inserisci un indirizzo email valido.');
   }
     ///////////////////// CONTROLL //////////////////////////////
-    await controlUserEmailExist();
-    await controlUserNameExist();
+    useEffect(() => {
+      const fetchDatacontrol = async () => {
+        await controlUserEmailExist();
+        await controlUserNameExist();
+      };
+
+      fetchDatacontrol();
+    }, []);
     /////////////////////////////////////////////////////////////////////////////////////////
 };
 
@@ -203,6 +217,7 @@ const  MoviSignUp = () => {
     {textError && (
       <p className="text-privacy-login-forms" style={{ color: '#e31c5f' }} >{textError}</p>
     )}
+      {loading ? <FontAwesomeIcon icon={faSpinner} spin /> : ''}
     <p className="text-privacy-login-forms">Informativa sulla Privacy</p>
     <div className="container-button-login-forms">
     <button className="button-login-forms" onClick={handleRegistration}>Registrati</button>
