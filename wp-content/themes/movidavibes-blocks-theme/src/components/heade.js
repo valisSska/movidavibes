@@ -1,40 +1,74 @@
 import React, { useState, useEffect, useRef } from "react";
 import LogoMovidavibes from "./logo-movidavibes";
 import { useMediaQuery } from '@react-hook/media-query';
+
+import logOut from "../requests/log-out";
+
 import "./components.css";
 
 function Heade(elems) {
+  const [loading, setLoading] = useState(false);
+  const [logged, setLogged] = useState(false);
   const [viewMenuProfile, setViewMenuProfile] = useState(false);
+  const [moviToken, setMoviToken] = useState(localStorage.getItem('movitoken'));
+  const [savedIdUser, setsavedIdUser] = useState(localStorage.getItem('id_user'));
+
   //const [isMobile, setIsMobile] = useState(false);
   //setIsMobile(useMediaQuery('(max-width: 767px)'));
 
   const formType = elems.formType;
   const menuRef = useRef(null);
+  const buttonRef = useRef(null);
   const menuTags= elems.menuTags;
+
+//////////////////////////////LOGGED?////////////////////////////////////////////////////
+
+const handleLogoutClick = () => {
+  if ((moviToken !== null && savedIdUser !== null) && (moviToken !== undefined && savedIdUser !== undefined)) {
+    logOut();
+    setMoviToken(localStorage.getItem('movitoken'));
+  }
+};
+
+  useEffect(() => {
+    if ((moviToken !== null && savedIdUser !== null) && (moviToken !== undefined && savedIdUser !== undefined)) {
+      setLogged(true);
+    }
+  }, [moviToken]); // useEffect 
+
+  console.log('movitokeeeeeeeeeeeeennnnnnn   ' + moviToken);
+
+
 
 const isMobile = useMediaQuery('(max-width: 767px)');
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setViewMenuProfile(false);
-      }
-    };
+useEffect(() => {
+  const handleClickOutside = (event) => {
+    if (
+      (menuRef.current && !menuRef.current.contains(event.target)) &&
+      (buttonRef.current && event.target !== buttonRef.current) &&
+      (buttonRef.current && !buttonRef.current.contains(event.target))
+    ) {
+      setViewMenuProfile(false);
+    }
+  };
 
-    document.addEventListener("mousedown", handleClickOutside);
+  document.addEventListener("mousedown", handleClickOutside);
 
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [menuRef]);
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, [menuRef]);
 
   function viewMenuProfileFunction() {
-    setViewMenuProfile(!viewMenuProfile);
+    if (viewMenuProfile) {
+      setViewMenuProfile(false);
+    } else {
+      setViewMenuProfile(true);
+    }
   }
   if(isMobile){
-    return(
-      <div>{elems.menuTags[0].name}</div>
-    )
+    return <div>IS MOBILE</div>
   }
 
   return (
@@ -56,7 +90,7 @@ const isMobile = useMediaQuery('(max-width: 767px)');
         </div>
       )}
       <div className="button-menu">
-        <button className="button-menu-content" onClick={viewMenuProfileFunction}>
+        <button ref={buttonRef} className="button-menu-content" onClick={viewMenuProfileFunction}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -82,7 +116,23 @@ const isMobile = useMediaQuery('(max-width: 767px)');
             <path className="icon-profile2" fillRule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
           </svg>
         </button>
-        {viewMenuProfile === true && (
+        {viewMenuProfile === true && logged === true && (
+          <div className="menu-profile-list" ref={menuRef}>
+            <div className="menu-profile-list-content">
+              <a className="visual-href-text-nolink" href={window.location + "/tesst"}>Profilo</a>
+            </div>
+            {menuTags.map((tag, index) => (
+              <div className="menu-profile-list-content">
+              <a className="visual-href-text-nolink" href={tag.url}>{tag.name}</a>
+              </div>
+            ))}
+            <div className="menu-profile-list-content" onClick={handleLogoutClick}>
+              <a className="visual-href-text-nolink">Esci</a>
+            </div>
+            <div style={{ height: "15px" }}></div>
+          </div>
+        )}
+        {viewMenuProfile === true && logged === false && (
           <div className="menu-profile-list" ref={menuRef}>
             <div className="menu-profile-list-content">
               <a className="visual-href-text-nolink" href={window.location + "/tesst"}>Accedi</a>

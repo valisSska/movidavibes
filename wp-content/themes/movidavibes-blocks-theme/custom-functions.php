@@ -1,4 +1,6 @@
 <?php
+echo "ciaoo da custom-functions 46665 /////  ";
+
 
 /*
 global $wpdb;
@@ -18,7 +20,6 @@ if($results){
     echo "errore query users db";
     $wpdb->print_error();
 }
-
 */
 
 /*
@@ -53,9 +54,6 @@ function enqueue_react_app() {
 add_action('wp_enqueue_scripts', 'enqueue_react_app');
 
 */
-
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 
 ?>
 <!--

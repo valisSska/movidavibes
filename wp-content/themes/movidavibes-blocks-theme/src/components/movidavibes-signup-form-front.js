@@ -7,18 +7,65 @@ import MoviAllert from "./Movi-allert";
 
 
 const  MoviSignUp = () => {
+  const [sgnUpPage, setSgnUpPage] = useState(0);
   const [phoneNumber, setPhoneNumber] = useState('');
   const [userName, setUserName] = useState('');
   const [userSurname, setUserSurName] = useState('');
   const [userNicename, setUserNicename] = useState('');
+  const [userUrl, setUserUrl] = useState('');
   const [userNicenameError, setUserNicenameError] = useState(false);
   const [userEmail, setUserEmail] = useState('');
   const [userPassword, setUserPassword] = useState('');
   const [userPassword2, setUserPassword2] = useState('');
   const [userPasswordControl, setUserPasswordControl] = useState(false);
   const [textError, setTextError] = useState('');
+  const [textAllert, setTextAllert] = useState('test');
   const [emailError, setEmailError] = useState(false);
+  const [telError, setTelError] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [selectedFile, setSelectedFile] = useState(null);
+
+
+
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    setSelectedFile(file);
+  };
+
+
+  const handleUpload = () => {
+    if (selectedFile) {
+      const id_user = localStorage.getItem('id_user');
+      const formData = {
+        id_user: id_user,
+        file: selectedFile
+        // Altri dati che desideri inviare
+      };
+      const jsonData = JSON.stringify(formData);
+      console.log('Dati img JSON inviati:', jsonData, 'selectedfile', selectedFile);
+
+      // Esempio di fetch per caricare l'immagine
+      fetch('/wp-json/movidavibes-api/v1/img-upload', {
+        method: 'POST',
+        body: jsonData,
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          // Gestisci la risposta del server
+          console.log('Risposta del server:', data);
+        })
+        .catch((error) => {
+          // Gestisci gli errori di rete o del server
+          console.error('Errore durante il caricamento:', error);
+        });
+    }
+  };
+
+  
+
+
+
+
 
   const handlePhoneNumberChange = (e) => {
 
@@ -31,6 +78,13 @@ const  MoviSignUp = () => {
 
     setPhoneNumber(truncatedPhoneNumber);
   };
+
+
+
+
+
+
+
 
   const controlUserNameExist = async () => {
     try {
@@ -61,6 +115,7 @@ const  MoviSignUp = () => {
         setLoading(false);
         setUserNicenameError(true);
         setTextError('Questo nome utente è già registrato');
+        return
       };
 
 
@@ -68,8 +123,13 @@ const  MoviSignUp = () => {
     } catch (error) {
       setLoading(false);
       console.error('Errore nell\'invio dei dati a PHP:', error);
+      return
     }
   };
+
+
+
+
   const controlUserEmailExist = async () => {
     try {
       const userData = {
@@ -100,6 +160,7 @@ const  MoviSignUp = () => {
         setLoading(false);
         setEmailError(true);
         setTextError('Questa email è già registrata');
+        return
       };
 
 
@@ -107,43 +168,269 @@ const  MoviSignUp = () => {
     } catch (error) {
       setLoading(false);
       console.error('Errore nell\'invio dei dati a PHP:', error);
+      return
     }
   };
+
+
+
+
+
+
+
+  const controlUserTelExist = async () => {
+    try {
+      const userData = {
+        data: phoneNumber,
+        // Altri dati che desideri inviare
+      };
+      setLoading(true);
+
+      const jsonData = JSON.stringify(userData);
+      console.log('Dati JSON inviati:', jsonData);
+
+      const responseTel = await fetch(`/wp-json/movidavibes-api/v1/exist-tel`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: jsonData,
+      });
+
+      const responseTelText = await responseTel.text(); // Leggi la risposta come testo
+
+
+
+
+      console.log('Risposta dal server:', responseTelText);
+
+      if(responseTelText!=='[]'){
+        setLoading(false);
+        setTelError(true);
+        setTextError('Questo numero di telefono è già registrato');
+        return
+      };
+
+
+
+    } catch (error) {
+      setLoading(false);
+      console.error('Errore nell\'invio dei dati a PHP:', error);
+      return
+    }
+  };
+
+
+
+
+
+  const senDataSignUp = async () => {
+    try {
+      const userData = {
+        name: userName,
+        surname: userSurname,
+        username:userNicename,
+        email: userEmail,
+        tel: phoneNumber,
+        url: userUrl,
+        password:userPassword
+        // Altri dati che desideri inviare
+      };
+      setLoading(true);
+
+      const jsonData = JSON.stringify(userData);
+      console.log('Dati JSON inviati:', jsonData);
+
+      const responseTel = await fetch(`/wp-json/movidavibes-api/v1/sgn-up2`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: jsonData,
+      });
+
+      const responseTelText = await responseTel.text(); // Leggi la risposta come testo
+
+
+
+
+      console.log('Risposta dal server:  ', responseTelText);
+      setTextAllert('Registrato con successo.');
+      setSgnUpPage(1);
+      console.log('handle-login inizio');
+      handleLogin();
+      setLoading(false);
+      return
+
+
+
+    } catch (error) {
+      setLoading(false);
+      console.error('Errore nell\'invio dei dati a PHP:', error);
+      return
+    }
+  };
+
+
+  const handleLogin = async () => {
+    console.log('ciao da handlelogin');
+    setTextError('');
+    const loginRequest = async () => {
+      try {
+        const userData = {
+          username: userNicename,
+          password:userPassword
+          // Altri dati che desideri inviare
+        };
+        setLoading(true);
+  
+        const jsonData = JSON.stringify(userData);
+        console.log('Dati JSON inviati: handlelogin ', jsonData);
+  
+        const responseLoggin = await fetch(`/wp-json/movidavibes-api/v1/log-in`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            credentials: 'include'
+          },
+          body: jsonData,
+        });
+  
+        const movieCookieLogged = await responseLoggin.json(); // Leggi la risposta come json
+
+
+      const moviToken=movieCookieLogged.token_user;
+      const idUser=movieCookieLogged.id_user;
+      localStorage.setItem('movitoken', moviToken);
+      localStorage.setItem('id_user', idUser);
+      console.log('token request log in token  handlelogin //// ' + moviToken);
+  
+  
+  
+  
+        console.log('Risposta dal server://///////////////////  log in ', movieCookieLogged); 
+  
+      } catch (error) {
+        setLoading(false);
+        console.error('Errore nell\'invio dei dati a PHP:', error);
+        return
+      }
+    };
+    await loginRequest();
+  };
+
+
+
+  function nextPage(){
+  setSgnUpPage(0);
+  setPhoneNumber('');
+  setUserName('');
+  setUserSurName('');
+  setUserNicename('');
+  setUserUrl('');
+  setUserNicenameError(false);
+  setUserEmail('');
+  setUserPassword('');
+  setUserPassword2('');
+  setUserPasswordControl(false);
+  setTextError('');
+  setTextAllert('');
+  setEmailError(false);
+  setTelError(false);
+  setLoading(false);
+  location.reload();
+  }
+
+
+
+
+
+
+  
+
 
   const handleRegistration = async () => {
   setTextError('');
   setUserPasswordControl(false);
   setEmailError(false);
   setUserNicenameError(false);
+  setTelError(false);
   const regexuserPassword =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[a-zA-Z0-9@$!%*?&]+$/;
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 
   if (userPassword !== userPassword2) {
     setUserPasswordControl(true);
     setTextError('Le due password non coincidono.');
+    return
   } else if (userPassword.length < 8) {
     setUserPasswordControl(true);
     setTextError('La password deve essere lunga almeno 8 caratteri.');
+    return
   } else if (!regexuserPassword.test(userPassword)) {
     setUserPasswordControl(true);
     setTextError('La password deve contenere lettere minuscole, maiuscole, almeno un numero e almeno un carattere speciale.');
+    return 
   } else if (!emailRegex.test(userEmail)) {
     setEmailError(true);
     setTextError('Inserisci un indirizzo email valido.');
+    return
+  }else if (!userName || userSurname=== '') {
+    setTextError('Inserisci i campi vuoti.');
+    return
+  }else if (phoneNumber.length < 9) {
+    setTelError(true);
+    setTextError('Inserisci un numero di telefono vallido.');
+    return
+  }
+  else if (userNicename.length < 5) {
+    setUserNicenameError(true);
+    setTextError('Inserisci all user almeno 5 caratteri.');
+    return
   }
     ///////////////////// CONTROLL //////////////////////////////
-    useEffect(() => {
       const fetchDatacontrol = async () => {
         await controlUserEmailExist();
         await controlUserNameExist();
+        await controlUserTelExist();
+        setLoading(false);
       };
 
       fetchDatacontrol();
-    }, []);
     /////////////////////////////////////////////////////////////////////////////////////////
+    if(textError===''){
+      senDataSignUp();
+      setLoading(false);
+      return
+    };
 };
 
-
+  if(sgnUpPage===1)
+  {
+    return (
+      <div className="flex-center">
+      <div className="container-login-forms">
+        <div className="header-login-forms">
+        <p className="text-welcome-login-forms">Registrati</p>
+        </div>
+      <p className="text-welcome-login-forms">Benvenuto su Movidavibes</p>
+      <div className="container-inputs-login-forms" style={{ height:'460px' }}>
+      {textAllert && (
+        <>
+      <p className="text-privacy-login-forms" >{textAllert}</p>
+      <div className='container-label-input-file'>Immagine del profilo (Facoltativo)</div>
+    <input type="file" className="custom-file-input input-password-login-forms" placeholder="Immagine profilo" onChange={handleFileChange} />
+    <button onClick={handleUpload}>carica</button>
+    </>
+    )}
+    <div className="container-button-login-forms" style={{ width:'100%' }}>
+    <button className="button-login-forms" onClick={nextPage}>Avanti</button>
+    </div>
+      </div>
+     </div> 
+     </div>
+    );
+  }
   return (
     <div className="flex-center">
     <div className="container-login-forms">
@@ -166,7 +453,20 @@ const  MoviSignUp = () => {
       ) : (
         <input className="input-user-SignUp-forms" placeholder='Email' type='email' value={userEmail} onChange={(e) => setUserEmail(e.target.value)}/>
       )}
-      <input
+      
+      {telError === true ? (
+      <input className={`input-password-SignUp-forms ${emailError ? 'error' : ''}`} 
+      style={{ backgroundColor: '#FFF0F5', border: 'solid #e31c5f 1px' }}  
+      type="tel"
+      id="phoneNumber"
+      name="phoneNumber"
+      value={phoneNumber}
+      onChange={handlePhoneNumberChange}
+      maxLength="10"
+      placeholder="Inserisci il numero di telefono"
+    />
+      ) : (
+        <input
         type="tel"
         id="phoneNumber"
         className="input-user-SignUp-forms"
@@ -176,6 +476,8 @@ const  MoviSignUp = () => {
         maxLength="10"
         placeholder="Inserisci il numero di telefono"
       />
+      )}
+      <input className="input-user-SignUp-forms" placeholder='Url (Facoltativo)' value={userUrl} onChange={(e) => setUserUrl(e.target.value)}/>
    {userPasswordControl === true ? (
   <>
     <input
@@ -212,13 +514,17 @@ const  MoviSignUp = () => {
       onChange={(e) => setUserPassword2(e.target.value)}
     />
   </>
-)}
+)}  <p className="text-privacy-login-forms">Informativa sulla Privacy</p>
     </div>
     {textError && (
       <p className="text-privacy-login-forms" style={{ color: '#e31c5f' }} >{textError}</p>
     )}
-      {loading ? <FontAwesomeIcon icon={faSpinner} spin /> : ''}
-    <p className="text-privacy-login-forms">Informativa sulla Privacy</p>
+      {loading ?
+      <>
+      <div className='movidavibes-space-column'></div>
+      <FontAwesomeIcon icon={faSpinner} spin /> 
+      </> 
+      : ''}
     <div className="container-button-login-forms">
     <button className="button-login-forms" onClick={handleRegistration}>Registrati</button>
     </div>

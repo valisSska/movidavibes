@@ -1,5 +1,5 @@
 /*!*********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/styles/main.scss ***!
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/styles/main.scss ***!
   \*********************************************************************************************************************************************************************************************************************************************/
 .example-react-component {
   margin: 15px 0;
@@ -67,6 +67,17 @@ a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+}
+.movidavibes-divider{
+    width:100%;
+    height:10px;
+    border-bottom:solid rgb(221, 221, 221) 1px;
+    margin-bottom:10px;
+}
+.movidavibes-space-column{
+    width:100%;
+    height:10px;
+    margin-bottom:10px;
 }
 .logo-movidavibes{
     margin-left:40px;
@@ -251,7 +262,7 @@ a:hover {
     text-align:center;
 }
 .container-inputs-signUp-row-forms{
-    width:87.8%;
+    width:80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -261,7 +272,7 @@ a:hover {
 }
 .input-name-Signup-forms{
     /*width:35.78%;*/
-    width:100%;
+    width:50%;
     height:35px;
     background-color: #fafafa;
     padding: 5px 15px 5px 15px;
@@ -274,7 +285,7 @@ a:hover {
 }
 .input-surname-Signup-forms{
     /*width:36.1%;*/
-    width:100%;
+    width:50%;
     height:35px;
     background-color: #fafafa;
     padding: 5px 15px 5px 15px;
@@ -334,6 +345,57 @@ a:hover {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
 }
+
+
+.container-label-input-file{
+    border-radius:15px 15px 0px 0px;
+    width: 80%;
+    background-color: grey;
+    color: white;
+}
+.custom-file-input{
+    padding:0;
+}
+.custom-file-input::-webkit-file-upload-button {
+    width:40%;
+    height:35px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    outline: none;
+    background-color: #e31c5f;
+    border-radius:15px;
+    color:white;
+    font-size: large;
+    border-radius:0px 0px 0px 15px;
+    border-right: solid rgb(221, 221, 221) 1px;
+  }
+.custom-file-input::file-selector-button {
+    width:40%;
+    height:35px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    outline: none;
+    background-color: #e31c5f;
+    border-radius:15px;
+    color:white;
+    font-size: large;
+    border-radius:0px 0px 0px 15px;
+    border-right: solid rgb(221, 221, 221) 1px;
+  }
+  
+  .custom-file-input::-webkit-file-upload-button:hover {
+    background-color: #e62754;
+    cursor: pointer;
+  }
+  
+  .custom-file-input::file-selector-button:hover {
+    background-color: #e62754;
+    cursor: pointer;
+  }
 
 @-webkit-keyframes click-animation-button-login-forms {
     0% {

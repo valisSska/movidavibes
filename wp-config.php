@@ -1,6 +1,6 @@
 <?php
 
-define('DB_NAME', 'movidabesblabla2');
+define('DB_NAME', 'movidavibes05012024');
 define('DB_USER', 'root');
 define('DB_PASSWORD', '');
 define('DB_HOST', 'localhost');
